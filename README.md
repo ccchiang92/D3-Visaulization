@@ -21,6 +21,8 @@ Data Sources
 Covid cases :
 https://github.com/CSSEGISandData/COVID-19
 
+Unemployment: https://oui.doleta.gov/unemploy/claims.asp
+
 
 Think about
 Interactivity
