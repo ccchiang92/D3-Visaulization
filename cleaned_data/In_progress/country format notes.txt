@@ -10,7 +10,15 @@ UK united kingdom
 Macao/Macau
 North Irealand to uk
 Saint Martin
+
+
 Bahamas/The bahams
+Channel islands
+Cayman Islands
+Faroe Islands
+Diamond Princess
+Republic of Ireland
+azerbyjon
 
 
 array(['Total', 'Zimbabwe', 'Zambia', 'Yemen', 'Western Sahara',
