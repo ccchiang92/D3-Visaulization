@@ -1,9 +1,24 @@
 // Call CSV data
-d3.csv("assets/data/data.csv").then(function (chartData) {
-    chartData.forEach(function (dataPoint) {
-        dataPoint.index = +dataPoint.index;
-        dataPoint.index2 = +dataPoint.index2;
-    });
+d3.csv("cleaned_data/in_progress/mers_final.csv").then(function (chartData) {
+    D={
+        // StackOverflow used this to sum a selected column
+        slice1:d3.sum(data, function(d){return parseFloat(d.cases);}),
+    };
+
+// Create summary table
+function populate(arr) {
+    var table = d3.select("tbody");
+    table.attr("id", "table");
+    table.html("");
+    arr.forEach(function (obj) {
+        row = table.append("tr");
+        row.append("td").text(obj.virus);
+        row.append("td").text(obj.cases);
+        row.append("td").text(obj.deaths);
+    })
+}
+// Populate table
+populate(data);
 
 //Listener for button clicks.
 button.on('click', function() {
@@ -15,22 +30,3 @@ button.on('click', function() {
     var filteredData = data.filter(filterData);
     populate(filteredData);
 });
-
-// Create summary table
-function populate(arr) {
-    var table = d3.select("tbody");
-    table.attr("id", "table");
-    table.html("");
-    arr.forEach(function (obj) {
-        row = table.append("tr");
-        row.append("td").text(obj.datetime);
-        row.append("td").text(obj.city);
-        row.append("td").text(obj.state);
-        row.append("td").text(obj.country);
-        row.append("td").text(obj.shape);
-        row.append("td").text(obj.durationMinutes);
-        row.append("td").text(obj.comments);
-    })
-}
-// Populate table
-populate(data);
