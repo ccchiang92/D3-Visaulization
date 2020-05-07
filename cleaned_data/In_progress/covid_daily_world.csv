@@ -23,7 +23,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-23,Taiwan,1,0
 2020-01-23,Thailand,3,0
 2020-01-23,United States of America,1,0
-2020-01-23,Vietnam,2,0
+2020-01-23,Viet Nam,2,0
 2020-01-23,Total,653,18
 2020-01-24,France,2,0
 2020-01-24,Hong Kong,2,0
@@ -35,7 +35,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-24,Taiwan,3,0
 2020-01-24,Thailand,5,0
 2020-01-24,United States of America,2,0
-2020-01-24,Vietnam,2,0
+2020-01-24,Viet Nam,2,0
 2020-01-24,Total,941,26
 2020-01-25,Australia,4,0
 2020-01-25,France,3,0
@@ -50,7 +50,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-25,Taiwan,3,0
 2020-01-25,Thailand,7,0
 2020-01-25,United States of America,2,0
-2020-01-25,Vietnam,2,0
+2020-01-25,Viet Nam,2,0
 2020-01-25,Total,1438,42
 2020-01-26,Australia,4,0
 2020-01-26,Canada,1,0
@@ -66,7 +66,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-26,Taiwan,4,0
 2020-01-26,Thailand,8,0
 2020-01-26,United States of America,5,0
-2020-01-26,Vietnam,2,0
+2020-01-26,Viet Nam,2,0
 2020-01-26,Total,2118,56
 2020-01-27,Australia,5,0
 2020-01-27,Cambodia,1,0
@@ -85,7 +85,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-27,Taiwan,5,0
 2020-01-27,Thailand,8,0
 2020-01-27,United States of America,5,0
-2020-01-27,Vietnam,2,0
+2020-01-27,Viet Nam,2,0
 2020-01-27,Total,2927,82
 2020-01-28,Australia,5,0
 2020-01-28,Cambodia,1,0
@@ -104,7 +104,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-28,Taiwan,8,0
 2020-01-28,Thailand,14,0
 2020-01-28,United States of America,5,0
-2020-01-28,Vietnam,2,0
+2020-01-28,Viet Nam,2,0
 2020-01-28,Total,5578,131
 2020-01-29,Australia,5,0
 2020-01-29,Cambodia,1,0
@@ -125,7 +125,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-29,Thailand,14,0
 2020-01-29,United States of America,5,0
 2020-01-29,United Arab Emirates,4,0
-2020-01-29,Vietnam,2,0
+2020-01-29,Viet Nam,2,0
 2020-01-29,Total,6165,133
 2020-01-30,Australia,9,0
 2020-01-30,Cambodia,1,0
@@ -148,7 +148,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-30,Thailand,14,0
 2020-01-30,United States of America,5,0
 2020-01-30,United Arab Emirates,4,0
-2020-01-30,Vietnam,2,0
+2020-01-30,Viet Nam,2,0
 2020-01-30,Total,8235,171
 2020-01-31,Australia,9,0
 2020-01-31,Cambodia,1,0
@@ -175,7 +175,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-01-31,United Kingdom,2,0
 2020-01-31,United States of America,6,0
 2020-01-31,United Arab Emirates,4,0
-2020-01-31,Vietnam,2,0
+2020-01-31,Viet Nam,2,0
 2020-01-31,Total,9925,213
 2020-02-01,Australia,12,0
 2020-02-01,Cambodia,1,0
@@ -203,7 +203,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-01,United Kingdom,2,0
 2020-02-01,United States of America,8,0
 2020-02-01,United Arab Emirates,4,0
-2020-02-01,Vietnam,6,0
+2020-02-01,Viet Nam,6,0
 2020-02-01,Total,12038,259
 2020-02-02,Australia,12,0
 2020-02-02,Cambodia,1,0
@@ -231,7 +231,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-02,United Kingdom,2,0
 2020-02-02,United States of America,8,0
 2020-02-02,United Arab Emirates,5,0
-2020-02-02,Vietnam,6,0
+2020-02-02,Viet Nam,6,0
 2020-02-02,Total,16787,362
 2020-02-03,Australia,12,0
 2020-02-03,Cambodia,1,0
@@ -259,7 +259,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-03,United Kingdom,2,0
 2020-02-03,United States of America,11,0
 2020-02-03,United Arab Emirates,5,0
-2020-02-03,Vietnam,8,0
+2020-02-03,Viet Nam,8,0
 2020-02-03,Total,19881,426
 2020-02-04,Australia,13,0
 2020-02-04,Belgium,1,0
@@ -288,7 +288,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-04,United Kingdom,2,0
 2020-02-04,United States of America,11,0
 2020-02-04,United Arab Emirates,5,0
-2020-02-04,Vietnam,8,0
+2020-02-04,Viet Nam,8,0
 2020-02-04,Total,23892,492
 2020-02-05,Australia,13,0
 2020-02-05,Belgium,1,0
@@ -317,7 +317,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-05,United Kingdom,2,0
 2020-02-05,United States of America,12,0
 2020-02-05,United Arab Emirates,5,0
-2020-02-05,Vietnam,8,0
+2020-02-05,Viet Nam,8,0
 2020-02-05,Total,27636,564
 2020-02-06,Australia,14,0
 2020-02-06,Belgium,1,0
@@ -346,7 +346,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-06,United Kingdom,2,0
 2020-02-06,United States of America,12,0
 2020-02-06,United Arab Emirates,5,0
-2020-02-06,Vietnam,10,0
+2020-02-06,Viet Nam,10,0
 2020-02-06,Total,30818,634
 2020-02-07,Australia,15,0
 2020-02-07,Belgium,1,0
@@ -376,7 +376,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-07,United Kingdom,3,0
 2020-02-07,United States of America,12,0
 2020-02-07,United Arab Emirates,5,0
-2020-02-07,Vietnam,10,0
+2020-02-07,Viet Nam,10,0
 2020-02-07,Total,34392,719
 2020-02-08,Australia,15,0
 2020-02-08,Belgium,1,0
@@ -406,7 +406,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-08,United Kingdom,3,0
 2020-02-08,United States of America,12,0
 2020-02-08,United Arab Emirates,7,0
-2020-02-08,Vietnam,13,0
+2020-02-08,Viet Nam,13,0
 2020-02-08,Total,37121,806
 2020-02-09,Australia,15,0
 2020-02-09,Belgium,1,0
@@ -436,7 +436,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-09,United Kingdom,3,0
 2020-02-09,United States of America,12,0
 2020-02-09,United Arab Emirates,7,0
-2020-02-09,Vietnam,13,0
+2020-02-09,Viet Nam,13,0
 2020-02-09,Total,40151,906
 2020-02-10,Australia,15,0
 2020-02-10,Belgium,1,0
@@ -466,7 +466,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-10,United Kingdom,8,0
 2020-02-10,United States of America,12,0
 2020-02-10,United Arab Emirates,8,0
-2020-02-10,Vietnam,14,0
+2020-02-10,Viet Nam,14,0
 2020-02-10,Total,42763,1013
 2020-02-11,Australia,15,0
 2020-02-11,Belgium,1,0
@@ -496,7 +496,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-11,United Kingdom,8,0
 2020-02-11,United States of America,13,0
 2020-02-11,United Arab Emirates,8,0
-2020-02-11,Vietnam,15,0
+2020-02-11,Viet Nam,15,0
 2020-02-11,Total,44803,1113
 2020-02-12,Australia,15,0
 2020-02-12,Belgium,1,0
@@ -526,7 +526,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-12,United Kingdom,9,0
 2020-02-12,United States of America,13,0
 2020-02-12,United Arab Emirates,8,0
-2020-02-12,Vietnam,15,0
+2020-02-12,Viet Nam,15,0
 2020-02-12,Total,45222,1118
 2020-02-13,Australia,15,0
 2020-02-13,Belgium,1,0
@@ -556,7 +556,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-13,United Kingdom,9,0
 2020-02-13,United States of America,15,0
 2020-02-13,United Arab Emirates,8,0
-2020-02-13,Vietnam,16,0
+2020-02-13,Viet Nam,16,0
 2020-02-13,Total,60370,1371
 2020-02-14,Australia,15,0
 2020-02-14,Belgium,1,0
@@ -587,7 +587,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-14,United Kingdom,9,0
 2020-02-14,United States of America,15,0
 2020-02-14,United Arab Emirates,8,0
-2020-02-14,Vietnam,16,0
+2020-02-14,Viet Nam,16,0
 2020-02-14,Total,66887,1523
 2020-02-15,Australia,15,0
 2020-02-15,Belgium,1,0
@@ -618,7 +618,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-15,United Kingdom,9,0
 2020-02-15,United States of America,15,0
 2020-02-15,United Arab Emirates,8,0
-2020-02-15,Vietnam,16,0
+2020-02-15,Viet Nam,16,0
 2020-02-15,Total,69032,1666
 2020-02-16,Australia,15,0
 2020-02-16,Belgium,1,0
@@ -649,7 +649,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-16,United Kingdom,9,0
 2020-02-16,United States of America,15,0
 2020-02-16,United Arab Emirates,9,0
-2020-02-16,Vietnam,16,0
+2020-02-16,Viet Nam,16,0
 2020-02-16,Total,71226,1770
 2020-02-17,Australia,15,0
 2020-02-17,Belgium,1,0
@@ -680,7 +680,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-17,United Kingdom,9,0
 2020-02-17,United States of America,15,0
 2020-02-17,United Arab Emirates,9,0
-2020-02-17,Vietnam,16,0
+2020-02-17,Viet Nam,16,0
 2020-02-17,Total,73260,1868
 2020-02-18,Australia,15,0
 2020-02-18,Belgium,1,0
@@ -711,7 +711,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-18,United Kingdom,9,0
 2020-02-18,United States of America,15,0
 2020-02-18,United Arab Emirates,9,0
-2020-02-18,Vietnam,16,0
+2020-02-18,Viet Nam,16,0
 2020-02-18,Total,75138,2007
 2020-02-19,Australia,15,0
 2020-02-19,Belgium,1,0
@@ -743,7 +743,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-19,United Kingdom,9,0
 2020-02-19,United States of America,15,0
 2020-02-19,United Arab Emirates,9,0
-2020-02-19,Vietnam,16,0
+2020-02-19,Viet Nam,16,0
 2020-02-19,Total,75641,2122
 2020-02-20,Australia,15,0
 2020-02-20,Belgium,1,0
@@ -775,7 +775,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-20,United Kingdom,9,0
 2020-02-20,United States of America,15,0
 2020-02-20,United Arab Emirates,9,0
-2020-02-20,Vietnam,16,0
+2020-02-20,Viet Nam,16,0
 2020-02-20,Total,76199,2247
 2020-02-21,Australia,19,0
 2020-02-21,Belgium,1,0
@@ -809,7 +809,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-21,United Kingdom,9,0
 2020-02-21,United States of America,35,0
 2020-02-21,United Arab Emirates,9,0
-2020-02-21,Vietnam,16,0
+2020-02-21,Viet Nam,16,0
 2020-02-21,Total,76843,2251
 2020-02-22,Australia,22,0
 2020-02-22,Belgium,1,0
@@ -843,7 +843,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-22,United Kingdom,9,0
 2020-02-22,United States of America,35,0
 2020-02-22,United Arab Emirates,13,0
-2020-02-22,Vietnam,16,0
+2020-02-22,Viet Nam,16,0
 2020-02-22,Total,78599,2458
 2020-02-23,Australia,22,0
 2020-02-23,Belgium,1,0
@@ -878,7 +878,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-23,United Kingdom,9,0
 2020-02-23,United States of America,35,0
 2020-02-23,United Arab Emirates,13,0
-2020-02-23,Vietnam,16,0
+2020-02-23,Viet Nam,16,0
 2020-02-23,Total,78985,2469
 2020-02-24,Afghanistan,1,0
 2020-02-24,Australia,22,0
@@ -917,7 +917,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-24,United Kingdom,13,0
 2020-02-24,United States of America,53,0
 2020-02-24,United Arab Emirates,13,0
-2020-02-24,Vietnam,16,0
+2020-02-24,Viet Nam,16,0
 2020-02-24,Total,79570,2629
 2020-02-25,Afghanistan,1,0
 2020-02-25,Algeria,1,0
@@ -960,7 +960,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-25,United Kingdom,13,0
 2020-02-25,United States of America,53,0
 2020-02-25,United Arab Emirates,13,0
-2020-02-25,Vietnam,16,0
+2020-02-25,Viet Nam,16,0
 2020-02-25,Total,80415,2708
 2020-02-26,Afghanistan,1,0
 2020-02-26,Algeria,1,0
@@ -1010,7 +1010,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-26,United Kingdom,13,0
 2020-02-26,United States of America,59,0
 2020-02-26,United Arab Emirates,13,0
-2020-02-26,Vietnam,16,0
+2020-02-26,Viet Nam,16,0
 2020-02-26,Total,81397,2770
 2020-02-27,Afghanistan,1,0
 2020-02-27,Algeria,1,0
@@ -1064,7 +1064,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-27,United Kingdom,15,0
 2020-02-27,United States of America,60,0
 2020-02-27,United Arab Emirates,13,0
-2020-02-27,Vietnam,16,0
+2020-02-27,Viet Nam,16,0
 2020-02-27,Total,82756,2814
 2020-02-28,Azerbaijan,1,0
 2020-02-28,Afghanistan,1,0
@@ -1125,7 +1125,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-28,Thailand,41,0
 2020-02-28,United States of America,62,0
 2020-02-28,United Arab Emirates,19,0
-2020-02-28,Vietnam,16,0
+2020-02-28,Viet Nam,16,0
 2020-02-28,Total,84124,2872
 2020-02-29,Afghanistan,1,0
 2020-02-29,Algeria,1,0
@@ -1189,7 +1189,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-02-29,United Kingdom,23,0
 2020-02-29,United States of America,70,1
 2020-02-29,United Arab Emirates,21,0
-2020-02-29,Vietnam,16,0
+2020-02-29,Viet Nam,16,0
 2020-02-29,Total,86013,2941
 2020-03-01,Afghanistan,1,0
 2020-03-01,Algeria,1,0
@@ -1258,7 +1258,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-01,United Kingdom,36,0
 2020-03-01,United States of America,76,1
 2020-03-01,United Arab Emirates,21,0
-2020-03-01,Vietnam,16,0
+2020-03-01,Viet Nam,16,0
 2020-03-01,Total,88371,2996
 2020-03-02,Afghanistan,1,0
 2020-03-02,Algeria,3,0
@@ -1334,7 +1334,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-02,United Kingdom,40,0
 2020-03-02,United States of America,101,6
 2020-03-02,United Arab Emirates,21,0
-2020-03-02,Vietnam,16,0
+2020-03-02,Viet Nam,16,0
 2020-03-02,Total,90309,3085
 2020-03-03,Afghanistan,1,0
 2020-03-03,Algeria,5,0
@@ -1414,7 +1414,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-03,United States of America,122,7
 2020-03-03,Ukraine,1,0
 2020-03-03,United Arab Emirates,27,0
-2020-03-03,Vietnam,16,0
+2020-03-03,Viet Nam,16,0
 2020-03-03,Total,92844,3160
 2020-03-04,Afghanistan,1,0
 2020-03-04,Algeria,12,0
@@ -1500,7 +1500,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-04,United States of America,153,11
 2020-03-04,Ukraine,1,0
 2020-03-04,United Arab Emirates,27,0
-2020-03-04,Vietnam,16,0
+2020-03-04,Viet Nam,16,0
 2020-03-04,Total,95124,3254
 2020-03-05,Afghanistan,1,0
 2020-03-05,Algeria,12,0
@@ -1590,7 +1590,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-05,United States of America,221,12
 2020-03-05,Ukraine,1,0
 2020-03-05,United Arab Emirates,29,0
-2020-03-05,Vietnam,16,0
+2020-03-05,Viet Nam,16,0
 2020-03-05,Total,97886,3348
 2020-03-06,Afghanistan,1,0
 2020-03-06,Algeria,17,0
@@ -1689,7 +1689,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-06,Ukraine,1,0
 2020-03-06,United Arab Emirates,29,0
 2020-03-06,Vatican City,1,0
-2020-03-06,Vietnam,16,0
+2020-03-06,Viet Nam,16,0
 2020-03-06,Total,101800,3460
 2020-03-07,Afghanistan,1,0
 2020-03-07,Algeria,17,0
@@ -1791,7 +1791,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-07,Ukraine,1,0
 2020-03-07,United Arab Emirates,45,0
 2020-03-07,Vatican City,1,0
-2020-03-07,Vietnam,18,0
+2020-03-07,Viet Nam,18,0
 2020-03-07,Total,105836,3558
 2020-03-08,Afghanistan,4,0
 2020-03-08,Algeria,19,0
@@ -1898,7 +1898,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-08,Ukraine,1,0
 2020-03-08,United Arab Emirates,45,0
 2020-03-08,Vatican City,1,0
-2020-03-08,Vietnam,30,0
+2020-03-08,Viet Nam,30,0
 2020-03-08,Total,109835,3803
 2020-03-09,Afghanistan,4,0
 2020-03-09,Albania,2,0
@@ -2009,7 +2009,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-09,Ukraine,1,0
 2020-03-09,United Arab Emirates,45,0
 2020-03-09,Vatican City,1,0
-2020-03-09,Vietnam,30,0
+2020-03-09,Viet Nam,30,0
 2020-03-09,Total,113582,3996
 2020-03-10,Afghanistan,5,0
 2020-03-10,Albania,10,0
@@ -2098,7 +2098,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-10,Portugal,41,0
 2020-03-10,Qatar,24,0
 2020-03-10,South Korea,7513,54
-2020-03-10,Republic of Moldova,3,0
+2020-03-10,Moldova,3,0
 2020-03-10,Romania,25,0
 2020-03-10,Russia,10,0
 2020-03-10,Saint Barthelemy,1,0
@@ -2153,11 +2153,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-11,Colombia,9,0
 2020-03-11,Republic of the Congo,1,0
 2020-03-11,Costa Rica,13,0
-2020-03-11,Cote d'Ivoire,1,0
+2020-03-11,Ivory Coast,1,0
 2020-03-11,Croatia,19,0
 2020-03-11,Cruise Ship,696,7
 2020-03-11,Cyprus,6,0
-2020-03-11,Czechia,91,0
+2020-03-11,Czech Republic,91,0
 2020-03-11,Denmark,444,0
 2020-03-11,Dominican Republic,5,0
 2020-03-11,Ecuador,17,0
@@ -2238,7 +2238,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-11,Ukraine,1,0
 2020-03-11,United Arab Emirates,74,0
 2020-03-11,United Kingdom,459,8
-2020-03-11,Vietnam,38,0
+2020-03-11,Viet Nam,38,0
 2020-03-11,Palestine,0,0
 2020-03-11,Total,125865,4615
 2020-03-12,Afghanistan,7,0
@@ -2269,12 +2269,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-12,Colombia,9,0
 2020-03-12,Republic of the Congo,1,0
 2020-03-12,Costa Rica,22,0
-2020-03-12,Cote d'Ivoire,1,0
+2020-03-12,Ivory Coast,1,0
 2020-03-12,Croatia,19,0
 2020-03-12,Cruise Ship,696,7
 2020-03-12,Cuba,3,0
 2020-03-12,Cyprus,6,0
-2020-03-12,Czechia,94,0
+2020-03-12,Czech Republic,94,0
 2020-03-12,Denmark,617,0
 2020-03-12,Dominican Republic,5,0
 2020-03-12,Ecuador,17,0
@@ -2356,7 +2356,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-12,Ukraine,1,0
 2020-03-12,United Arab Emirates,85,0
 2020-03-12,United Kingdom,459,8
-2020-03-12,Vietnam,39,0
+2020-03-12,Viet Nam,39,0
 2020-03-12,Palestine,0,0
 2020-03-12,Total,128343,4720
 2020-03-13,Afghanistan,7,0
@@ -2390,12 +2390,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-13,Colombia,13,0
 2020-03-13,Republic of the Congo,2,0
 2020-03-13,Costa Rica,23,0
-2020-03-13,Cote d'Ivoire,1,0
+2020-03-13,Ivory Coast,1,0
 2020-03-13,Croatia,32,0
 2020-03-13,Cruise Ship,696,7
 2020-03-13,Cuba,4,0
 2020-03-13,Cyprus,14,0
-2020-03-13,Czechia,141,0
+2020-03-13,Czech Republic,141,0
 2020-03-13,Denmark,804,0
 2020-03-13,Dominican Republic,5,0
 2020-03-13,Ecuador,17,0
@@ -2482,7 +2482,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-13,United States of America,2179,47
 2020-03-13,Ukraine,3,1
 2020-03-13,United Arab Emirates,85,0
-2020-03-13,Vietnam,47,0
+2020-03-13,Viet Nam,47,0
 2020-03-13,Total,145193,5404
 2020-03-14,Afghanistan,11,0
 2020-03-14,Albania,38,1
@@ -2515,13 +2515,13 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-14,Colombia,22,0
 2020-03-14,Republic of the Congo,2,0
 2020-03-14,Costa Rica,26,0
-2020-03-14,Cote d'Ivoire,1,0
+2020-03-14,Ivory Coast,1,0
 2020-03-14,Croatia,38,0
 2020-03-14,Cruise Ship,696,7
 2020-03-14,Cuba,4,0
 2020-03-14,Curacao,1,0
 2020-03-14,Cyprus,26,0
-2020-03-14,Czechia,189,0
+2020-03-14,Czech Republic,189,0
 2020-03-14,Denmark,836,1
 2020-03-14,Dominican Republic,11,0
 2020-03-14,Ecuador,28,2
@@ -2624,7 +2624,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-14,United Arab Emirates,85,0
 2020-03-14,Uruguay,4,0
 2020-03-14,Venezuela,2,0
-2020-03-14,Vietnam,53,0
+2020-03-14,Viet Nam,53,0
 2020-03-14,Palestine,0,0
 2020-03-14,Total,156099,5819
 2020-03-15,Afghanistan,16,0
@@ -2659,13 +2659,13 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-15,Colombia,34,0
 2020-03-15,Republic of the Congo,3,0
 2020-03-15,Costa Rica,27,0
-2020-03-15,Cote d'Ivoire,1,0
+2020-03-15,Ivory Coast,1,0
 2020-03-15,Croatia,49,0
 2020-03-15,Cruise Ship,696,7
 2020-03-15,Cuba,4,0
 2020-03-15,Curacao,1,0
 2020-03-15,Cyprus,26,0
-2020-03-15,Czechia,253,0
+2020-03-15,Czech Republic,253,0
 2020-03-15,Denmark,875,2
 2020-03-15,Dominican Republic,11,0
 2020-03-15,Ecuador,28,2
@@ -2770,7 +2770,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-15,Uruguay,4,0
 2020-03-15,Uzbekistan,1,0
 2020-03-15,Venezuela,10,0
-2020-03-15,Vietnam,56,0
+2020-03-15,Viet Nam,56,0
 2020-03-15,Palestine,0,0
 2020-03-15,Total,167447,6440
 2020-03-16,Afghanistan,21,0
@@ -2805,12 +2805,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-16,Colombia,54,0
 2020-03-16,Republic of the Congo,4,0
 2020-03-16,Costa Rica,35,0
-2020-03-16,Cote d'Ivoire,1,0
+2020-03-16,Ivory Coast,1,0
 2020-03-16,Croatia,57,0
 2020-03-16,Cruise Ship,696,7
 2020-03-16,Cuba,4,0
 2020-03-16,Cyprus,33,0
-2020-03-16,Czechia,298,0
+2020-03-16,Czech Republic,298,0
 2020-03-16,Denmark,932,3
 2020-03-16,Dominican Republic,11,0
 2020-03-16,Ecuador,37,2
@@ -2925,7 +2925,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-16,Uruguay,8,0
 2020-03-16,Uzbekistan,6,0
 2020-03-16,Venezuela,17,0
-2020-03-16,Vietnam,61,0
+2020-03-16,Viet Nam,61,0
 2020-03-16,Palestine,0,0
 2020-03-16,Total,181546,7126
 2020-03-17,Afghanistan,22,0
@@ -2961,12 +2961,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-17,Colombia,65,0
 2020-03-17,Republic of the Congo,4,0
 2020-03-17,Costa Rica,41,0
-2020-03-17,Cote d'Ivoire,5,0
+2020-03-17,Ivory Coast,5,0
 2020-03-17,Croatia,65,0
 2020-03-17,Cruise Ship,696,7
 2020-03-17,Cuba,5,0
 2020-03-17,Cyprus,46,0
-2020-03-17,Czechia,396,0
+2020-03-17,Czech Republic,396,0
 2020-03-17,Denmark,1024,4
 2020-03-17,Dominican Republic,21,1
 2020-03-17,Ecuador,58,2
@@ -3071,7 +3071,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-17,Tanzania,1,0
 2020-03-17,Thailand,177,1
 2020-03-17,Bahams,1,0
-2020-03-17,The Gambia,1,0
+2020-03-17,Gambia,1,0
 2020-03-17,Togo,1,0
 2020-03-17,Trinidad and Tobago,5,0
 2020-03-17,Tunisia,24,0
@@ -3083,7 +3083,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-17,Uruguay,29,0
 2020-03-17,Uzbekistan,10,0
 2020-03-17,Venezuela,33,0
-2020-03-17,Vietnam,66,0
+2020-03-17,Viet Nam,66,0
 2020-03-17,Palestine,0,0
 2020-03-17,Total,197168,7905
 2020-03-18,Afghanistan,22,0
@@ -3119,12 +3119,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-18,Colombia,93,0
 2020-03-18,Republic of the Congo,5,0
 2020-03-18,Costa Rica,50,0
-2020-03-18,Cote d'Ivoire,6,0
+2020-03-18,Ivory Coast,6,0
 2020-03-18,Croatia,81,0
 2020-03-18,Cruise Ship,712,7
 2020-03-18,Cuba,7,1
 2020-03-18,Cyprus,49,0
-2020-03-18,Czechia,464,0
+2020-03-18,Czech Republic,464,0
 2020-03-18,Denmark,1115,4
 2020-03-18,Djibouti,1,0
 2020-03-18,Dominican Republic,21,1
@@ -3138,7 +3138,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-18,France,9052,148
 2020-03-18,French Guiana,11,0
 2020-03-18,Gabon,1,0
-2020-03-18,"Gambia, The",1,0
+2020-03-18,Gambia,1,0
 2020-03-18,Georgia,38,0
 2020-03-18,Germany,12327,28
 2020-03-18,Ghana,7,0
@@ -3233,7 +3233,6 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-18,Tanzania,3,0
 2020-03-18,Thailand,212,1
 2020-03-18,Bahams,1,0
-2020-03-18,The Gambia,0,0
 2020-03-18,Togo,1,0
 2020-03-18,Trinidad and Tobago,7,0
 2020-03-18,Tunisia,29,0
@@ -3245,7 +3244,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-18,Uruguay,50,0
 2020-03-18,Uzbekistan,15,0
 2020-03-18,Venezuela,36,0
-2020-03-18,Vietnam,75,0
+2020-03-18,Viet Nam,75,0
 2020-03-18,Zambia,2,0
 2020-03-18,Total,214915,8733
 2020-03-19,Afghanistan,22,0
@@ -3283,12 +3282,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-19,Colombia,102,0
 2020-03-19,Republic of the Congo,17,0
 2020-03-19,Costa Rica,69,1
-2020-03-19,Cote d'Ivoire,9,0
+2020-03-19,Ivory Coast,9,0
 2020-03-19,Croatia,105,1
 2020-03-19,Cruise Ship,712,7
 2020-03-19,Cuba,11,1
 2020-03-19,Cyprus,67,0
-2020-03-19,Czechia,694,0
+2020-03-19,Czech Republic,694,0
 2020-03-19,Denmark,1225,6
 2020-03-19,Djibouti,1,0
 2020-03-19,Dominican Republic,34,2
@@ -3304,7 +3303,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-19,France,10886,243
 2020-03-19,French Guiana,11,0
 2020-03-19,Gabon,1,0
-2020-03-19,"Gambia, The",1,0
+2020-03-19,Gambia,1,0
 2020-03-19,Georgia,40,0
 2020-03-19,Germany,15320,44
 2020-03-19,Ghana,11,0
@@ -3399,7 +3398,6 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-19,Taiwan,108,1
 2020-03-19,Tanzania,6,0
 2020-03-19,Thailand,272,1
-2020-03-19,The Gambia,0,0
 2020-03-19,Togo,1,0
 2020-03-19,Trinidad and Tobago,9,0
 2020-03-19,Tunisia,39,1
@@ -3411,7 +3409,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-19,Uruguay,79,0
 2020-03-19,Uzbekistan,23,0
 2020-03-19,Venezuela,42,0
-2020-03-19,Vietnam,85,0
+2020-03-19,Viet Nam,85,0
 2020-03-19,Zambia,2,0
 2020-03-19,Total,242713,9867
 2020-03-20,Afghanistan,24,0
@@ -3439,7 +3437,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-20,Brunei,78,0
 2020-03-20,Bulgaria,127,3
 2020-03-20,Burkina Faso,40,1
-2020-03-20,Cabo Verde,1,0
+2020-03-20,Cape Verde,1,0
 2020-03-20,Cambodia,51,0
 2020-03-20,Cameroon,20,0
 2020-03-20,Canada,943,12
@@ -3450,12 +3448,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-20,Colombia,128,0
 2020-03-20,Republic of the Congo,21,0
 2020-03-20,Costa Rica,89,1
-2020-03-20,Cote d'Ivoire,9,0
+2020-03-20,Ivory Coast,9,0
 2020-03-20,Croatia,128,1
 2020-03-20,Cruise Ship,712,7
 2020-03-20,Cuba,16,1
 2020-03-20,Cyprus,67,0
-2020-03-20,Czechia,833,0
+2020-03-20,Czech Republic,833,0
 2020-03-20,Denmark,1337,9
 2020-03-20,Djibouti,1,0
 2020-03-20,Dominican Republic,72,2
@@ -3471,7 +3469,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-20,France,12632,450
 2020-03-20,French Guiana,15,0
 2020-03-20,Gabon,3,1
-2020-03-20,"Gambia, The",1,0
+2020-03-20,Gambia,1,0
 2020-03-20,Georgia,43,0
 2020-03-20,Germany,19848,67
 2020-03-20,Ghana,16,0
@@ -3570,7 +3568,6 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-20,Taiwan,135,2
 2020-03-20,Tanzania,6,0
 2020-03-20,Thailand,322,1
-2020-03-20,The Gambia,0,0
 2020-03-20,Togo,9,0
 2020-03-20,Trinidad and Tobago,9,0
 2020-03-20,Tunisia,54,1
@@ -3582,7 +3579,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-20,Uruguay,94,0
 2020-03-20,Uzbekistan,33,0
 2020-03-20,Venezuela,42,0
-2020-03-20,Vietnam,91,0
+2020-03-20,Viet Nam,91,0
 2020-03-20,Zambia,2,0
 2020-03-20,Zimbabwe,1,0
 2020-03-20,Total,272167,11299
@@ -3611,11 +3608,10 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-21,Brunei,83,0
 2020-03-21,Bulgaria,163,3
 2020-03-21,Burkina Faso,64,2
-2020-03-21,Cabo Verde,3,0
+2020-03-21,Cape Verde,4,0
 2020-03-21,Cambodia,53,0
 2020-03-21,Cameroon,27,0
 2020-03-21,Canada,1278,19
-2020-03-21,Cape Verde,1,0
 2020-03-21,Central African Republic,3,0
 2020-03-21,Chad,1,0
 2020-03-21,Chile,537,0
@@ -3623,12 +3619,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-21,Colombia,196,0
 2020-03-21,Republic of the Congo,26,1
 2020-03-21,Costa Rica,117,2
-2020-03-21,Cote d'Ivoire,14,0
+2020-03-21,Ivory Coast,14,0
 2020-03-21,Croatia,206,1
 2020-03-21,Cruise Ship,712,8
 2020-03-21,Cuba,21,1
 2020-03-21,Cyprus,84,0
-2020-03-21,Czechia,995,0
+2020-03-21,Czech Republic,995,0
 2020-03-21,Denmark,1420,13
 2020-03-21,Djibouti,1,0
 2020-03-21,Dominican Republic,112,2
@@ -3646,7 +3642,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-21,France,14308,562
 2020-03-21,French Guiana,18,0
 2020-03-21,Gabon,4,1
-2020-03-21,"Gambia, The",1,0
+2020-03-21,Gambia,1,0
 2020-03-21,Georgia,49,0
 2020-03-21,Germany,22213,84
 2020-03-21,Ghana,19,1
@@ -3745,7 +3741,6 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-21,Taiwan,153,2
 2020-03-21,Tanzania,6,0
 2020-03-21,Thailand,411,1
-2020-03-21,The Gambia,0,0
 2020-03-21,Togo,16,0
 2020-03-21,Trinidad and Tobago,49,0
 2020-03-21,Tunisia,60,1
@@ -3758,7 +3753,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-21,Uruguay,110,0
 2020-03-21,Uzbekistan,43,0
 2020-03-21,Venezuela,70,0
-2020-03-21,Vietnam,94,0
+2020-03-21,Viet Nam,94,0
 2020-03-21,Zambia,2,0
 2020-03-21,Zimbabwe,3,0
 2020-03-21,Total,304549,12973
@@ -3787,7 +3782,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-22,Brunei,88,0
 2020-03-22,Bulgaria,187,3
 2020-03-22,Burkina Faso,75,4
-2020-03-22,Cabo Verde,3,0
+2020-03-22,Cape Verde,3,0
 2020-03-22,Cambodia,84,0
 2020-03-22,Cameroon,40,0
 2020-03-22,Canada,1470,21
@@ -3798,12 +3793,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-22,Colombia,231,2
 2020-03-22,Republic of the Congo,33,1
 2020-03-22,Costa Rica,134,2
-2020-03-22,Cote d'Ivoire,14,0
+2020-03-22,Ivory Coast,14,0
 2020-03-22,Croatia,254,1
 2020-03-22,Cruise Ship,712,8
 2020-03-22,Cuba,35,1
 2020-03-22,Cyprus,95,1
-2020-03-22,Czechia,1120,1
+2020-03-22,Czech Republic,1120,1
 2020-03-22,Denmark,1514,13
 2020-03-22,Djibouti,1,0
 2020-03-22,Dominica,1,0
@@ -3925,7 +3920,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-22,Uruguay,135,0
 2020-03-22,Uzbekistan,43,0
 2020-03-22,Venezuela,70,0
-2020-03-22,Vietnam,113,0
+2020-03-22,Viet Nam,113,0
 2020-03-22,Zambia,3,0
 2020-03-22,Zimbabwe,3,0
 2020-03-22,Total,337122,14623
@@ -3955,7 +3950,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-23,Brunei,91,0
 2020-03-23,Bulgaria,201,3
 2020-03-23,Burkina Faso,99,4
-2020-03-23,Cabo Verde,3,0
+2020-03-23,Cape Verde,3,0
 2020-03-23,Cambodia,87,0
 2020-03-23,Cameroon,56,0
 2020-03-23,Canada,2088,25
@@ -3966,12 +3961,12 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-23,Colombia,277,3
 2020-03-23,Republic of the Congo,40,1
 2020-03-23,Costa Rica,158,2
-2020-03-23,Cote d'Ivoire,25,0
+2020-03-23,Ivory Coast,25,0
 2020-03-23,Croatia,315,1
 2020-03-23,Cruise Ship,712,8
 2020-03-23,Cuba,40,1
 2020-03-23,Cyprus,116,1
-2020-03-23,Czechia,1236,1
+2020-03-23,Czech Republic,1236,1
 2020-03-23,Denmark,1572,24
 2020-03-23,Djibouti,3,0
 2020-03-23,Dominica,2,0
@@ -4093,7 +4088,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-23,Uruguay,158,0
 2020-03-23,Uzbekistan,46,0
 2020-03-23,Venezuela,77,0
-2020-03-23,Vietnam,123,0
+2020-03-23,Viet Nam,123,0
 2020-03-23,Zambia,3,0
 2020-03-23,Zimbabwe,3,1
 2020-03-23,Total,378283,16497
@@ -4123,7 +4118,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-24,Brunei,104,0
 2020-03-24,Bulgaria,218,3
 2020-03-24,Burkina Faso,114,4
-2020-03-24,Cabo Verde,3,1
+2020-03-24,Cape Verde,3,1
 2020-03-24,Cambodia,91,0
 2020-03-24,Cameroon,66,0
 2020-03-24,Canada,2790,26
@@ -4134,11 +4129,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-24,Colombia,378,3
 2020-03-24,Republic of the Congo,49,2
 2020-03-24,Costa Rica,177,2
-2020-03-24,Cote d'Ivoire,73,0
+2020-03-24,Ivory Coast,73,0
 2020-03-24,Croatia,382,1
 2020-03-24,Cuba,48,1
 2020-03-24,Cyprus,124,3
-2020-03-24,Czechia,1394,3
+2020-03-24,Czech Republic,1394,3
 2020-03-24,Denmark,1718,32
 2020-03-24,Djibouti,3,0
 2020-03-24,Dominica,2,0
@@ -4262,7 +4257,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-24,Uruguay,162,0
 2020-03-24,Uzbekistan,50,0
 2020-03-24,Venezuela,84,0
-2020-03-24,Vietnam,134,0
+2020-03-24,Viet Nam,134,0
 2020-03-24,Zambia,3,0
 2020-03-24,Zimbabwe,3,1
 2020-03-24,Total,417962,18615
@@ -4292,7 +4287,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-25,Brunei,109,0
 2020-03-25,Bulgaria,242,3
 2020-03-25,Burkina Faso,146,4
-2020-03-25,Cabo Verde,4,1
+2020-03-25,Cape Verde,4,1
 2020-03-25,Cambodia,96,0
 2020-03-25,Cameroon,75,1
 2020-03-25,Canada,3251,30
@@ -4303,11 +4298,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-25,Colombia,470,4
 2020-03-25,Republic of the Congo,52,2
 2020-03-25,Costa Rica,201,2
-2020-03-25,Cote d'Ivoire,80,0
+2020-03-25,Ivory Coast,80,0
 2020-03-25,Croatia,442,1
 2020-03-25,Cuba,57,1
 2020-03-25,Cyprus,132,3
-2020-03-25,Czechia,1654,6
+2020-03-25,Czech Republic,1654,6
 2020-03-25,Denmark,1862,34
 2020-03-25,Japan,2019,55
 2020-03-25,Djibouti,11,0
@@ -4434,7 +4429,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-25,Uruguay,189,0
 2020-03-25,Uzbekistan,60,0
 2020-03-25,Venezuela,91,0
-2020-03-25,Vietnam,141,0
+2020-03-25,Viet Nam,141,0
 2020-03-25,Zambia,12,0
 2020-03-25,Zimbabwe,3,1
 2020-03-25,Total,467594,21181
@@ -4464,7 +4459,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-26,Brunei,114,0
 2020-03-26,Bulgaria,264,3
 2020-03-26,Burkina Faso,152,7
-2020-03-26,Cabo Verde,4,1
+2020-03-26,Cape Verde,4,1
 2020-03-26,Cambodia,96,0
 2020-03-26,Cameroon,75,1
 2020-03-26,Canada,4042,38
@@ -4475,11 +4470,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-26,Colombia,491,6
 2020-03-26,Republic of the Congo,55,3
 2020-03-26,Costa Rica,231,2
-2020-03-26,Cote d'Ivoire,96,0
+2020-03-26,Ivory Coast,96,0
 2020-03-26,Croatia,495,3
 2020-03-26,Cuba,67,2
 2020-03-26,Cyprus,146,3
-2020-03-26,Czechia,1925,9
+2020-03-26,Czech Republic,1925,9
 2020-03-26,Denmark,2023,41
 2020-03-26,Japan,2099,57
 2020-03-26,Djibouti,11,0
@@ -4607,7 +4602,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-26,Uruguay,217,0
 2020-03-26,Uzbekistan,75,0
 2020-03-26,Venezuela,107,0
-2020-03-26,Vietnam,153,0
+2020-03-26,Viet Nam,153,0
 2020-03-26,West Bank and Gaza,84,1
 2020-03-26,Zambia,16,0
 2020-03-26,Zimbabwe,3,1
@@ -4639,7 +4634,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-27,Bulgaria,293,3
 2020-03-27,Burkina Faso,180,9
 2020-03-27,Burma,8,0
-2020-03-27,Cabo Verde,5,1
+2020-03-27,Cape Verde,5,1
 2020-03-27,Cambodia,99,0
 2020-03-27,Cameroon,91,2
 2020-03-27,Canada,4682,54
@@ -4650,11 +4645,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-27,Colombia,539,6
 2020-03-27,Republic of the Congo,55,3
 2020-03-27,Costa Rica,263,2
-2020-03-27,Cote d'Ivoire,101,0
+2020-03-27,Ivory Coast,101,0
 2020-03-27,Croatia,586,3
 2020-03-27,Cuba,80,2
 2020-03-27,Cyprus,162,5
-2020-03-27,Czechia,2279,9
+2020-03-27,Czech Republic,2279,9
 2020-03-27,Denmark,2200,52
 2020-03-27,Japan,2180,59
 2020-03-27,Djibouti,12,0
@@ -4782,7 +4777,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-27,Uruguay,238,0
 2020-03-27,Uzbekistan,88,1
 2020-03-27,Venezuela,107,1
-2020-03-27,Vietnam,163,0
+2020-03-27,Viet Nam,163,0
 2020-03-27,West Bank and Gaza,91,1
 2020-03-27,Zambia,22,0
 2020-03-27,Zimbabwe,5,1
@@ -4814,7 +4809,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-28,Bulgaria,331,7
 2020-03-28,Burkina Faso,207,11
 2020-03-28,Burma,8,0
-2020-03-28,Cabo Verde,5,1
+2020-03-28,Cape Verde,5,1
 2020-03-28,Cambodia,99,0
 2020-03-28,Cameroon,91,2
 2020-03-28,Canada,5576,61
@@ -4825,11 +4820,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-28,Colombia,608,6
 2020-03-28,Republic of the Congo,69,6
 2020-03-28,Costa Rica,295,2
-2020-03-28,Cote d'Ivoire,101,0
+2020-03-28,Ivory Coast,101,0
 2020-03-28,Croatia,657,5
 2020-03-28,Cuba,119,3
 2020-03-28,Cyprus,179,5
-2020-03-28,Czechia,2631,11
+2020-03-28,Czech Republic,2631,11
 2020-03-28,Denmark,2366,65
 2020-03-28,Japan,2405,62
 2020-03-28,Djibouti,14,0
@@ -4958,7 +4953,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-28,Uruguay,274,0
 2020-03-28,Uzbekistan,104,2
 2020-03-28,Venezuela,119,2
-2020-03-28,Vietnam,174,0
+2020-03-28,Viet Nam,174,0
 2020-03-28,West Bank and Gaza,98,1
 2020-03-28,Zambia,28,0
 2020-03-28,Zimbabwe,7,1
@@ -4990,7 +4985,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-29,Bulgaria,346,8
 2020-03-29,Burkina Faso,222,12
 2020-03-29,Burma,10,0
-2020-03-29,Cabo Verde,6,1
+2020-03-29,Cape Verde,6,1
 2020-03-29,Cambodia,103,0
 2020-03-29,Cameroon,139,6
 2020-03-29,Canada,6280,64
@@ -5001,11 +4996,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-29,Colombia,702,10
 2020-03-29,Republic of the Congo,84,6
 2020-03-29,Costa Rica,314,2
-2020-03-29,Cote d'Ivoire,165,1
+2020-03-29,Ivory Coast,165,1
 2020-03-29,Croatia,713,6
 2020-03-29,Cuba,139,3
 2020-03-29,Cyprus,214,5
-2020-03-29,Czechia,2817,16
+2020-03-29,Czech Republic,2817,16
 2020-03-29,Denmark,2564,72
 2020-03-29,Japan,2578,64
 2020-03-29,Djibouti,18,0
@@ -5134,7 +5129,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-29,Uruguay,304,1
 2020-03-29,Uzbekistan,144,2
 2020-03-29,Venezuela,119,2
-2020-03-29,Vietnam,188,0
+2020-03-29,Viet Nam,188,0
 2020-03-29,West Bank and Gaza,109,1
 2020-03-29,Zambia,29,0
 2020-03-29,Zimbabwe,7,1
@@ -5167,7 +5162,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-30,Bulgaria,359,8
 2020-03-30,Burkina Faso,246,12
 2020-03-30,Burma,14,0
-2020-03-30,Cabo Verde,6,1
+2020-03-30,Cape Verde,6,1
 2020-03-30,Cambodia,107,0
 2020-03-30,Cameroon,139,6
 2020-03-30,Canada,7398,80
@@ -5178,11 +5173,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-30,Colombia,798,12
 2020-03-30,Republic of the Congo,100,8
 2020-03-30,Costa Rica,330,2
-2020-03-30,Cote d'Ivoire,168,1
+2020-03-30,Ivory Coast,168,1
 2020-03-30,Croatia,790,6
 2020-03-30,Cuba,170,4
 2020-03-30,Cyprus,230,7
-2020-03-30,Czechia,3001,23
+2020-03-30,Czech Republic,3001,23
 2020-03-30,Denmark,2755,77
 2020-03-30,Japan,2578,64
 2020-03-30,Djibouti,18,0
@@ -5311,7 +5306,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-30,Uruguay,310,1
 2020-03-30,Uzbekistan,149,2
 2020-03-30,Venezuela,135,3
-2020-03-30,Vietnam,203,0
+2020-03-30,Viet Nam,203,0
 2020-03-30,West Bank and Gaza,116,1
 2020-03-30,Zambia,35,0
 2020-03-30,Zimbabwe,7,1
@@ -5345,7 +5340,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-31,Burkina Faso,261,14
 2020-03-31,Burma,15,1
 2020-03-31,Burundi,2,0
-2020-03-31,Cabo Verde,6,1
+2020-03-31,Cape Verde,6,1
 2020-03-31,Cambodia,109,0
 2020-03-31,Cameroon,193,6
 2020-03-31,Canada,8527,101
@@ -5356,11 +5351,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-31,Colombia,906,16
 2020-03-31,Republic of the Congo,117,8
 2020-03-31,Costa Rica,347,2
-2020-03-31,Cote d'Ivoire,179,1
+2020-03-31,Ivory Coast,179,1
 2020-03-31,Croatia,867,6
 2020-03-31,Cuba,186,6
 2020-03-31,Cyprus,262,8
-2020-03-31,Czechia,3308,31
+2020-03-31,Czech Republic,3308,31
 2020-03-31,Denmark,3039,90
 2020-03-31,Japan,2665,66
 2020-03-31,Djibouti,30,0
@@ -5490,7 +5485,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-03-31,Uruguay,338,1
 2020-03-31,Uzbekistan,172,2
 2020-03-31,Venezuela,135,3
-2020-03-31,Vietnam,212,0
+2020-03-31,Viet Nam,212,0
 2020-03-31,West Bank and Gaza,119,1
 2020-03-31,Zambia,35,0
 2020-03-31,Zimbabwe,8,1
@@ -5524,7 +5519,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-01,Burkina Faso,282,16
 2020-04-01,Burma,15,1
 2020-04-01,Burundi,2,0
-2020-04-01,Cabo Verde,6,1
+2020-04-01,Cape Verde,6,1
 2020-04-01,Cambodia,109,0
 2020-04-01,Cameroon,233,6
 2020-04-01,Canada,9560,109
@@ -5535,11 +5530,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-01,Colombia,1065,17
 2020-04-01,Republic of the Congo,128,9
 2020-04-01,Costa Rica,375,2
-2020-04-01,Cote d'Ivoire,190,1
+2020-04-01,Ivory Coast,190,1
 2020-04-01,Croatia,963,6
 2020-04-01,Cuba,212,6
 2020-04-01,Cyprus,320,9
-2020-04-01,Czechia,3508,39
+2020-04-01,Czech Republic,3508,39
 2020-04-01,Denmark,3290,104
 2020-04-01,Japan,2890,68
 2020-04-01,Djibouti,33,0
@@ -5669,7 +5664,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-01,Uruguay,338,2
 2020-04-01,Uzbekistan,181,2
 2020-04-01,Venezuela,143,3
-2020-04-01,Vietnam,218,0
+2020-04-01,Viet Nam,218,0
 2020-04-01,West Bank and Gaza,134,1
 2020-04-01,Zambia,36,0
 2020-04-01,Zimbabwe,8,1
@@ -5703,7 +5698,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-02,Burkina Faso,288,16
 2020-04-02,Burma,20,1
 2020-04-02,Burundi,3,0
-2020-04-02,Cabo Verde,6,1
+2020-04-02,Cape Verde,6,1
 2020-04-02,Cambodia,110,0
 2020-04-02,Cameroon,306,7
 2020-04-02,Canada,11284,139
@@ -5714,11 +5709,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-02,Colombia,1161,19
 2020-04-02,Republic of the Congo,156,15
 2020-04-02,Costa Rica,396,2
-2020-04-02,Cote d'Ivoire,194,1
+2020-04-02,Ivory Coast,194,1
 2020-04-02,Croatia,1011,7
 2020-04-02,Cuba,233,6
 2020-04-02,Cyprus,356,10
-2020-04-02,Czechia,3858,44
+2020-04-02,Czech Republic,3858,44
 2020-04-02,Denmark,3573,123
 2020-04-02,Japan,3207,73
 2020-04-02,Djibouti,40,0
@@ -5849,7 +5844,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-02,Uruguay,350,4
 2020-04-02,Uzbekistan,205,2
 2020-04-02,Venezuela,146,5
-2020-04-02,Vietnam,233,0
+2020-04-02,Viet Nam,233,0
 2020-04-02,West Bank and Gaza,161,1
 2020-04-02,Zambia,39,1
 2020-04-02,Zimbabwe,9,1
@@ -5883,7 +5878,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-03,Burkina Faso,302,16
 2020-04-03,Burma,20,1
 2020-04-03,Burundi,3,0
-2020-04-03,Cabo Verde,6,1
+2020-04-03,Cape Verde,6,1
 2020-04-03,Cambodia,114,0
 2020-04-03,Cameroon,509,8
 2020-04-03,Canada,12437,179
@@ -5894,11 +5889,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-03,Colombia,1267,25
 2020-04-03,Republic of the Congo,156,15
 2020-04-03,Costa Rica,416,2
-2020-04-03,Cote d'Ivoire,218,1
+2020-04-03,Ivory Coast,218,1
 2020-04-03,Croatia,1079,8
 2020-04-03,Cuba,269,6
 2020-04-03,Cyprus,396,11
-2020-04-03,Czechia,4091,53
+2020-04-03,Czech Republic,4091,53
 2020-04-03,Denmark,3946,139
 2020-04-03,Japan,3329,74
 2020-04-03,Djibouti,49,0
@@ -6029,7 +6024,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-03,Uruguay,369,4
 2020-04-03,Uzbekistan,227,2
 2020-04-03,Venezuela,153,7
-2020-04-03,Vietnam,237,0
+2020-04-03,Viet Nam,237,0
 2020-04-03,West Bank and Gaza,194,1
 2020-04-03,Zambia,39,1
 2020-04-03,Zimbabwe,9,1
@@ -6063,7 +6058,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-04,Burkina Faso,318,16
 2020-04-04,Burma,21,1
 2020-04-04,Burundi,3,0
-2020-04-04,Cabo Verde,7,1
+2020-04-04,Cape Verde,7,1
 2020-04-04,Cambodia,114,0
 2020-04-04,Cameroon,555,9
 2020-04-04,Canada,12978,218
@@ -6074,11 +6069,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-04,Colombia,1406,32
 2020-04-04,Republic of the Congo,176,20
 2020-04-04,Costa Rica,435,2
-2020-04-04,Cote d'Ivoire,245,1
+2020-04-04,Ivory Coast,245,1
 2020-04-04,Croatia,1126,12
 2020-04-04,Cuba,288,6
 2020-04-04,Cyprus,426,11
-2020-04-04,Czechia,4472,59
+2020-04-04,Czech Republic,4472,59
 2020-04-04,Denmark,4269,161
 2020-04-04,Japan,3851,88
 2020-04-04,Djibouti,50,0
@@ -6209,7 +6204,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-04,Uruguay,400,5
 2020-04-04,Uzbekistan,266,2
 2020-04-04,Venezuela,155,7
-2020-04-04,Vietnam,240,0
+2020-04-04,Viet Nam,240,0
 2020-04-04,West Bank and Gaza,217,1
 2020-04-04,Zambia,39,1
 2020-04-04,Zimbabwe,9,1
@@ -6243,7 +6238,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-05,Burkina Faso,345,17
 2020-04-05,Burma,21,1
 2020-04-05,Burundi,3,0
-2020-04-05,Cabo Verde,7,1
+2020-04-05,Cape Verde,7,1
 2020-04-05,Cambodia,114,0
 2020-04-05,Cameroon,650,9
 2020-04-05,Canada,15756,259
@@ -6254,11 +6249,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-05,Colombia,1485,35
 2020-04-05,Republic of the Congo,199,23
 2020-04-05,Costa Rica,454,2
-2020-04-05,Cote d'Ivoire,261,3
+2020-04-05,Ivory Coast,261,3
 2020-04-05,Croatia,1182,15
 2020-04-05,Cuba,320,8
 2020-04-05,Cyprus,446,9
-2020-04-05,Czechia,4587,67
+2020-04-05,Czech Republic,4587,67
 2020-04-05,Denmark,4561,179
 2020-04-05,Japan,3851,88
 2020-04-05,Djibouti,59,0
@@ -6390,7 +6385,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-05,Uruguay,400,5
 2020-04-05,Uzbekistan,342,2
 2020-04-05,Venezuela,159,7
-2020-04-05,Vietnam,241,0
+2020-04-05,Viet Nam,241,0
 2020-04-05,West Bank and Gaza,237,1
 2020-04-05,Western Sahara,4,0
 2020-04-05,Zambia,39,1
@@ -6425,7 +6420,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-06,Burkina Faso,364,18
 2020-04-06,Burma,22,1
 2020-04-06,Burundi,3,0
-2020-04-06,Cabo Verde,7,1
+2020-04-06,Cape Verde,7,1
 2020-04-06,Cambodia,114,0
 2020-04-06,Cameroon,658,9
 2020-04-06,Canada,16563,339
@@ -6436,11 +6431,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-06,Colombia,1579,46
 2020-04-06,Republic of the Congo,206,23
 2020-04-06,Costa Rica,467,2
-2020-04-06,Cote d'Ivoire,323,3
+2020-04-06,Ivory Coast,323,3
 2020-04-06,Croatia,1222,16
 2020-04-06,Cuba,350,9
 2020-04-06,Cyprus,465,9
-2020-04-06,Czechia,4822,78
+2020-04-06,Czech Republic,4822,78
 2020-04-06,Denmark,4875,187
 2020-04-06,Japan,4366,96
 2020-04-06,Djibouti,90,0
@@ -6573,7 +6568,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-06,Uruguay,406,6
 2020-04-06,Uzbekistan,457,2
 2020-04-06,Venezuela,165,7
-2020-04-06,Vietnam,245,0
+2020-04-06,Viet Nam,245,0
 2020-04-06,West Bank and Gaza,254,1
 2020-04-06,Western Sahara,4,0
 2020-04-06,Zambia,39,1
@@ -6608,7 +6603,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-07,Burkina Faso,384,19
 2020-04-07,Burma,22,1
 2020-04-07,Burundi,3,0
-2020-04-07,Cabo Verde,7,1
+2020-04-07,Cape Verde,7,1
 2020-04-07,Cambodia,115,0
 2020-04-07,Cameroon,658,9
 2020-04-07,Canada,17872,375
@@ -6619,11 +6614,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-07,Colombia,1780,50
 2020-04-07,Republic of the Congo,225,23
 2020-04-07,Costa Rica,483,2
-2020-04-07,Cote d'Ivoire,349,3
+2020-04-07,Ivory Coast,349,3
 2020-04-07,Croatia,1282,18
 2020-04-07,Cuba,396,11
 2020-04-07,Cyprus,494,9
-2020-04-07,Czechia,5017,88
+2020-04-07,Czech Republic,5017,88
 2020-04-07,Denmark,5266,203
 2020-04-07,Japan,4618,103
 2020-04-07,Djibouti,90,0
@@ -6756,7 +6751,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-07,Uruguay,424,7
 2020-04-07,Uzbekistan,520,2
 2020-04-07,Venezuela,165,7
-2020-04-07,Vietnam,249,0
+2020-04-07,Viet Nam,249,0
 2020-04-07,West Bank and Gaza,261,1
 2020-04-07,Western Sahara,4,0
 2020-04-07,Zambia,39,1
@@ -6791,7 +6786,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-08,Burkina Faso,414,23
 2020-04-08,Burma,22,3
 2020-04-08,Burundi,3,0
-2020-04-08,Cabo Verde,7,1
+2020-04-08,Cape Verde,7,1
 2020-04-08,Cambodia,117,0
 2020-04-08,Cameroon,730,10
 2020-04-08,Canada,19141,407
@@ -6802,11 +6797,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-08,Colombia,2054,54
 2020-04-08,Republic of the Congo,225,23
 2020-04-08,Costa Rica,502,3
-2020-04-08,Cote d'Ivoire,384,3
+2020-04-08,Ivory Coast,384,3
 2020-04-08,Croatia,1343,19
 2020-04-08,Cuba,457,12
 2020-04-08,Cyprus,526,9
-2020-04-08,Czechia,5312,99
+2020-04-08,Czech Republic,5312,99
 2020-04-08,Denmark,5597,218
 2020-04-08,Japan,4969,104
 2020-04-08,Djibouti,135,0
@@ -6939,7 +6934,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-08,Uruguay,424,7
 2020-04-08,Uzbekistan,545,3
 2020-04-08,Venezuela,167,9
-2020-04-08,Vietnam,251,0
+2020-04-08,Viet Nam,251,0
 2020-04-08,West Bank and Gaza,263,1
 2020-04-08,Western Sahara,4,0
 2020-04-08,Zambia,39,1
@@ -6974,7 +6969,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-09,Burkina Faso,443,24
 2020-04-09,Burma,23,3
 2020-04-09,Burundi,3,0
-2020-04-09,Cabo Verde,7,1
+2020-04-09,Cape Verde,7,1
 2020-04-09,Cambodia,119,0
 2020-04-09,Cameroon,730,10
 2020-04-09,Canada,20654,503
@@ -6985,11 +6980,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-09,Colombia,2223,69
 2020-04-09,Republic of the Congo,240,23
 2020-04-09,Costa Rica,539,3
-2020-04-09,Cote d'Ivoire,444,3
+2020-04-09,Ivory Coast,444,3
 2020-04-09,Croatia,1407,20
 2020-04-09,Cuba,515,15
 2020-04-09,Cyprus,564,10
-2020-04-09,Czechia,5569,112
+2020-04-09,Czech Republic,5569,112
 2020-04-09,Denmark,5830,237
 2020-04-09,Japan,5379,105
 2020-04-09,Djibouti,135,0
@@ -7122,7 +7117,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-09,Uruguay,456,7
 2020-04-09,Uzbekistan,582,3
 2020-04-09,Venezuela,171,9
-2020-04-09,Vietnam,255,0
+2020-04-09,Viet Nam,255,0
 2020-04-09,West Bank and Gaza,263,1
 2020-04-09,Western Sahara,4,0
 2020-04-09,Zambia,39,1
@@ -7157,7 +7152,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-10,Burkina Faso,443,24
 2020-04-10,Burma,27,3
 2020-04-10,Burundi,3,0
-2020-04-10,Cabo Verde,7,1
+2020-04-10,Cape Verde,7,1
 2020-04-10,Cambodia,119,0
 2020-04-10,Cameroon,820,12
 2020-04-10,Canada,22059,557
@@ -7168,11 +7163,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-10,Colombia,2473,80
 2020-04-10,Republic of the Congo,275,25
 2020-04-10,Costa Rica,558,3
-2020-04-10,Cote d'Ivoire,444,3
+2020-04-10,Ivory Coast,444,3
 2020-04-10,Croatia,1495,21
 2020-04-10,Cuba,564,15
 2020-04-10,Cyprus,595,10
-2020-04-10,Czechia,5732,119
+2020-04-10,Czech Republic,5732,119
 2020-04-10,Denmark,6014,247
 2020-04-10,Japan,6242,110
 2020-04-10,Djibouti,150,1
@@ -7305,7 +7300,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-10,Uruguay,473,7
 2020-04-10,Uzbekistan,624,3
 2020-04-10,Venezuela,171,9
-2020-04-10,Vietnam,257,0
+2020-04-10,Viet Nam,257,0
 2020-04-10,West Bank and Gaza,267,2
 2020-04-10,Western Sahara,4,0
 2020-04-10,Yemen,1,0
@@ -7341,7 +7336,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-11,Burkina Faso,484,27
 2020-04-11,Burma,38,3
 2020-04-11,Burundi,5,0
-2020-04-11,Cabo Verde,8,1
+2020-04-11,Cape Verde,8,1
 2020-04-11,Cambodia,120,0
 2020-04-11,Cameroon,820,12
 2020-04-11,Canada,23316,654
@@ -7352,11 +7347,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-11,Colombia,2709,100
 2020-04-11,Republic of the Congo,283,25
 2020-04-11,Costa Rica,577,3
-2020-04-11,Cote d'Ivoire,533,4
+2020-04-11,Ivory Coast,533,4
 2020-04-11,Croatia,1534,21
 2020-04-11,Cuba,620,16
 2020-04-11,Cyprus,616,10
-2020-04-11,Czechia,5831,129
+2020-04-11,Czech Republic,5831,129
 2020-04-11,Denmark,6191,260
 2020-04-11,Japan,6717,110
 2020-04-11,Djibouti,187,2
@@ -7489,7 +7484,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-11,Uruguay,494,7
 2020-04-11,Uzbekistan,767,4
 2020-04-11,Venezuela,175,9
-2020-04-11,Vietnam,258,0
+2020-04-11,Viet Nam,258,0
 2020-04-11,West Bank and Gaza,268,2
 2020-04-11,Western Sahara,4,0
 2020-04-11,Yemen,1,0
@@ -7525,7 +7520,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-12,Burkina Faso,497,27
 2020-04-12,Burma,41,4
 2020-04-12,Burundi,5,0
-2020-04-12,Cabo Verde,8,1
+2020-04-12,Cape Verde,8,1
 2020-04-12,Cambodia,122,0
 2020-04-12,Cameroon,820,12
 2020-04-12,Canada,24299,713
@@ -7536,11 +7531,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-12,Colombia,2776,109
 2020-04-12,Republic of the Congo,294,25
 2020-04-12,Costa Rica,595,3
-2020-04-12,Cote d'Ivoire,574,5
+2020-04-12,Ivory Coast,574,5
 2020-04-12,Croatia,1600,23
 2020-04-12,Cuba,669,18
 2020-04-12,Cyprus,633,11
-2020-04-12,Czechia,5991,138
+2020-04-12,Czech Republic,5991,138
 2020-04-12,Denmark,6369,273
 2020-04-12,Japan,7460,119
 2020-04-12,Djibouti,214,2
@@ -7673,7 +7668,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-12,Uruguay,480,7
 2020-04-12,Uzbekistan,865,4
 2020-04-12,Venezuela,181,9
-2020-04-12,Vietnam,262,0
+2020-04-12,Viet Nam,262,0
 2020-04-12,West Bank and Gaza,290,2
 2020-04-12,Western Sahara,6,0
 2020-04-12,Yemen,1,0
@@ -7709,7 +7704,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-13,Burkina Faso,497,27
 2020-04-13,Burma,62,4
 2020-04-13,Burundi,5,1
-2020-04-13,Cabo Verde,10,1
+2020-04-13,Cape Verde,10,1
 2020-04-13,Cambodia,122,0
 2020-04-13,Cameroon,820,12
 2020-04-13,Canada,25680,780
@@ -7720,11 +7715,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-13,Colombia,2852,112
 2020-04-13,Republic of the Congo,295,25
 2020-04-13,Costa Rica,612,3
-2020-04-13,Cote d'Ivoire,626,6
+2020-04-13,Ivory Coast,626,6
 2020-04-13,Croatia,1650,25
 2020-04-13,Cuba,726,21
 2020-04-13,Cyprus,662,12
-2020-04-13,Czechia,6059,143
+2020-04-13,Czech Republic,6059,143
 2020-04-13,Denmark,6513,285
 2020-04-13,Japan,8082,134
 2020-04-13,Djibouti,298,2
@@ -7857,7 +7852,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-13,Uruguay,480,8
 2020-04-13,Uzbekistan,998,4
 2020-04-13,Venezuela,189,9
-2020-04-13,Vietnam,265,0
+2020-04-13,Viet Nam,265,0
 2020-04-13,West Bank and Gaza,308,2
 2020-04-13,Western Sahara,6,0
 2020-04-13,Yemen,1,0
@@ -7893,7 +7888,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-14,Burkina Faso,528,30
 2020-04-14,Burma,63,4
 2020-04-14,Burundi,5,1
-2020-04-14,Cabo Verde,11,1
+2020-04-14,Cape Verde,11,1
 2020-04-14,Cambodia,122,0
 2020-04-14,Cameroon,848,14
 2020-04-14,Canada,27035,900
@@ -7904,11 +7899,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-14,Colombia,2979,127
 2020-04-14,Republic of the Congo,301,25
 2020-04-14,Costa Rica,618,3
-2020-04-14,Cote d'Ivoire,638,6
+2020-04-14,Ivory Coast,638,6
 2020-04-14,Croatia,1704,31
 2020-04-14,Cuba,766,21
 2020-04-14,Cyprus,695,12
-2020-04-14,Czechia,6111,161
+2020-04-14,Czech Republic,6111,161
 2020-04-14,Denmark,6706,299
 2020-04-14,Japan,8357,155
 2020-04-14,Djibouti,363,2
@@ -8041,7 +8036,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-14,Uruguay,483,8
 2020-04-14,Uzbekistan,1165,4
 2020-04-14,Venezuela,189,9
-2020-04-14,Vietnam,266,0
+2020-04-14,Viet Nam,266,0
 2020-04-14,West Bank and Gaza,308,2
 2020-04-14,Western Sahara,6,0
 2020-04-14,Yemen,1,0
@@ -8077,7 +8072,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-15,Burkina Faso,542,32
 2020-04-15,Burma,74,4
 2020-04-15,Burundi,5,1
-2020-04-15,Cabo Verde,56,1
+2020-04-15,Cape Verde,56,1
 2020-04-15,Cambodia,122,0
 2020-04-15,Cameroon,848,17
 2020-04-15,Canada,28209,1007
@@ -8088,11 +8083,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-15,Colombia,3105,131
 2020-04-15,Republic of the Congo,371,26
 2020-04-15,Costa Rica,626,4
-2020-04-15,Cote d'Ivoire,638,6
+2020-04-15,Ivory Coast,638,6
 2020-04-15,Croatia,1741,33
 2020-04-15,Cuba,814,24
 2020-04-15,Cyprus,715,12
-2020-04-15,Czechia,6216,166
+2020-04-15,Czech Republic,6216,166
 2020-04-15,Denmark,6876,309
 2020-04-15,Japan,8812,158
 2020-04-15,Djibouti,435,2
@@ -8225,7 +8220,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-15,Uruguay,492,8
 2020-04-15,Uzbekistan,1302,4
 2020-04-15,Venezuela,197,9
-2020-04-15,Vietnam,267,0
+2020-04-15,Viet Nam,267,0
 2020-04-15,West Bank and Gaza,374,2
 2020-04-15,Western Sahara,6,0
 2020-04-15,Yemen,1,0
@@ -8261,7 +8256,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-16,Burkina Faso,546,32
 2020-04-16,Burma,85,4
 2020-04-16,Burundi,5,1
-2020-04-16,Cabo Verde,56,1
+2020-04-16,Cape Verde,56,1
 2020-04-16,Cambodia,122,0
 2020-04-16,Cameroon,996,22
 2020-04-16,Canada,30809,1258
@@ -8272,11 +8267,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-16,Colombia,3233,144
 2020-04-16,Republic of the Congo,384,27
 2020-04-16,Costa Rica,642,4
-2020-04-16,Cote d'Ivoire,654,6
+2020-04-16,Ivory Coast,654,6
 2020-04-16,Croatia,1791,35
 2020-04-16,Cuba,862,27
 2020-04-16,Cyprus,735,12
-2020-04-16,Czechia,6433,169
+2020-04-16,Czech Republic,6433,169
 2020-04-16,Denmark,7074,321
 2020-04-16,Japan,9338,190
 2020-04-16,Djibouti,591,2
@@ -8409,7 +8404,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-16,Uruguay,502,9
 2020-04-16,Uzbekistan,1349,4
 2020-04-16,Venezuela,204,9
-2020-04-16,Vietnam,268,0
+2020-04-16,Viet Nam,268,0
 2020-04-16,West Bank and Gaza,374,2
 2020-04-16,Western Sahara,6,0
 2020-04-16,Yemen,1,0
@@ -8445,7 +8440,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-17,Burkina Faso,557,35
 2020-04-17,Burma,88,4
 2020-04-17,Burundi,5,1
-2020-04-17,Cabo Verde,56,1
+2020-04-17,Cape Verde,56,1
 2020-04-17,Cambodia,122,0
 2020-04-17,Cameroon,996,22
 2020-04-17,Canada,32814,1355
@@ -8456,11 +8451,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-17,Colombia,3439,153
 2020-04-17,Republic of the Congo,430,29
 2020-04-17,Costa Rica,649,4
-2020-04-17,Cote d'Ivoire,688,6
+2020-04-17,Ivory Coast,688,6
 2020-04-17,Croatia,1814,36
 2020-04-17,Cuba,923,31
 2020-04-17,Cyprus,750,12
-2020-04-17,Czechia,6549,173
+2020-04-17,Czech Republic,6549,173
 2020-04-17,Denmark,7268,336
 2020-04-17,Japan,10499,203
 2020-04-17,Djibouti,732,2
@@ -8593,7 +8588,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-17,Uruguay,502,9
 2020-04-17,Uzbekistan,1405,4
 2020-04-17,Venezuela,204,9
-2020-04-17,Vietnam,268,0
+2020-04-17,Viet Nam,268,0
 2020-04-17,West Bank and Gaza,402,2
 2020-04-17,Western Sahara,6,0
 2020-04-17,Yemen,1,0
@@ -8629,7 +8624,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-18,Burkina Faso,565,36
 2020-04-18,Burma,98,5
 2020-04-18,Burundi,5,1
-2020-04-18,Cabo Verde,58,1
+2020-04-18,Cape Verde,58,1
 2020-04-18,Cambodia,122,0
 2020-04-18,Cameroon,1017,22
 2020-04-18,Canada,34356,1400
@@ -8640,11 +8635,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-18,Colombia,3439,153
 2020-04-18,Republic of the Congo,450,31
 2020-04-18,Costa Rica,655,4
-2020-04-18,Cote d'Ivoire,801,8
+2020-04-18,Ivory Coast,801,8
 2020-04-18,Croatia,1832,39
 2020-04-18,Cuba,986,32
 2020-04-18,Cyprus,761,12
-2020-04-18,Czechia,6606,181
+2020-04-18,Czech Republic,6606,181
 2020-04-18,Denmark,7437,346
 2020-04-18,Japan,11008,235
 2020-04-18,Djibouti,732,2
@@ -8777,7 +8772,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-18,Uruguay,508,9
 2020-04-18,Uzbekistan,1490,5
 2020-04-18,Venezuela,227,9
-2020-04-18,Vietnam,268,0
+2020-04-18,Viet Nam,268,0
 2020-04-18,West Bank and Gaza,418,2
 2020-04-18,Western Sahara,6,0
 2020-04-18,Yemen,1,0
@@ -8813,7 +8808,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-19,Burkina Faso,576,36
 2020-04-19,Burma,111,5
 2020-04-19,Burundi,5,1
-2020-04-19,Cabo Verde,61,1
+2020-04-19,Cape Verde,61,1
 2020-04-19,Cambodia,122,0
 2020-04-19,Cameroon,1017,42
 2020-04-19,Canada,35633,1564
@@ -8824,11 +8819,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-19,Colombia,3792,179
 2020-04-19,Republic of the Congo,470,31
 2020-04-19,Costa Rica,660,5
-2020-04-19,Cote d'Ivoire,847,9
+2020-04-19,Ivory Coast,847,9
 2020-04-19,Croatia,1871,47
 2020-04-19,Cuba,1035,34
 2020-04-19,Cyprus,767,12
-2020-04-19,Czechia,6746,186
+2020-04-19,Czech Republic,6746,186
 2020-04-19,Denmark,7580,355
 2020-04-19,Japan,11509,249
 2020-04-19,Djibouti,846,2
@@ -8961,7 +8956,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-19,Uruguay,517,10
 2020-04-19,Uzbekistan,1565,5
 2020-04-19,Venezuela,256,9
-2020-04-19,Vietnam,268,0
+2020-04-19,Viet Nam,268,0
 2020-04-19,West Bank and Gaza,437,3
 2020-04-19,Western Sahara,6,0
 2020-04-19,Yemen,1,0
@@ -8997,7 +8992,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-20,Burkina Faso,581,38
 2020-04-20,Burma,119,5
 2020-04-20,Burundi,5,1
-2020-04-20,Cabo Verde,67,1
+2020-04-20,Cape Verde,67,1
 2020-04-20,Cambodia,122,0
 2020-04-20,Cameroon,1163,42
 2020-04-20,Canada,37658,1726
@@ -9008,11 +9003,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-20,Colombia,3977,189
 2020-04-20,Republic of the Congo,492,31
 2020-04-20,Costa Rica,662,6
-2020-04-20,Cote d'Ivoire,847,9
+2020-04-20,Ivory Coast,847,9
 2020-04-20,Croatia,1881,47
 2020-04-20,Cuba,1087,36
 2020-04-20,Cyprus,772,12
-2020-04-20,Czechia,6900,194
+2020-04-20,Czech Republic,6900,194
 2020-04-20,Denmark,7711,364
 2020-04-20,Japan,11509,249
 2020-04-20,Djibouti,846,2
@@ -9145,7 +9140,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-20,Uruguay,535,10
 2020-04-20,Uzbekistan,1627,5
 2020-04-20,Venezuela,256,9
-2020-04-20,Vietnam,268,0
+2020-04-20,Viet Nam,268,0
 2020-04-20,West Bank and Gaza,449,3
 2020-04-20,Western Sahara,6,0
 2020-04-20,Yemen,1,0
@@ -9181,7 +9176,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-21,Burkina Faso,600,38
 2020-04-21,Burma,121,5
 2020-04-21,Burundi,5,1
-2020-04-21,Cabo Verde,68,1
+2020-04-21,Cape Verde,68,1
 2020-04-21,Cambodia,122,0
 2020-04-21,Cameroon,1163,43
 2020-04-21,Canada,39402,1909
@@ -9192,11 +9187,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-21,Colombia,4149,196
 2020-04-21,Republic of the Congo,515,31
 2020-04-21,Costa Rica,669,6
-2020-04-21,Cote d'Ivoire,916,13
+2020-04-21,Ivory Coast,916,13
 2020-04-21,Croatia,1908,48
 2020-04-21,Cuba,1137,38
 2020-04-21,Cyprus,784,12
-2020-04-21,Czechia,7033,201
+2020-04-21,Czech Republic,7033,201
 2020-04-21,Denmark,7891,370
 2020-04-21,Japan,11847,276
 2020-04-21,Djibouti,945,2
@@ -9329,7 +9324,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-21,Uruguay,535,11
 2020-04-21,Uzbekistan,1678,6
 2020-04-21,Venezuela,285,10
-2020-04-21,Vietnam,268,0
+2020-04-21,Viet Nam,268,0
 2020-04-21,West Bank and Gaza,466,4
 2020-04-21,Western Sahara,6,0
 2020-04-21,Yemen,1,0
@@ -9365,7 +9360,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-22,Burkina Faso,609,39
 2020-04-22,Burma,123,5
 2020-04-22,Burundi,11,1
-2020-04-22,Cabo Verde,73,1
+2020-04-22,Cape Verde,73,1
 2020-04-22,Cambodia,122,0
 2020-04-22,Cameroon,1163,43
 2020-04-22,Canada,41650,2077
@@ -9376,11 +9371,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-22,Colombia,4356,206
 2020-04-22,Republic of the Congo,545,31
 2020-04-22,Costa Rica,681,6
-2020-04-22,Cote d'Ivoire,952,14
+2020-04-22,Ivory Coast,952,14
 2020-04-22,Croatia,1950,48
 2020-04-22,Cuba,1189,40
 2020-04-22,Cyprus,790,13
-2020-04-22,Czechia,7132,208
+2020-04-22,Czech Republic,7132,208
 2020-04-22,Denmark,8108,384
 2020-04-22,Japan,12224,294
 2020-04-22,Djibouti,974,2
@@ -9513,7 +9508,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-22,Uruguay,543,12
 2020-04-22,Uzbekistan,1716,7
 2020-04-22,Venezuela,288,10
-2020-04-22,Vietnam,268,0
+2020-04-22,Viet Nam,268,0
 2020-04-22,West Bank and Gaza,474,4
 2020-04-22,Western Sahara,6,0
 2020-04-22,Yemen,1,0
@@ -9549,7 +9544,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-23,Burkina Faso,616,41
 2020-04-23,Burma,139,5
 2020-04-23,Burundi,11,1
-2020-04-23,Cabo Verde,82,1
+2020-04-23,Cape Verde,82,1
 2020-04-23,Cambodia,122,0
 2020-04-23,Cameroon,1334,43
 2020-04-23,Canada,43286,2241
@@ -9560,11 +9555,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-23,Colombia,4561,215
 2020-04-23,Republic of the Congo,563,31
 2020-04-23,Costa Rica,686,6
-2020-04-23,Cote d'Ivoire,1004,14
+2020-04-23,Ivory Coast,1004,14
 2020-04-23,Croatia,1981,50
 2020-04-23,Cuba,1235,43
 2020-04-23,Cyprus,795,13
-2020-04-23,Czechia,7187,210
+2020-04-23,Czech Republic,7187,210
 2020-04-23,Denmark,8271,394
 2020-04-23,Japan,13080,341
 2020-04-23,Djibouti,986,2
@@ -9697,7 +9692,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-23,Uruguay,557,12
 2020-04-23,Uzbekistan,1758,7
 2020-04-23,Venezuela,311,10
-2020-04-23,Vietnam,268,0
+2020-04-23,Viet Nam,268,0
 2020-04-23,West Bank and Gaza,480,4
 2020-04-23,Western Sahara,6,0
 2020-04-23,Yemen,1,0
@@ -9733,7 +9728,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-24,Burkina Faso,629,41
 2020-04-24,Burma,144,5
 2020-04-24,Burundi,11,1
-2020-04-24,Cabo Verde,88,1
+2020-04-24,Cape Verde,88,1
 2020-04-24,Cambodia,122,0
 2020-04-24,Cameroon,1430,43
 2020-04-24,Canada,44056,2386
@@ -9744,11 +9739,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-24,Colombia,4881,225
 2020-04-24,Republic of the Congo,594,31
 2020-04-24,Costa Rica,687,6
-2020-04-24,Cote d'Ivoire,1077,14
+2020-04-24,Ivory Coast,1077,14
 2020-04-24,Croatia,2009,51
 2020-04-24,Cuba,1285,49
 2020-04-24,Cyprus,804,14
-2020-04-24,Czechia,7273,214
+2020-04-24,Czech Republic,7273,214
 2020-04-24,Denmark,8408,403
 2020-04-24,Japan,13541,358
 2020-04-24,Djibouti,999,2
@@ -9881,7 +9876,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-24,Uruguay,563,12
 2020-04-24,Uzbekistan,1804,8
 2020-04-24,Venezuela,318,10
-2020-04-24,Vietnam,270,0
+2020-04-24,Viet Nam,270,0
 2020-04-24,West Bank and Gaza,484,4
 2020-04-24,Western Sahara,6,0
 2020-04-24,Yemen,1,0
@@ -9917,7 +9912,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-25,Burkina Faso,629,41
 2020-04-25,Burma,146,5
 2020-04-25,Burundi,11,1
-2020-04-25,Cabo Verde,90,1
+2020-04-25,Cape Verde,90,1
 2020-04-25,Cambodia,122,0
 2020-04-25,Cameroon,1518,53
 2020-04-25,Canada,45493,2549
@@ -9928,11 +9923,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-25,Colombia,5142,233
 2020-04-25,Republic of the Congo,616,34
 2020-04-25,Costa Rica,693,6
-2020-04-25,Cote d'Ivoire,1077,14
+2020-04-25,Ivory Coast,1077,14
 2020-04-25,Croatia,2016,54
 2020-04-25,Cuba,1337,51
 2020-04-25,Cyprus,810,14
-2020-04-25,Czechia,7352,218
+2020-04-25,Czech Republic,7352,218
 2020-04-25,Denmark,8643,418
 2020-04-25,Japan,13943,373
 2020-04-25,Djibouti,1008,2
@@ -10065,7 +10060,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-25,Uruguay,596,14
 2020-04-25,Uzbekistan,1862,8
 2020-04-25,Venezuela,323,10
-2020-04-25,Vietnam,270,0
+2020-04-25,Viet Nam,270,0
 2020-04-25,West Bank and Gaza,342,2
 2020-04-25,Western Sahara,6,0
 2020-04-25,Yemen,1,0
@@ -10101,7 +10096,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-26,Burkina Faso,632,42
 2020-04-26,Burma,146,5
 2020-04-26,Burundi,11,1
-2020-04-26,Cabo Verde,106,1
+2020-04-26,Cape Verde,106,1
 2020-04-26,Cambodia,122,0
 2020-04-26,Cameroon,1621,56
 2020-04-26,Canada,47147,2663
@@ -10112,11 +10107,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-26,Colombia,5379,244
 2020-04-26,Republic of the Congo,642,34
 2020-04-26,Costa Rica,695,6
-2020-04-26,Cote d'Ivoire,1150,14
+2020-04-26,Ivory Coast,1150,14
 2020-04-26,Croatia,2030,55
 2020-04-26,Cuba,1369,54
 2020-04-26,Cyprus,817,14
-2020-04-26,Czechia,7404,220
+2020-04-26,Czech Republic,7404,220
 2020-04-26,Denmark,8773,422
 2020-04-26,Japan,14153,385
 2020-04-26,Djibouti,1023,2
@@ -10249,7 +10244,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-26,Uruguay,606,15
 2020-04-26,Uzbekistan,1869,8
 2020-04-26,Venezuela,325,10
-2020-04-26,Vietnam,270,0
+2020-04-26,Viet Nam,270,0
 2020-04-26,West Bank and Gaza,342,2
 2020-04-26,Western Sahara,6,0
 2020-04-26,Yemen,1,0
@@ -10285,7 +10280,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-27,Burkina Faso,635,42
 2020-04-27,Burma,146,5
 2020-04-27,Burundi,11,1
-2020-04-27,Cabo Verde,109,1
+2020-04-27,Cape Verde,109,1
 2020-04-27,Cambodia,122,0
 2020-04-27,Cameroon,1705,58
 2020-04-27,Canada,49616,2841
@@ -10296,11 +10291,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-27,Colombia,5597,253
 2020-04-27,Republic of the Congo,659,34
 2020-04-27,Costa Rica,697,6
-2020-04-27,Cote d'Ivoire,1164,14
+2020-04-27,Ivory Coast,1164,14
 2020-04-27,Croatia,2039,59
 2020-04-27,Cuba,1389,56
 2020-04-27,Cyprus,822,15
-2020-04-27,Czechia,7445,223
+2020-04-27,Czech Republic,7445,223
 2020-04-27,Denmark,8896,427
 2020-04-27,Japan,14865,398
 2020-04-27,Djibouti,1035,2
@@ -10433,7 +10428,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-27,Uruguay,620,15
 2020-04-27,Uzbekistan,1904,8
 2020-04-27,Venezuela,329,10
-2020-04-27,Vietnam,270,0
+2020-04-27,Viet Nam,270,0
 2020-04-27,West Bank and Gaza,342,2
 2020-04-27,Western Sahara,6,0
 2020-04-27,Yemen,1,0
@@ -10469,7 +10464,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-28,Burkina Faso,638,42
 2020-04-28,Burma,150,5
 2020-04-28,Burundi,11,1
-2020-04-28,Cabo Verde,114,1
+2020-04-28,Cape Verde,114,1
 2020-04-28,Cambodia,122,0
 2020-04-28,Cameroon,1705,58
 2020-04-28,Canada,51150,2983
@@ -10480,11 +10475,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-28,Colombia,5949,269
 2020-04-28,Republic of the Congo,678,38
 2020-04-28,Costa Rica,705,6
-2020-04-28,Cote d'Ivoire,1183,14
+2020-04-28,Ivory Coast,1183,14
 2020-04-28,Croatia,2047,63
 2020-04-28,Cuba,1437,58
 2020-04-28,Cyprus,837,15
-2020-04-28,Czechia,7504,227
+2020-04-28,Czech Republic,7504,227
 2020-04-28,Denmark,9049,434
 2020-04-28,Japan,14448,407
 2020-04-28,Djibouti,1072,2
@@ -10617,7 +10612,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-28,Uruguay,625,15
 2020-04-28,Uzbekistan,1939,8
 2020-04-28,Venezuela,329,10
-2020-04-28,Vietnam,270,0
+2020-04-28,Viet Nam,270,0
 2020-04-28,West Bank and Gaza,343,2
 2020-04-28,Western Sahara,6,0
 2020-04-28,Yemen,1,0
@@ -10653,7 +10648,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-29,Burkina Faso,641,43
 2020-04-29,Burma,150,6
 2020-04-29,Burundi,11,1
-2020-04-29,Cabo Verde,114,1
+2020-04-29,Cape Verde,114,1
 2020-04-29,Cambodia,122,0
 2020-04-29,Cameroon,1832,61
 2020-04-29,Canada,52865,3155
@@ -10664,11 +10659,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-29,Colombia,6207,278
 2020-04-29,Republic of the Congo,698,38
 2020-04-29,Costa Rica,713,6
-2020-04-29,Cote d'Ivoire,1238,14
+2020-04-29,Ivory Coast,1238,14
 2020-04-29,Croatia,2062,67
 2020-04-29,Cuba,1467,58
 2020-04-29,Cyprus,843,15
-2020-04-29,Czechia,7579,227
+2020-04-29,Czech Republic,7579,227
 2020-04-29,Denmark,9206,443
 2020-04-29,Japan,14607,426
 2020-04-29,Djibouti,1077,2
@@ -10801,7 +10796,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-29,Uruguay,630,15
 2020-04-29,Uzbekistan,2002,9
 2020-04-29,Venezuela,331,10
-2020-04-29,Vietnam,270,0
+2020-04-29,Viet Nam,270,0
 2020-04-29,West Bank and Gaza,344,2
 2020-04-29,Western Sahara,6,0
 2020-04-29,Yemen,6,0
@@ -10837,7 +10832,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-30,Burkina Faso,645,43
 2020-04-30,Burma,151,6
 2020-04-30,Burundi,11,1
-2020-04-30,Cabo Verde,121,1
+2020-04-30,Cape Verde,121,1
 2020-04-30,Cambodia,122,0
 2020-04-30,Cameroon,1832,61
 2020-04-30,Canada,54457,3310
@@ -10849,11 +10844,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-30,Comoros,1,0
 2020-04-30,Republic of the Congo,792,40
 2020-04-30,Costa Rica,719,6
-2020-04-30,Cote d'Ivoire,1275,14
+2020-04-30,Ivory Coast,1275,14
 2020-04-30,Croatia,2076,69
 2020-04-30,Cuba,1501,61
 2020-04-30,Cyprus,850,15
-2020-04-30,Czechia,7682,236
+2020-04-30,Czech Republic,7682,236
 2020-04-30,Denmark,9356,452
 2020-04-30,Japan,14800,443
 2020-04-30,Djibouti,1089,2
@@ -10987,7 +10982,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-04-30,Uruguay,643,17
 2020-04-30,Uzbekistan,2039,9
 2020-04-30,Venezuela,333,16
-2020-04-30,Vietnam,270,0
+2020-04-30,Viet Nam,270,0
 2020-04-30,West Bank and Gaza,344,2
 2020-04-30,Western Sahara,6,0
 2020-04-30,Yemen,6,2
@@ -11023,7 +11018,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-01,Burkina Faso,649,44
 2020-05-01,Burma,151,6
 2020-05-01,Burundi,11,1
-2020-05-01,Cabo Verde,122,1
+2020-05-01,Cape Verde,122,1
 2020-05-01,Cambodia,122,0
 2020-05-01,Cameroon,1832,61
 2020-05-01,Canada,56343,3537
@@ -11035,11 +11030,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-01,Comoros,1,0
 2020-05-01,Republic of the Congo,833,41
 2020-05-01,Costa Rica,725,6
-2020-05-01,Cote d'Ivoire,1333,15
+2020-05-01,Ivory Coast,1333,15
 2020-05-01,Croatia,2085,75
 2020-05-01,Cuba,1537,64
 2020-05-01,Cyprus,857,15
-2020-05-01,Czechia,7737,240
+2020-05-01,Czech Republic,7737,240
 2020-05-01,Denmark,9509,460
 2020-05-01,Japan,15017,468
 2020-05-01,Djibouti,1097,2
@@ -11173,7 +11168,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-01,Uruguay,648,17
 2020-05-01,Uzbekistan,2086,9
 2020-05-01,Venezuela,335,10
-2020-05-01,Vietnam,270,0
+2020-05-01,Viet Nam,270,0
 2020-05-01,West Bank and Gaza,353,2
 2020-05-01,Western Sahara,6,0
 2020-05-01,Yemen,7,2
@@ -11209,7 +11204,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-02,Burkina Faso,652,44
 2020-05-02,Burma,151,6
 2020-05-02,Burundi,15,1
-2020-05-02,Cabo Verde,152,2
+2020-05-02,Cape Verde,152,2
 2020-05-02,Cambodia,122,0
 2020-05-02,Cameroon,2077,64
 2020-05-02,Canada,57926,3684
@@ -11221,11 +11216,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-02,Comoros,3,0
 2020-05-02,Republic of the Congo,903,42
 2020-05-02,Costa Rica,733,6
-2020-05-02,Cote d'Ivoire,1362,15
+2020-05-02,Ivory Coast,1362,15
 2020-05-02,Croatia,2088,77
 2020-05-02,Cuba,1611,66
 2020-05-02,Cyprus,864,15
-2020-05-02,Czechia,7755,245
+2020-05-02,Czech Republic,7755,245
 2020-05-02,Denmark,9605,475
 2020-05-02,Japan,15283,487
 2020-05-02,Djibouti,1112,2
@@ -11359,7 +11354,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-02,Uruguay,652,17
 2020-05-02,Uzbekistan,2118,9
 2020-05-02,Venezuela,345,10
-2020-05-02,Vietnam,270,0
+2020-05-02,Viet Nam,270,0
 2020-05-02,West Bank and Gaza,353,2
 2020-05-02,Western Sahara,6,0
 2020-05-02,Yemen,10,2
@@ -11395,7 +11390,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-03,Burkina Faso,662,45
 2020-05-03,Burma,155,6
 2020-05-03,Burundi,15,1
-2020-05-03,Cabo Verde,165,2
+2020-05-03,Cape Verde,165,2
 2020-05-03,Cambodia,122,0
 2020-05-03,Cameroon,2077,64
 2020-05-03,Canada,60504,3795
@@ -11407,11 +11402,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-03,Comoros,3,0
 2020-05-03,Republic of the Congo,903,42
 2020-05-03,Costa Rica,739,6
-2020-05-03,Cote d'Ivoire,1398,17
+2020-05-03,Ivory Coast,1398,17
 2020-05-03,Croatia,2096,79
 2020-05-03,Cuba,1649,67
 2020-05-03,Cyprus,872,15
-2020-05-03,Czechia,7781,248
+2020-05-03,Czech Republic,7781,248
 2020-05-03,Denmark,9721,484
 2020-05-03,Japan,15589,500
 2020-05-03,Djibouti,1112,2
@@ -11545,7 +11540,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-03,Uruguay,655,17
 2020-05-03,Uzbekistan,2149,10
 2020-05-03,Venezuela,357,10
-2020-05-03,Vietnam,271,0
+2020-05-03,Viet Nam,271,0
 2020-05-03,West Bank and Gaza,353,2
 2020-05-03,Western Sahara,6,0
 2020-05-03,Yemen,10,2
@@ -11581,7 +11576,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-04,Burkina Faso,672,46
 2020-05-04,Burma,161,6
 2020-05-04,Burundi,15,1
-2020-05-04,Cabo Verde,175,2
+2020-05-04,Cape Verde,175,2
 2020-05-04,Cambodia,122,0
 2020-05-04,Cameroon,2104,64
 2020-05-04,Canada,61957,4003
@@ -11593,11 +11588,11 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-04,Comoros,3,0
 2020-05-04,Republic of the Congo,918,44
 2020-05-04,Costa Rica,742,6
-2020-05-04,Cote d'Ivoire,1432,17
+2020-05-04,Ivory Coast,1432,17
 2020-05-04,Croatia,2101,80
 2020-05-04,Cuba,1668,69
 2020-05-04,Cyprus,874,15
-2020-05-04,Czechia,7819,252
+2020-05-04,Czech Republic,7819,252
 2020-05-04,Denmark,9868,493
 2020-05-04,Japan,15790,549
 2020-05-04,Djibouti,1116,2
@@ -11731,7 +11726,7 @@ Date,Country/Region,Confirmed,Deaths
 2020-05-04,Uruguay,657,17
 2020-05-04,Uzbekistan,2189,10
 2020-05-04,Venezuela,357,10
-2020-05-04,Vietnam,271,0
+2020-05-04,Viet Nam,271,0
 2020-05-04,West Bank and Gaza,362,2
 2020-05-04,Western Sahara,6,0
 2020-05-04,Yemen,12,2
