@@ -1,8 +1,6 @@
 import pandas as pd
 import os
 
-
-
 def summarize():
     path=os.getcwd()
     sars_file_path='SARS_data.csv'

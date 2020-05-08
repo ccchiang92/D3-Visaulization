@@ -27,8 +27,10 @@ populate(data);
 // covid_file_path='covid_daily_world.csv'
 
 //Listener for button clicks.
+var button = d3.select(".dropdown-item");
+
 button.on('click', function() {
-    var inputElement = d3.select(html_element);
+    var inputElement = d3.select(".dropdown-item");
     var inputValue = inputElement.property('value');
     function filterData(input){
         return input.virus == inputValue

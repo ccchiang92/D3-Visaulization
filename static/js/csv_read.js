@@ -5,7 +5,7 @@ d3.csv('../raw_data/Brent_oil_price.xls').then(function(getPrices) {
     date.forEach(function(getDate) {
       Brent_oil_price.Date = parseDate(Brent_oil_price.Date);
     })
-    date.forEach(function(getPrice) {
+    price.forEach(function(getPrice) {
       Brent_oil_price.`Weekly Europe Brent Spot Price FOB  (Dollars per Barrel)` = parseDate(Brent_oil_price.`Weekly Europe Brent Spot Price FOB  (Dollars per Barrel)`);
     })
   })
