@@ -801,7 +801,7 @@ Date,Country,Cases,Deaths
 2003-04-30,Canada,148,20
 2003-04-30,China,3460,159
 2003-04-30,Hong Kong,1589,157
-2003-04-30,China,1,0
+2003-04-30,Macao,1,0
 2003-04-30,Taiwan,78,1
 2003-04-30,France,5,0
 2003-04-30,Germany,7,0
@@ -831,7 +831,7 @@ Date,Country,Cases,Deaths
 2003-05-01,Canada,147,20
 2003-05-01,China,3638,170
 2003-05-01,Hong Kong,1600,162
-2003-05-01,China,1,0
+2003-05-01,Macao,1,0
 2003-05-01,Taiwan,89,3
 2003-05-01,France,5,0
 2003-05-01,Germany,7,0
@@ -862,7 +862,7 @@ Date,Country,Cases,Deaths
 2003-05-02,Canada,149,22
 2003-05-02,China,3799,181
 2003-05-02,Hong Kong,1611,170
-2003-05-02,China,1,0
+2003-05-02,Macao,1,0
 2003-05-02,Taiwan,100,8
 2003-05-02,France,5,0
 2003-05-02,Germany,7,0
@@ -893,7 +893,7 @@ Date,Country,Cases,Deaths
 2003-05-03,Canada,149,22
 2003-05-03,China,3971,190
 2003-05-03,Hong Kong,1621,179
-2003-05-03,China,1,0
+2003-05-03,Macao,1,0
 2003-05-03,Taiwan,100,8
 2003-05-03,France,5,0
 2003-05-03,Germany,7,0
@@ -924,7 +924,7 @@ Date,Country,Cases,Deaths
 2003-05-05,Canada,148,22
 2003-05-05,China,4280,206
 2003-05-05,Hong Kong,1637,187
-2003-05-05,China,1,0
+2003-05-05,Macao,1,0
 2003-05-05,Taiwan,116,8
 2003-05-05,France,5,0
 2003-05-05,Germany,7,0
@@ -955,7 +955,7 @@ Date,Country,Cases,Deaths
 2003-05-06,Canada,148,22
 2003-05-06,China,4409,214
 2003-05-06,Hong Kong,1646,193
-2003-05-06,China,1,0
+2003-05-06,Macao,1,0
 2003-05-06,Taiwan,116,10
 2003-05-06,Colombia,1,0
 2003-05-06,France,5,0
@@ -988,7 +988,7 @@ Date,Country,Cases,Deaths
 2003-05-07,Canada,146,22
 2003-05-07,China,4560,219
 2003-05-07,Hong Kong,1654,204
-2003-05-07,China,1,0
+2003-05-07,Macao,1,0
 2003-05-07,Taiwan,125,11
 2003-05-07,Colombia,1,0
 2003-05-07,France,6,0
@@ -1021,7 +1021,7 @@ Date,Country,Cases,Deaths
 2003-05-08,Canada,146,22
 2003-05-08,China,4698,224
 2003-05-08,Hong Kong,1661,208
-2003-05-08,China,1,0
+2003-05-08,Macao,1,0
 2003-05-08,Taiwan,131,13
 2003-05-08,Colombia,1,0
 2003-05-08,Finland,1,0
@@ -1055,7 +1055,7 @@ Date,Country,Cases,Deaths
 2003-05-09,Canada,145,22
 2003-05-09,China,4805,230
 2003-05-09,Hong Kong,1667,210
-2003-05-09,China,1,0
+2003-05-09,Macao,1,0
 2003-05-09,Taiwan,149,13
 2003-05-09,Colombia,1,0
 2003-05-09,Finland,1,0
@@ -1089,7 +1089,7 @@ Date,Country,Cases,Deaths
 2003-05-10,Canada,145,22
 2003-05-10,China,4884,235
 2003-05-10,Hong Kong,1674,212
-2003-05-10,China,1,0
+2003-05-10,Macao,1,0
 2003-05-10,Taiwan,172,18
 2003-05-10,Colombia,1,0
 2003-05-10,Finland,1,0
@@ -1123,7 +1123,7 @@ Date,Country,Cases,Deaths
 2003-05-12,Canada,143,22
 2003-05-12,China,5013,252
 2003-05-12,Hong Kong,1683,218
-2003-05-12,China,1,0
+2003-05-12,Macao,1,0
 2003-05-12,Taiwan,184,20
 2003-05-12,Colombia,1,0
 2003-05-12,Finland,1,0
@@ -1157,7 +1157,7 @@ Date,Country,Cases,Deaths
 2003-05-13,Canada,143,22
 2003-05-13,China,5086,262
 2003-05-13,Hong Kong,1689,225
-2003-05-13,China,1,0
+2003-05-13,Macao,1,0
 2003-05-13,Taiwan,207,24
 2003-05-13,Colombia,1,0
 2003-05-13,Finland,1,0
@@ -1190,7 +1190,7 @@ Date,Country,Cases,Deaths
 2003-05-14,Canada,143,23
 2003-05-14,China,5124,267
 2003-05-14,Hong Kong,1698,227
-2003-05-14,China,1,0
+2003-05-14,Macao,1,0
 2003-05-14,Taiwan,238,30
 2003-05-14,Colombia,1,0
 2003-05-14,Finland,1,0
@@ -1223,7 +1223,7 @@ Date,Country,Cases,Deaths
 2003-05-15,Canada,142,23
 2003-05-15,China,5163,271
 2003-05-15,Hong Kong,1703,234
-2003-05-15,China,1,0
+2003-05-15,Macao,1,0
 2003-05-15,Taiwan,264,30
 2003-05-15,Colombia,1,0
 2003-05-15,Finland,1,0
@@ -1256,7 +1256,7 @@ Date,Country,Cases,Deaths
 2003-05-16,Canada,140,23
 2003-05-16,China,5191,275
 2003-05-16,Hong Kong,1706,238
-2003-05-16,China,1,0
+2003-05-16,Macao,1,0
 2003-05-16,Taiwan,274,35
 2003-05-16,Colombia,1,0
 2003-05-16,Finland,1,0
@@ -1288,7 +1288,7 @@ Date,Country,Cases,Deaths
 2003-05-17,Canada,140,23
 2003-05-17,China,5209,282
 2003-05-17,Hong Kong,1710,243
-2003-05-17,China,1,0
+2003-05-17,Macao,1,0
 2003-05-17,Taiwan,274,35
 2003-05-17,Colombia,1,0
 2003-05-17,Finland,1,0
@@ -1320,7 +1320,7 @@ Date,Country,Cases,Deaths
 2003-05-19,Canada,140,23
 2003-05-19,China,5236,289
 2003-05-19,Hong Kong,1714,251
-2003-05-19,China,1,0
+2003-05-19,Macao,1,0
 2003-05-19,Taiwan,344,40
 2003-05-19,Colombia,1,0
 2003-05-19,Finland,1,0
@@ -1352,7 +1352,7 @@ Date,Country,Cases,Deaths
 2003-05-20,Canada,140,23
 2003-05-20,China,5248,294
 2003-05-20,Hong Kong,1718,253
-2003-05-20,China,1,0
+2003-05-20,Macao,1,0
 2003-05-20,Taiwan,383,52
 2003-05-20,Colombia,1,0
 2003-05-20,Finland,1,0
@@ -1384,7 +1384,7 @@ Date,Country,Cases,Deaths
 2003-05-21,Canada,140,23
 2003-05-21,China,5249,296
 2003-05-21,Hong Kong,1719,255
-2003-05-21,China,1,0
+2003-05-21,Macao,1,0
 2003-05-21,Taiwan,418,52
 2003-05-21,Colombia,1,0
 2003-05-21,Finland,1,0
@@ -1416,7 +1416,7 @@ Date,Country,Cases,Deaths
 2003-05-22,Canada,140,23
 2003-05-22,China,5271,300
 2003-05-22,Hong Kong,1722,258
-2003-05-22,China,2,0
+2003-05-22,Macao,2,0
 2003-05-22,Taiwan,483,60
 2003-05-22,Colombia,1,0
 2003-05-22,Finland,1,0
@@ -1448,7 +1448,7 @@ Date,Country,Cases,Deaths
 2003-05-23,Canada,140,23
 2003-05-23,China,5285,303
 2003-05-23,Hong Kong,1724,260
-2003-05-23,China,2,0
+2003-05-23,Macao,2,0
 2003-05-23,Taiwan,538,60
 2003-05-23,Colombia,1,0
 2003-05-23,Finland,1,0
@@ -1480,7 +1480,7 @@ Date,Country,Cases,Deaths
 2003-05-24,Canada,140,23
 2003-05-24,China,5309,308
 2003-05-24,Hong Kong,1724,262
-2003-05-24,China,2,0
+2003-05-24,Macao,2,0
 2003-05-24,Taiwan,538,60
 2003-05-24,Colombia,1,0
 2003-05-24,Finland,1,0
@@ -1512,7 +1512,7 @@ Date,Country,Cases,Deaths
 2003-05-26,Canada,148,26
 2003-05-26,China,5316,317
 2003-05-26,Hong Kong,1726,267
-2003-05-26,China,2,0
+2003-05-26,Macao,2,0
 2003-05-26,Taiwan,585,72
 2003-05-26,Colombia,1,0
 2003-05-26,Finland,1,0
@@ -1544,7 +1544,7 @@ Date,Country,Cases,Deaths
 2003-05-27,Canada,148,26
 2003-05-27,China,5322,321
 2003-05-27,Hong Kong,1728,269
-2003-05-27,China,2,0
+2003-05-27,Macao,2,0
 2003-05-27,Taiwan,596,76
 2003-05-27,Colombia,1,0
 2003-05-27,Finland,1,0
@@ -1576,7 +1576,7 @@ Date,Country,Cases,Deaths
 2003-05-28,Canada,149,26
 2003-05-28,China,5323,325
 2003-05-28,Hong Kong,1730,270
-2003-05-28,China,2,0
+2003-05-28,Macao,2,0
 2003-05-28,Taiwan,610,81
 2003-05-28,Colombia,1,0
 2003-05-28,Finland,1,0
@@ -1608,7 +1608,7 @@ Date,Country,Cases,Deaths
 2003-05-29,Canada,151,26
 2003-05-29,China,5325,327
 2003-05-29,Hong Kong,1732,273
-2003-05-29,China,1,0
+2003-05-29,Macao,1,0
 2003-05-29,Taiwan,660,81
 2003-05-29,Colombia,1,0
 2003-05-29,Finland,1,0
@@ -1640,7 +1640,7 @@ Date,Country,Cases,Deaths
 2003-05-30,Canada,159,28
 2003-05-30,China,5328,328
 2003-05-30,Hong Kong,1736,274
-2003-05-30,China,1,0
+2003-05-30,Macao,1,0
 2003-05-30,Taiwan,667,81
 2003-05-30,Colombia,1,0
 2003-05-30,Finland,1,0
@@ -1672,7 +1672,7 @@ Date,Country,Cases,Deaths
 2003-05-31,Canada,188,30
 2003-05-31,China,5328,332
 2003-05-31,Hong Kong,1739,278
-2003-05-31,China,1,0
+2003-05-31,Macao,1,0
 2003-05-31,Taiwan,676,81
 2003-05-31,Colombia,1,0
 2003-05-31,Finland,1,0
@@ -1705,7 +1705,7 @@ Date,Country,Cases,Deaths
 2003-06-02,Canada,198,30
 2003-06-02,China,5328,334
 2003-06-02,Hong Kong,1746,282
-2003-06-02,China,1,0
+2003-06-02,Macao,1,0
 2003-06-02,Taiwan,684,81
 2003-06-02,Colombia,1,0
 2003-06-02,Finland,1,0
@@ -1738,7 +1738,7 @@ Date,Country,Cases,Deaths
 2003-06-03,Canada,213,31
 2003-06-03,China,5329,334
 2003-06-03,Hong Kong,1747,283
-2003-06-03,China,1,0
+2003-06-03,Macao,1,0
 2003-06-03,Taiwan,679,81
 2003-06-03,Colombia,1,0
 2003-06-03,Finland,1,0
@@ -1771,7 +1771,7 @@ Date,Country,Cases,Deaths
 2003-06-04,Canada,216,31
 2003-06-04,China,5329,334
 2003-06-04,Hong Kong,1748,283
-2003-06-04,China,1,0
+2003-06-04,Macao,1,0
 2003-06-04,Taiwan,678,81
 2003-06-04,Colombia,1,0
 2003-06-04,Finland,1,0
@@ -1804,7 +1804,7 @@ Date,Country,Cases,Deaths
 2003-06-05,Canada,218,31
 2003-06-05,China,5329,336
 2003-06-05,Hong Kong,1748,284
-2003-06-05,China,1,0
+2003-06-05,Macao,1,0
 2003-06-05,Taiwan,677,81
 2003-06-05,Colombia,1,0
 2003-06-05,Finland,1,0
@@ -1837,7 +1837,7 @@ Date,Country,Cases,Deaths
 2003-06-06,Canada,219,31
 2003-06-06,China,5329,338
 2003-06-06,Hong Kong,1750,286
-2003-06-06,China,1,0
+2003-06-06,Macao,1,0
 2003-06-06,Taiwan,676,81
 2003-06-06,Colombia,1,0
 2003-06-06,Finland,1,0
@@ -1870,7 +1870,7 @@ Date,Country,Cases,Deaths
 2003-06-09,Canada,229,32
 2003-06-09,China,5328,340
 2003-06-09,Hong Kong,1753,288
-2003-06-09,China,1,0
+2003-06-09,Macao,1,0
 2003-06-09,Taiwan,680,81
 2003-06-09,Colombia,1,0
 2003-06-09,Finland,1,0
@@ -1903,7 +1903,7 @@ Date,Country,Cases,Deaths
 2003-06-10,Canada,229,32
 2003-06-10,China,5328,343
 2003-06-10,Hong Kong,1754,290
-2003-06-10,China,1,0
+2003-06-10,Macao,1,0
 2003-06-10,Taiwan,686,81
 2003-06-10,Colombia,1,0
 2003-06-10,Finland,1,0
@@ -1936,7 +1936,7 @@ Date,Country,Cases,Deaths
 2003-06-11,Canada,230,32
 2003-06-11,China,5329,343
 2003-06-11,Hong Kong,1754,290
-2003-06-11,China,1,0
+2003-06-11,Macao,1,0
 2003-06-11,Taiwan,687,81
 2003-06-11,Colombia,1,0
 2003-06-11,Finland,1,0
@@ -1969,7 +1969,7 @@ Date,Country,Cases,Deaths
 2003-06-12,Canada,238,32
 2003-06-12,China,5328,343
 2003-06-12,Hong Kong,1755,291
-2003-06-12,China,1,0
+2003-06-12,Macao,1,0
 2003-06-12,Taiwan,688,81
 2003-06-12,Colombia,1,0
 2003-06-12,Finland,1,0
@@ -2002,7 +2002,7 @@ Date,Country,Cases,Deaths
 2003-06-13,Canada,242,32
 2003-06-13,China,5327,343
 2003-06-13,Hong Kong,1755,293
-2003-06-13,China,1,0
+2003-06-13,Macao,1,0
 2003-06-13,Taiwan,693,81
 2003-06-13,Colombia,1,0
 2003-06-13,Finland,1,0
@@ -2035,7 +2035,7 @@ Date,Country,Cases,Deaths
 2003-06-16,Canada,243,32
 2003-06-16,China,5326,346
 2003-06-16,Hong Kong,1755,295
-2003-06-16,China,1,0
+2003-06-16,Macao,1,0
 2003-06-16,Taiwan,698,83
 2003-06-16,Colombia,1,0
 2003-06-16,Finland,1,0
@@ -2068,7 +2068,7 @@ Date,Country,Cases,Deaths
 2003-06-17,Canada,247,32
 2003-06-17,China,5326,346
 2003-06-17,Hong Kong,1755,295
-2003-06-17,China,1,0
+2003-06-17,Macao,1,0
 2003-06-17,Taiwan,697,83
 2003-06-17,Colombia,1,0
 2003-06-17,Finland,1,0
@@ -2101,7 +2101,7 @@ Date,Country,Cases,Deaths
 2003-06-18,Canada,246,33
 2003-06-18,China,5326,347
 2003-06-18,Hong Kong,1755,295
-2003-06-18,China,1,0
+2003-06-18,Macao,1,0
 2003-06-18,Taiwan,697,83
 2003-06-18,Colombia,1,0
 2003-06-18,Finland,1,0
@@ -2134,7 +2134,7 @@ Date,Country,Cases,Deaths
 2003-06-19,Canada,245,34
 2003-06-19,China,5326,347
 2003-06-19,Hong Kong,1755,296
-2003-06-19,China,1,0
+2003-06-19,Macao,1,0
 2003-06-19,Taiwan,695,84
 2003-06-19,Colombia,1,0
 2003-06-19,Finland,1,0
@@ -2167,7 +2167,7 @@ Date,Country,Cases,Deaths
 2003-06-20,Canada,245,34
 2003-06-20,China,5326,347
 2003-06-20,Hong Kong,1755,296
-2003-06-20,China,1,0
+2003-06-20,Macao,1,0
 2003-06-20,Taiwan,695,84
 2003-06-20,Colombia,1,0
 2003-06-20,Finland,1,0
@@ -2200,7 +2200,7 @@ Date,Country,Cases,Deaths
 2003-06-23,Canada,246,35
 2003-06-23,China,5326,347
 2003-06-23,Hong Kong,1755,296
-2003-06-23,China,1,0
+2003-06-23,Macao,1,0
 2003-06-23,Taiwan,692,84
 2003-06-23,Colombia,1,0
 2003-06-23,Finland,1,0
@@ -2233,7 +2233,7 @@ Date,Country,Cases,Deaths
 2003-06-24,Canada,249,37
 2003-06-24,China,5326,347
 2003-06-24,Hong Kong,1755,296
-2003-06-24,China,1,0
+2003-06-24,Macao,1,0
 2003-06-24,Taiwan,687,84
 2003-06-24,Colombia,1,0
 2003-06-24,Finland,1,0
@@ -2266,7 +2266,7 @@ Date,Country,Cases,Deaths
 2003-06-25,Canada,250,37
 2003-06-25,China,5327,348
 2003-06-25,Hong Kong,1755,296
-2003-06-25,China,1,0
+2003-06-25,Macao,1,0
 2003-06-25,Taiwan,686,84
 2003-06-25,Colombia,1,0
 2003-06-25,Finland,1,0
@@ -2300,7 +2300,7 @@ Date,Country,Cases,Deaths
 2003-06-26,Canada,251,37
 2003-06-26,China,5327,348
 2003-06-26,Hong Kong,1755,296
-2003-06-26,China,1,0
+2003-06-26,Macao,1,0
 2003-06-26,Taiwan,682,84
 2003-06-26,Colombia,1,0
 2003-06-26,Finland,1,0
@@ -2334,7 +2334,7 @@ Date,Country,Cases,Deaths
 2003-06-27,Canada,251,37
 2003-06-27,China,5327,348
 2003-06-27,Hong Kong,1755,297
-2003-06-27,China,1,0
+2003-06-27,Macao,1,0
 2003-06-27,Taiwan,681,84
 2003-06-27,Colombia,1,0
 2003-06-27,Finland,1,0
@@ -2367,7 +2367,7 @@ Date,Country,Cases,Deaths
 2003-06-30,Canada,252,37
 2003-06-30,China,5327,348
 2003-06-30,Hong Kong,1755,298
-2003-06-30,China,1,0
+2003-06-30,Macao,1,0
 2003-06-30,Taiwan,678,84
 2003-06-30,Colombia,1,0
 2003-06-30,Finland,1,0
@@ -2400,7 +2400,7 @@ Date,Country,Cases,Deaths
 2003-07-01,Canada,252,38
 2003-07-01,China,5327,348
 2003-07-01,Hong Kong,1755,298
-2003-07-01,China,1,0
+2003-07-01,Macao,1,0
 2003-07-01,Taiwan,678,84
 2003-07-01,Colombia,1,0
 2003-07-01,Finland,1,0
@@ -2433,7 +2433,7 @@ Date,Country,Cases,Deaths
 2003-07-02,Canada,252,38
 2003-07-02,China,5327,348
 2003-07-02,Hong Kong,1755,298
-2003-07-02,China,1,0
+2003-07-02,Macao,1,0
 2003-07-02,Taiwan,676,84
 2003-07-02,Colombia,1,0
 2003-07-02,Finland,1,0
@@ -2466,7 +2466,7 @@ Date,Country,Cases,Deaths
 2003-07-03,Canada,251,38
 2003-07-03,China,5327,348
 2003-07-03,Hong Kong,1755,298
-2003-07-03,China,1,0
+2003-07-03,Macao,1,0
 2003-07-03,Taiwan,674,84
 2003-07-03,Colombia,1,0
 2003-07-03,Finland,1,0
@@ -2499,7 +2499,7 @@ Date,Country,Cases,Deaths
 2003-07-04,Canada,251,38
 2003-07-04,China,5327,348
 2003-07-04,Hong Kong,1755,298
-2003-07-04,China,1,0
+2003-07-04,Macao,1,0
 2003-07-04,Taiwan,674,84
 2003-07-04,Colombia,1,0
 2003-07-04,Finland,1,0
@@ -2532,7 +2532,7 @@ Date,Country,Cases,Deaths
 2003-07-07,Canada,251,38
 2003-07-07,China,5327,348
 2003-07-07,Hong Kong,1755,298
-2003-07-07,China,1,0
+2003-07-07,Macao,1,0
 2003-07-07,Taiwan,674,84
 2003-07-07,Colombia,1,0
 2003-07-07,Finland,1,0
@@ -2565,7 +2565,7 @@ Date,Country,Cases,Deaths
 2003-07-08,Canada,250,38
 2003-07-08,China,5327,348
 2003-07-08,Hong Kong,1755,298
-2003-07-08,China,1,0
+2003-07-08,Macao,1,0
 2003-07-08,Taiwan,671,84
 2003-07-08,Colombia,1,0
 2003-07-08,Finland,1,0
@@ -2598,7 +2598,7 @@ Date,Country,Cases,Deaths
 2003-07-09,Canada,249,38
 2003-07-09,China,5327,348
 2003-07-09,Hong Kong,1755,298
-2003-07-09,China,1,0
+2003-07-09,Macao,1,0
 2003-07-09,Taiwan,671,84
 2003-07-09,Colombia,1,0
 2003-07-09,Finland,1,0
@@ -2631,7 +2631,7 @@ Date,Country,Cases,Deaths
 2003-07-10,Canada,250,38
 2003-07-10,China,5327,348
 2003-07-10,Hong Kong,1755,298
-2003-07-10,China,1,0
+2003-07-10,Macao,1,0
 2003-07-10,Taiwan,671,84
 2003-07-10,Colombia,1,0
 2003-07-10,Finland,1,0
@@ -2664,7 +2664,7 @@ Date,Country,Cases,Deaths
 2003-07-11,Canada,250,38
 2003-07-11,China,5327,348
 2003-07-11,Hong Kong,1755,298
-2003-07-11,China,1,0
+2003-07-11,Macao,1,0
 2003-07-11,Taiwan,671,84
 2003-07-11,Colombia,1,0
 2003-07-11,Finland,1,0

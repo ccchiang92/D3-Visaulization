@@ -1,8 +1,15 @@
 // Responsive interactive d3 scatter plot script
 // Uses code from class activities
-
-var colors= ['red','blue','green','orange','yellow','pink','grey','purple']
-
+var colorGen = 0;
+var colors= ['blue','red','green','orange','darkred','pink','grey','purple'];
+function newColor(){
+    if (colorGen <7){
+        colorGen++;
+    }else{
+        colorGen=0
+    }
+    return colors[colorGen];
+}
 function makeResponsive(){
     var initSvg = d3.select('#chart').select('svg');
     if (!initSvg.empty()) {
@@ -56,6 +63,128 @@ function makeResponsive(){
     var curCountry ='Total';
     var curIndex = 'DJI';
 
+    function setScale(data, col_name,option) {
+        if (option === 'x'){
+            var scale = d3.scaleTime()
+            .domain(d3.extent(data, d => d.Date))
+            .range([0, chartW]);
+        }else if (option === 'right'){
+            var scale = d3.scaleLinear()
+            .domain([0,d3.max(data, d => d[col_name])])
+            .range([chartH, 0]);
+        }else{
+            var scale = d3.scaleLinear()
+            .domain([d3.min(data, d => d.Price)*0.8, d3.max(data, d => d.Price)*1.2])
+            .range([chartH, 0]);
+
+        }       
+        return scale;
+    }
+    function renderAxes(newScale, Axis, option) {
+        if (option === 'x'){
+            var bottomAxis = d3.axisBottom(newScale);
+            Axis.transition()
+            .duration(1000)
+            .call(bottomAxis);
+        }else if(option ==='left'){
+            var leftAxis = d3.axisLeft(newScale);
+            Axis.transition()
+            .duration(1000)
+            .call(leftAxis);
+        }else{
+            var rightAxis = d3.axisRight(newScale);
+            Axis.transition()
+            .duration(1000)
+            .call(rightAxis);
+        }
+        return Axis;
+    }
+
+    function drawLegend(index){
+        var i = 1;
+        var legend = lineChartG.append('g')
+        .attr("transform", `translate(${chartW-margin.left}, 0)`);
+        legend.append("rect")
+        .attr("x", 0)
+        .attr("y", 0-margin.top*0.8-6)
+        .attr("width", 20)
+        .attr("height", 20)
+        .attr("opacity", ".5")  
+        .style("fill", "CornflowerBlue")
+        legend  
+        .append("text")
+        .attr("x", 0 + 20*1.2)
+        .attr("y", 0-margin.top*0.8)
+        .style("fill", "CornflowerBlue")
+        .text('Confirmed Cases')
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        legend.append("rect")
+        .attr("x", 0)
+        .attr("y", i*25-margin.top*0.8-6)
+        .attr("width", 20)
+        .attr("height", 20)
+        .attr("opacity", ".3")  
+        .style("fill", "Orange")
+        legend  
+        .append("text")
+        .attr("x", 0 + 20*1.2)
+        .attr("y", i*25-margin.top*0.8)
+        .style("fill", "Orange")
+        .text('Confirmed Deaths')
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        i++;
+        var line = legend.append('line')
+        .style("stroke", colors[colorGen])
+        .style("stroke-width", 3)
+        .attr("x1", 0)
+        .attr("y1", i*25-margin.top*0.8)
+        .attr("x2", 20)
+        .attr("y2", i*25-margin.top*0.8)
+        var lineLab = legend  
+        .append("text")
+        .attr("x", 0+ 20*1.2 )
+        .attr("y", i*25-margin.top*0.8)
+        .style("fill", colors[colorGen])
+        .text(index +' index')
+        .attr("text-anchor", "left")
+        .style("alignment-baseline", "middle")
+        return [line,lineLab]
+    }
+
+
+    function draw_stock(path, index, year, legend,yAxis){
+        d3.csv(path+'/stock/'+index+' '+year+'.csv', function(error, stockData) {
+            if (error) throw error;
+                stockData.forEach(function(data) {
+                  data.Date = d3.isoParse(data.Date);
+                  data.Price = +data.Price;
+                });
+                var xScale = setScale(stockData,'Date','x')
+                var yScale = setScale(stockData,'Price','left');
+                var drawLine = d3
+                  .line()
+                  .x(data => xScale(data.Date))
+                  .y(data => yScale(data.Price));
+                lineChartG.selectAll('.stockLine').remove()
+                lineChartG.append("path")
+                  .attr("d", drawLine(stockData))
+                  .classed("stockLine", true)
+                  .attr("opacity", ".8")
+                  .attr("fill", "none")
+                  .attr("stroke", newColor())
+                  .attr("stroke-width", 3);
+                legend[0].style("stroke", colors[colorGen]);
+                legend[1].style("stroke", colors[colorGen]);
+                legend[1].text(index);
+                renderAxes(yScale,yAxis,'left');
+                
+              });
+    };
+    
+
+
     // Label creation function
     function setupOptions (virus){
         var year;
@@ -76,22 +205,70 @@ function makeResponsive(){
                 indexes.push('NSE');
                 countries.push('Nigeria');
                 countries.push('Sierra Leone');
+                countries.push('USA');
                 break;
             case 'SARS':
                 year ='2003'
                 indexes.push('HSI')
+                indexes.push('DAX')
+                countries.push('USA');
+                countries.push('China');
                 countries.push('Hong Kong');
                 break;
         }
     
         // Create axis labels
-        var old_labels = d3.select('.countryLables');
+        var old_labels = d3.selectAll('.clickableC');
         // remove old labels
         if (!old_labels.empty()){
-            old_labels.remove()
-            d3.select('.indexLabels').remove();
-        }
+            old_labels.data(countries).enter()
+            .append('text')
+            .attr("font-family", "sans-serif")
+            .attr("font-size", "16px")
+            .attr("y", function(d,i){
+                return i*90})
+            .attr("x", 0- margin.left/2 )
+            .classed("clickableC countryLabel", true)
+            .merge(old_labels)
+            .attr("value", function(d){
+                if (d=='World Total'){
+                    return 'Total';
+                }else if (d=='USA'){
+                    return 'United States of America';
+                }else{
+                    return d;
+                }
+            })
+            .text(function(data){
+                return data;
+            }).exit().remove();
 
+            old_labels = d3.selectAll('.clickableI');
+            old_labels.data(indexes).enter()
+            .append('text')
+            .attr("font-family", "sans-serif")
+            .attr("font-size", "16px")
+            
+            .attr("y", function(d,i){
+                return i*90})
+            .attr("x", 0- margin.left/2 )
+            .classed("clickableI indexLabel", true)
+            .merge(old_labels)
+            .text(function(data){
+                return data;
+            }).attr("value", function(d){
+                return d;
+            })
+            .exit().remove();
+            d3.selectAll('.clickableC').classed('active',false);
+            d3.selectAll('.clickableC').classed('inactive',true);
+            d3.select('.clickableC').classed('active',true);
+            d3.select('.clickableC').classed('inactive',false);
+            d3.selectAll('.clickableI').classed('active',false);
+            d3.selectAll('.clickableI').classed('inactive',true);
+            d3.select('.clickableI').classed('active',true);
+            d3.select('.clickableI').classed('inactive',false);
+        }else{
             var countryGroup = lineChartG.append('g')
             .classed('countryLabels', true)
             .attr("transform", `translate(${chartW}, ${chartH/5})`);
@@ -129,7 +306,7 @@ function makeResponsive(){
                 .attr("value", ind)
                 .attr("y", i*90)
                 .attr("x", 0- margin.left/2 )
-                .classed(ac+ " clickable indexLabel", true)
+                .classed(ac+ " clickableI indexLabel", true)
                 .text(ind);
                 i++;
             });
@@ -158,20 +335,23 @@ function makeResponsive(){
                 countryGroup.append("text")
                 .attr("font-family", "sans-serif")
                 .attr("font-size", "16px")
-                .attr("value", coun)
+                .attr("value", labValue)
                 .attr("y", i*90)
                 .attr("x", 0 + margin.left/2)
-                .classed(ac+" clickable countryLabel", true)
+                .classed(ac+" clickableC countryLabel", true)
                 .text(coun);
                 i++;
             });
+        }
     
     
     
         
     
         // X label
-            lineChartG.append("text")
+            d3.selectAll('x_label').remove();
+            var x_label = lineChartG.append("text")
+            .classed('x_label',true)
             .attr("transform", `translate(${chartW / 2-margin.left*0.7}, ${chartH + margin.top*0.7})`)
             .attr("font-size", "16px")
             .attr('fill','olive')
@@ -179,44 +359,55 @@ function makeResponsive(){
             .text('Date in '+year);
     
     }
-
-
-
-    // init line graph
-    // load covid data
-    d3.csv(data_loc+'covid_daily_world.csv', function(error, virusData) {
-        if (error) throw error;
-        var virus = 'Covid-19'
+    function virusSelector(virus){
         var file_name;
         var case_col;
         var death_col;
         var country_col;
-        var country ='Total'
+        var year;
         switch (virus){
             case 'Covid-19':
                 file_name = 'covid_daily_world.csv';
                 case_col='Confirmed';
                 death_col='Deaths';
                 country_col = 'Country/Region';
+                year='2020';
                 break;
             case 'Ebola':
                 file_name = 'ebola_final';
                 country_col = 'Country';
                 case_col='No. of confirmed cases';
                 death_col='No. of confirmed deaths';
+                year='2014';
                 break;
             case 'SARS':
                 country_col = 'Country';
                 file_name = 'SARS_data.csv';
                 case_col='Cases';
                 death_col='Deaths';
+                year='2003';
                 break;
         }
-        setupOptions(virus);
+        return [file_name, case_col, death_col, country_col,year];
+    }
+
+
+    // init line graph
+    // load covid data
+    d3.csv(data_loc+'covid_daily_world.csv', function(error, virusData) {
+        if (error) throw error;
+        var curCountry ='Total'
+        var virusAttr =virusSelector('Covid-19');
+        var file_name = virusAttr[0] ;
+        var case_col  = virusAttr[1] ;
+        var death_col  = virusAttr[2] ;
+        var country_col = virusAttr[3] ;
+        var curYear  = virusAttr[4] ;
+        setupOptions('Covid-19');
         // format data
             var just_one_country =[];
             virusData.forEach(function(row) {
-              if (row[country_col]==country){
+              if (row[country_col]==curCountry){
                 row.Date = d3.isoParse(row.Date);
                 row[case_col] = +row[case_col];
                 row[death_col] = +row[death_col];
@@ -252,27 +443,27 @@ function makeResponsive(){
             // draw 2 areas
             var confirmedArea = lineChartG.append("path")
               .attr("d", drawConfirm(just_one_country))
-              .classed("stockLine", true)
+              .classed("caseArea", true)
               .attr("opacity", ".5")
               .attr("fill", "CornflowerBlue")
               .attr("stroke", "grey")
               .attr("stroke-width", 3);
             var deathArea = lineChartG.append("path")
               .attr("d", drawDeath(just_one_country))
-              .classed("stockLine", true)
+              .classed("caseArea", true)
               .attr("opacity", ".3")
               .attr("fill", "Orange")
               .attr("stroke", "grey")
               .attr("stroke-width", 3);
           
-            lineChartG.append("g")
+            var rYAxis = lineChartG.append("g")
               .classed("axis", true)
               .attr("transform", "translate(" + chartW + ", 0)")
               .call(rightAxis);
 
           
          
-            lineChartG.append("g")
+            var xAxis = lineChartG.append("g")
               .classed("axis", true)
               .attr("transform", "translate(0, " + chartH + ")")
               .call(bottomAxis);
@@ -286,11 +477,11 @@ function makeResponsive(){
                     });
                     var yLeftScale = d3.scaleLinear()
                                 .range([chartH, 0])
-                                .domain([0, d3.max(stockData, data => data.Price)]);
+                                .domain([d3.min(stockData, data => data.Price)*0.8, d3.max(stockData, data => data.Price)*1.2]);
                       
                     var leftAxis = d3.axisLeft(yLeftScale);
                             
-                    lineChartG.append("g")
+                    var lYAxis = lineChartG.append("g")
                                 .classed("axis", true)
                                 .call(leftAxis);
                   
@@ -307,28 +498,62 @@ function makeResponsive(){
                       .classed("stockLine", true)
                       .attr("opacity", ".8")
                       .attr("fill", "none")
-                      .attr("stroke", colors[0])
+                      .attr("stroke", newColor())
                       .attr("stroke-width", 3);
+                      
+                    var curLegend = drawLegend('DJI');
                   
-                    // handle clicks
+                    // handle index clicks
+                      lineChartG.selectAll('.indexLabel')
+                      .on('click',function(){
+                          var value = d3.select(this).attr("value");
+                          if (value !== curIndex) {
+                                curIndex = value;
+                                  d3.selectAll('.indexLabel').classed("inactive", true);
+                                  d3.selectAll('.indexLabel').classed("active", false);
+                                  d3.select(this).classed("active", true)
+                                  d3.select(this).classed("inactive", false)
+                                  draw_stock(data_loc,curIndex,curYear,curLegend,lYAxis)
+                              }
+                              // update tooltips
+                            //   circles = updateToolTip(currentX,currentY, circles);
+                      });
+                    //   handle country change
+                      lineChartG.selectAll('.countryLabel')
+                      .on('click',function(){
+                          var value = d3.select(this).attr("value");
+                          if (value !== curCountry) {
+                                curCountry = value;
+                                  d3.selectAll('.countryLabel').classed("inactive", true);
+                                  d3.selectAll('.countryLabel').classed("active", false);
+                                  d3.select(this).classed("active", true)
+                                  d3.select(this).classed("inactive", false)
+                                  update_virus(data_loc,curVirus,curCountry,xAxis,rYAxis,false)
+                              }
+                              // update tooltips
+                            //   circles = updateToolTip(currentX,currentY, circles);
+                      });
+
+                      //   handle country change
                       lineChartG.selectAll('.virusLabel')
                       .on('click',function(){
                           var value = d3.select(this).attr("value");
                           if (value !== curVirus) {
                                 curVirus = value;
-                                //   xScale = setScale(censusData, currentX,'x');
-                                //   xAxis = renderAxes(xScale, xAxis,'x');
-                                //   circles = renderCircles(circles, xScale, currentX,'x');
+                                curIndex = 'DJI';
+                                curCountry = 'Total'
+                                curYear = virusSelector(curVirus)[4];
                                   d3.selectAll('.virusLabel').classed("inactive", true);
                                   d3.selectAll('.virusLabel').classed("active", false);
                                   d3.select(this).classed("active", true)
                                   d3.select(this).classed("inactive", false)
+                                  update_virus(data_loc,curVirus,'Total',xAxis,rYAxis,true)
+                                  draw_stock(data_loc,'DJI',curYear,curLegend,lYAxis)
+                                  setupOptions(curVirus);
 
-                              
                               }
                               // update tooltips
                             //   circles = updateToolTip(currentX,currentY, circles);
-                            
                       });
 
 
@@ -338,34 +563,16 @@ function makeResponsive(){
 
           });
 
-    function draw_virus(path,virus,country){
-        var file_name;
-        var case_col;
-        var death_col;
-        var country_col;
-        switch (virus){
-            case 'Covid-19':
-                file_name = 'covid_daily_world.csv';
-                case_col='Confirmed';
-                death_col='Deaths';
-                country_col = 'Country/Region';
-                break;
-            case 'Ebola':
-                file_name = 'ebola_final';
-                country_col = 'Country';
-                case_col='No. of confirmed cases';
-                death_col='No. of confirmed deaths';
-                break;
-            case 'SARS':
-                country_col = 'Country';
-                file_name = 'SARS_data.csv';
-                case_col='Cases';
-                death_col='Deaths';
-                break;
-        }
+    function update_virus(path,virus,country,xAxis,yAxis,newVirus){
+        var virusAttr =virusSelector(virus);
+        var file_name = virusAttr[0] ;
+        var case_col  = virusAttr[1] ;
+        var death_col  = virusAttr[2] ;
+        var country_col = virusAttr[3] ;
+        var year  = virusAttr[4] ;
         d3.csv(path+file_name, function(error, virusData) {
             if (error) throw error;
-                // Format the date and cast the miles value to a number
+
                 var just_one_country =[];
                 virusData.forEach(function(row) {
                   if (row[country_col]==country){
@@ -376,26 +583,15 @@ function makeResponsive(){
                   }
                   
                 });
+                d3.selectAll('.caseArea').remove()
+                var xTimeScale = setScale(just_one_country,'Date','x');
+                var yLinearScale = setScale(just_one_country,case_col,'right')
+              
                 
-                // Configure a time scale with a range between 0 and the chartWidth
-                // Set the domain for the xTimeScale function
-                // d3.extent returns the an array containing the min and max values for the property specified
-                var xTimeScale = d3.scaleTime()
-                  .range([0, chartW])
-                  .domain(d3.extent(just_one_country, data => data.Date));
-              
-                // Configure a linear scale with a range between the chartHeight and 0
-                // Set the domain for the xLinearScale function
-                var yLinearScale = d3.scaleLinear()
-                  .range([chartH, 0])
-                  .domain([0, d3.max(just_one_country, data => data[case_col])]);
-              
-                // Create two new functions passing the scales in as arguments
-                // These will be used to create the chart's axes
-                var bottomAxis = d3.axisBottom(xTimeScale);
-                var rightAxis = d3.axisRight(yLinearScale);
-              
-                // Configure a drawLine function which will use our scales to plot the line's points
+                var bottomAxis = renderAxes(xTimeScale,xAxis,'x');
+                var rightAxis = renderAxes(yLinearScale,yAxis,'right');
+                
+                              
                 var drawConfirm = d3
                   .area()
                   .x(data => xTimeScale(data.Date))
@@ -407,203 +603,28 @@ function makeResponsive(){
                   .y1(data => yLinearScale(data[death_col]))
                   .y0(yLinearScale(0));
               
-                // Append an SVG path and plot its points using the line function
                 lineChartG.append("path")
-                  // The drawLine function returns the instructions for creating the line for milesData
                   .attr("d", drawConfirm(just_one_country))
-                  .classed("stockLine", true)
+                  .classed("caseArea", true)
                   .attr("opacity", ".5")
                   .attr("fill", "CornflowerBlue")
                   .attr("stroke", "grey")
                   .attr("stroke-width", 3);
                 lineChartG.append("path")
-                  // The drawLine function returns the instructions for creating the line for milesData
                   .attr("d", drawDeath(just_one_country))
-                  .classed("stockLine", true)
+                  .classed("caseArea", true)
                   .attr("opacity", ".3")
                   .attr("fill", "Orange")
                   .attr("stroke", "grey")
                   .attr("stroke-width", 3);
-              
-                // Append an SVG group element to the SVG area, create the left axis inside of it
-                lineChartG.append("g")
-                  .classed("axis", true)
-                  .attr("transform", "translate(" + chartW + ", 0)")
-                  .call(rightAxis);
-
-              
-                // Append an SVG group element to the SVG area, create the bottom axis inside of it
-                // Translate the bottom axis to the bottom of the page
-                lineChartG.append("g")
-                  .classed("axis", true)
-                  .attr("transform", "translate(0, " + chartH + ")")
-                  .call(bottomAxis);
-
-
-
-                  scatterChartG.selectAll('.clickable')
-                  .on('click',function(){
-                      var value = d3.select(this).attr("value");
-                      if (value !== currentX | value !== currentY) {
-                          // if click on a x label
-                          // change currentX value and call update functions
-                          if (value === 'poverty' | value === 'age'){
-                              currentX = value;
-                              xScale = setScale(censusData, currentX,'x');
-                              xAxis = renderAxes(xScale, xAxis,'x');
-                              circles = renderCircles(circles, xScale, currentX,'x');
-                              abbrGroup = renderAbbr(abbrGroup, xScale, currentX,'x');
-                              if (currentX === "poverty") {
-                              povertyLabel
-                                  .classed("active", true)
-                                  .classed("inactive", false);
-                              ageLabel
-                                  .classed("active", false)
-                                  .classed("inactive", true);
-                              }
-                              else {
-                              povertyLabel
-                                  .classed("active", false)
-                                  .classed("inactive", true);
-                              ageLabel
-                                  .classed("active", true)
-                                  .classed("inactive", false);
-                              }
-                          }else{
-                              currentY = value;
-                              yScale = setScale(censusData, currentY,'y');
-                              yAxis = renderAxes(yScale, yAxis,'y');
-                              circles = renderCircles(circles, yScale, currentY,'y');
-                              abbrGroup = renderAbbr(abbrGroup, yScale, currentY,'y');
-                              if (currentY === "healthcare") {
-                              healthLabel
-                                  .classed("active", true)
-                                  .classed("inactive", false);
-                              smokeLabel
-                                  .classed("active", false)
-                                  .classed("inactive", true);
-                              }
-                              else {
-                              healthLabel
-                                  .classed("active", false)
-                                  .classed("inactive", true);
-                              smokeLabel
-                                  .classed("active", true)
-                                  .classed("inactive", false);
-                              }
-                          }
-                          // update tooltips
-                          circles = updateToolTip(currentX,currentY, circles);
-                        }
-                  });
+                  
               });
     };
    
 
 
-function draw_stock(path, index,year,color,yScale){
-    d3.csv(path+'/stock/'+index+' '+year+'.csv', function(error, stockData) {
-        if (error) throw error;
-            // Format the date and cast the miles value to a number
-            stockData.forEach(function(data) {
-              data.Date = d3.isoParse(data.Date);
-              data.Price = +data.Price;
-            });
-          
-            // Configure a time scale with a range between 0 and the chartWidth
-            // Set the domain for the xTimeScale function
-            // d3.extent returns the an array containing the min and max values for the property specified
-            var xTimeScale = d3.scaleTime()
-              .range([0, chartW])
-              .domain(d3.extent(stockData, data => data.Date));
-          
-            // Configure a linear scale with a range between the chartHeight and 0
-            // Set the domain for the xLinearScale function
-           
-          
-            // Create two new functions passing the scales in as arguments
-            // These will be used to create the chart's axes
-            // var bottomAxis = d3.axisBottom(xTimeScale);
-        
-            // Configure a drawLine function which will use our scales to plot the line's points
-            var drawLine = d3
-              .line()
-              .x(data => xTimeScale(data.Date))
-              .y(data => yScale(data.Price));
-          
-            // Append an SVG path and plot its points using the line function
-            lineChartG.append("path")
-              // The drawLine function returns the instructions for creating the line for milesData
-              .attr("d", drawLine(stockData))
-              .classed("stockLine", true)
-              .attr("opacity", ".8")
-              .attr("fill", "none")
-              .attr("stroke", color)
-              .attr("stroke-width", 3);
-          
-            // Append an SVG group element to the SVG area, create the left axis inside of it
-            
-          
-            // Append an SVG group element to the SVG area, create the bottom axis inside of it
-            // Translate the bottom axis to the bottom of the page
-            // lineChartG.append("g")
-            //   .classed("axis", true)
-            //   .attr("transform", "translate(0, " + chartH + ")")
-            //   .call(bottomAxis);
-          });
-};
-function drawLegend(index){
-    var i = 1;
-    var legend = lineChartG.append('g')
-    .attr("transform", `translate(${chartW-margin.left}, 0)`);
-    legend.append("rect")
-    .attr("x", 0)
-    .attr("y", 0-margin.top*0.8-6)
-    .attr("width", 20)
-    .attr("height", 20)
-    .attr("opacity", ".5")  
-    .style("fill", "CornflowerBlue")
-    legend  
-    .append("text")
-    .attr("x", 0 + 20*1.2)
-    .attr("y", 0-margin.top*0.8)
-    .style("fill", "CornflowerBlue")
-    .text('Confirmed Cases')
-    .attr("text-anchor", "left")
-    .style("alignment-baseline", "middle")
-    legend.append("rect")
-    .attr("x", 0)
-    .attr("y", i*25-margin.top*0.8-6)
-    .attr("width", 20)
-    .attr("height", 20)
-    .attr("opacity", ".3")  
-    .style("fill", "Orange")
-    legend  
-    .append("text")
-    .attr("x", 0 + 20*1.2)
-    .attr("y", i*25-margin.top*0.8)
-    .style("fill", "Orange")
-    .text('Confirmed Deaths')
-    .attr("text-anchor", "left")
-    .style("alignment-baseline", "middle")
-    i++;
-    legend.append('line')
-    .style("stroke", "red")
-    .style("stroke-width", 3)
-    .attr("x1", 0)
-    .attr("y1", i*25-margin.top*0.8)
-    .attr("x2", 20)
-    .attr("y2", i*25-margin.top*0.8)
-    legend  
-    .append("text")
-    .attr("x", 0+ 20*1.2 )
-    .attr("y", i*25-margin.top*0.8)
-    .style("fill", "red")
-    .text(index +' index')
-    .attr("text-anchor", "left")
-    .style("alignment-baseline", "middle")
-}
-drawLegend('DJI')
+
+
 
 
 // // Draw default lines
