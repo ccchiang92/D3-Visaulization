@@ -1,5 +1,5 @@
 // Call CSV data
-d3.csv("cleaned_data/in_progress/summary_table.csv")
+d3.csv("static/data/summary_table.csv")
 //.then(function (chartData) {
     //D={
         // StackOverflow used this to sum a selected column
