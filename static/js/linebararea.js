@@ -11,7 +11,7 @@ import {
 } from 'recharts';
 
 // Create default chart
-d3.csv("cleaned_data/in_progress/summary_table.csv")
+d3.csv("cleaned_data/in_progress/summary_table.csv");
 var data = [
     {date: Date, cases: total_cases, deaths: total_deaths, price: current_price}
   // {
@@ -60,6 +60,17 @@ export default class Example extends PureComponent {
     );
   }
 }
+
+// Assemble data array
+virus.forEach(function(data) {
+  data.date = parseInt(data.Date);
+  data.cases = parseInt(data.total_cases);
+  data.deaths = parseInt(data.total_deaths);
+  data.price = parseInt(data.current_price);
+  date.push(data.Date);
+  cases.push(data.total_cases);
+  deaths.push(data.total_deaths);
+  price.push(data.current_price);
 
 //Listener for button clicks.
 var button = d3.select(".dropdown-item");
