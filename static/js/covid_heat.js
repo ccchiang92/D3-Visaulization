@@ -87,7 +87,7 @@ function circleMap(map,control,date){
 // controlPanel.addTo(myMap);
 // heatMap(myMap,controlPanel,test_date);
 // circleMap(myMap,controlPanel,test_date);
-// a = d3.isoParse('202-01-03');
+// a = d3.isoParse('2020-01-03');
 // console.log(a);
 // console.log(type(a));
 // L.control.layers(baseMaps, overlayMaps, {

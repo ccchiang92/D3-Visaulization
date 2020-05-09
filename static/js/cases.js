@@ -1,4 +1,4 @@
-d3.csv("../../cleaned_data/In_progress/cases.csv").then(function(virus) {
+d3.csv("../../cleaned_data/In_progress/cases.csv",function(virus) {
 
     console.log(virus);
 
@@ -76,11 +76,9 @@ d3.csv("../../cleaned_data/In_progress/cases.csv").then(function(virus) {
         },
     };
 
-    Plotly.newPlot("plot", data, layout);
+    Plotly.newPlot("cases", data, layout);
   
     
   
-  }).catch(function(error) {
-    console.log(error);
   });
   

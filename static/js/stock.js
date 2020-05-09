@@ -271,7 +271,7 @@ function makeResponsive(){
         }else{
             var countryGroup = lineChartG.append('g')
             .classed('countryLabels', true)
-            .attr("transform", `translate(${chartW}, ${chartH/5})`);
+            .attr("transform", `translate(${chartW-margin.left/2}, ${chartH/5})`);
             
     
             var indexGroup = lineChartG.append('g')
