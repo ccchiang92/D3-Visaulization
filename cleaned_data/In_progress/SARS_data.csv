@@ -284,31 +284,6 @@ Date,Country,Cases,Deaths
 2003-04-05,United States of America,115,0
 2003-04-05,Viet Nam,59,4
 2003-04-05,Total,2416,89
-2003-04-06,Brazil,2,0
-2003-04-06,Canada,103,3
-2003-04-06,China,1432,14
-2003-04-06,Hong Kong,1268,36
-2003-04-06,Taiwan,27,4
-2003-04-06,France,5,0
-2003-04-06,Germany,6,0
-2003-04-06,Indonesia,1,0
-2003-04-06,Italy,3,0
-2003-04-06,Japan,1,0
-2003-04-06,Kuwait,1,0
-2003-04-06,Malaysia,5,1
-2003-04-06,Philippines,1,0
-2003-04-06,Ireland,1,0
-2003-04-06,Romania,1,0
-2003-04-06,Singapore,162,0
-2003-04-06,South Africa,1,0
-2003-04-06,Spain,1,0
-2003-04-06,Sweden,1,0
-2003-04-06,Switzerland,1,0
-2003-04-06,Thailand,8,0
-2003-04-06,United Kingdom,6,0
-2003-04-06,United States of America,193,0
-2003-04-06,Viet Nam,63,0
-2003-04-06,Total,3293,58
 2003-04-07,Australia,1,0
 2003-04-07,Brazil,1,0
 2003-04-07,Canada,90,9
@@ -943,39 +918,6 @@ Date,Country,Cases,Deaths
 2003-05-03,United States of America,54,0
 2003-05-03,Viet Nam,63,5
 2003-05-03,Total,6234,435
-2003-05-04,Australia,6,0
-2003-05-04,Brazil,2,0
-2003-05-04,Bulgaria,1,0
-2003-05-04,Canada,143,23
-2003-05-04,China,5124,267
-2003-05-04,Hong Kong,1698,227
-2003-05-04,China,1,0
-2003-05-04,Taiwan,238,30
-2003-05-04,Colombia,1,0
-2003-05-04,Finland,1,0
-2003-05-04,France,7,0
-2003-05-04,Germany,9,0
-2003-05-04,India,3,0
-2003-05-04,Indonesia,2,0
-2003-05-04,Italy,9,0
-2003-05-04,Kuwait,1,0
-2003-05-04,Malaysia,7,2
-2003-05-04,Mongolia,9,0
-2003-05-04,New Zealand,1,0
-2003-05-04,Philippines,10,2
-2003-05-04,Ireland,1,0
-2003-05-04,South Korea,3,0
-2003-05-04,Romania,1,0
-2003-05-04,Singapore,205,28
-2003-05-04,South Africa,1,1
-2003-05-04,Spain,1,0
-2003-05-04,Sweden,3,0
-2003-05-04,Switzerland,1,0
-2003-05-04,Thailand,8,2
-2003-05-04,United Kingdom,4,0
-2003-05-04,United States of America,64,0
-2003-05-04,Viet Nam,63,5
-2003-05-04,Total,7628,587
 2003-05-05,Australia,4,0
 2003-05-05,Brazil,2,0
 2003-05-05,Bulgaria,1,0
@@ -1758,39 +1700,6 @@ Date,Country,Cases,Deaths
 2003-05-31,United States of America,66,0
 2003-05-31,Viet Nam,63,5
 2003-05-31,Total,8360,764
-2003-06-01,Australia,5,0
-2003-06-01,Brazil,3,0
-2003-06-01,Canada,230,32
-2003-06-01,China,5329,343
-2003-06-01,Hong Kong,1754,290
-2003-06-01,China,1,0
-2003-06-01,Taiwan,687,81
-2003-06-01,Colombia,1,0
-2003-06-01,Finland,1,0
-2003-06-01,France,7,0
-2003-06-01,Germany,10,0
-2003-06-01,India,3,0
-2003-06-01,Indonesia,2,0
-2003-06-01,Italy,9,0
-2003-06-01,Kuwait,1,0
-2003-06-01,Malaysia,5,2
-2003-06-01,Mongolia,9,0
-2003-06-01,New Zealand,1,0
-2003-06-01,Philippines,12,2
-2003-06-01,Ireland,1,0
-2003-06-01,South Korea,3,0
-2003-06-01,Romania,1,0
-2003-06-01,Russia,1,0
-2003-06-01,Singapore,206,31
-2003-06-01,South Africa,1,1
-2003-06-01,Spain,1,0
-2003-06-01,Sweden,3,0
-2003-06-01,Switzerland,1,0
-2003-06-01,Thailand,9,2
-2003-06-01,United Kingdom,4,0
-2003-06-01,United States of America,71,0
-2003-06-01,Viet Nam,63,5
-2003-06-01,Total,8435,789
 2003-06-02,Australia,5,0
 2003-06-02,Brazil,2,0
 2003-06-02,Canada,198,30
@@ -1956,105 +1865,39 @@ Date,Country,Cases,Deaths
 2003-06-06,United States of America,68,0
 2003-06-06,Viet Nam,63,5
 2003-06-06,Total,8404,779
-2003-06-07,Australia,5,0
-2003-06-07,Brazil,3,0
-2003-06-07,Canada,247,32
-2003-06-07,China,5326,346
-2003-06-07,Hong Kong,1755,295
-2003-06-07,China,1,0
-2003-06-07,Taiwan,697,83
-2003-06-07,Colombia,1,0
-2003-06-07,Finland,1,0
-2003-06-07,France,7,0
-2003-06-07,Germany,10,0
-2003-06-07,India,3,0
-2003-06-07,Indonesia,2,0
-2003-06-07,Italy,9,0
-2003-06-07,Kuwait,1,0
-2003-06-07,Malaysia,5,2
-2003-06-07,Mongolia,9,0
-2003-06-07,New Zealand,1,0
-2003-06-07,Philippines,14,2
-2003-06-07,Ireland,1,0
-2003-06-07,South Korea,3,0
-2003-06-07,Romania,1,0
-2003-06-07,Russia,1,0
-2003-06-07,Singapore,206,31
-2003-06-07,South Africa,1,1
-2003-06-07,Spain,1,0
-2003-06-07,Sweden,3,0
-2003-06-07,Switzerland,1,0
-2003-06-07,Thailand,9,2
-2003-06-07,United Kingdom,4,0
-2003-06-07,United States of America,73,0
-2003-06-07,Viet Nam,63,5
-2003-06-07,Total,8464,799
-2003-06-08,Australia,5,0
-2003-06-08,Brazil,3,0
-2003-06-08,Canada,246,33
-2003-06-08,China,5326,347
-2003-06-08,Hong Kong,1755,295
-2003-06-08,China,1,0
-2003-06-08,Taiwan,697,83
-2003-06-08,Colombia,1,0
-2003-06-08,Finland,1,0
-2003-06-08,France,7,0
-2003-06-08,Germany,10,0
-2003-06-08,India,3,0
-2003-06-08,Indonesia,2,0
-2003-06-08,Italy,9,0
-2003-06-08,Kuwait,1,0
-2003-06-08,Malaysia,5,2
-2003-06-08,Mongolia,9,0
-2003-06-08,New Zealand,1,0
-2003-06-08,Philippines,14,2
-2003-06-08,Ireland,1,0
-2003-06-08,South Korea,3,0
-2003-06-08,Romania,1,0
-2003-06-08,Russia,1,0
-2003-06-08,Singapore,206,31
-2003-06-08,South Africa,1,1
-2003-06-08,Spain,1,0
-2003-06-08,Sweden,3,0
-2003-06-08,Switzerland,1,0
-2003-06-08,Thailand,9,2
-2003-06-08,United Kingdom,4,0
-2003-06-08,United States of America,75,0
-2003-06-08,Viet Nam,63,5
-2003-06-08,Total,8465,801
-2003-06-09,Australia,50,0
-2003-06-09,Brazil,20,0
-2003-06-09,Canada,2290,320
-2003-06-09,China,53280,3400
-2003-06-09,Hong Kong,17530,2880
-2003-06-09,China,10,0
-2003-06-09,Taiwan,6800,810
-2003-06-09,Colombia,10,0
-2003-06-09,Finland,10,0
-2003-06-09,France,70,0
-2003-06-09,Germany,100,0
-2003-06-09,India,30,0
-2003-06-09,Indonesia,20,0
-2003-06-09,Italy,90,0
-2003-06-09,Kuwait,10,0
-2003-06-09,Malaysia,50,20
-2003-06-09,Mongolia,90,0
-2003-06-09,New Zealand,10,0
-2003-06-09,Philippines,120,20
-2003-06-09,Ireland,10,0
-2003-06-09,South Korea,30,0
-2003-06-09,Romania,10,0
-2003-06-09,Russia,10,0
-2003-06-09,Singapore,2060,310
-2003-06-09,South Africa,10,10
-2003-06-09,Spain,10,0
-2003-06-09,Sweden,30,0
-2003-06-09,Switzerland,10,0
-2003-06-09,Thailand,90,20
-2003-06-09,United Kingdom,40,0
-2003-06-09,United States of America,680,0
-2003-06-09,Viet Nam,630,50
-2003-06-09,Total,84210,7840
+2003-06-09,Australia,5,0
+2003-06-09,Brazil,2,0
+2003-06-09,Canada,229,32
+2003-06-09,China,5328,340
+2003-06-09,Hong Kong,1753,288
+2003-06-09,China,1,0
+2003-06-09,Taiwan,680,81
+2003-06-09,Colombia,1,0
+2003-06-09,Finland,1,0
+2003-06-09,France,7,0
+2003-06-09,Germany,10,0
+2003-06-09,India,3,0
+2003-06-09,Indonesia,2,0
+2003-06-09,Italy,9,0
+2003-06-09,Kuwait,1,0
+2003-06-09,Malaysia,5,2
+2003-06-09,Mongolia,9,0
+2003-06-09,New Zealand,1,0
+2003-06-09,Philippines,12,2
+2003-06-09,Ireland,1,0
+2003-06-09,South Korea,3,0
+2003-06-09,Romania,1,0
+2003-06-09,Russia,1,0
+2003-06-09,Singapore,206,31
+2003-06-09,South Africa,1,1
+2003-06-09,Spain,1,0
+2003-06-09,Sweden,3,0
+2003-06-09,Switzerland,1,0
+2003-06-09,Thailand,9,2
+2003-06-09,United Kingdom,4,0
+2003-06-09,United States of America,68,0
+2003-06-09,Viet Nam,63,5
+2003-06-09,Total,8421,784
 2003-06-10,Australia,5,0
 2003-06-10,Brazil,3,0
 2003-06-10,Canada,229,32
