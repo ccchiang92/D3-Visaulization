@@ -3,7 +3,7 @@ var myMap = L.map("map", {
   zoom: 2
 });
 
-L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var worldmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.light",
@@ -36,12 +36,12 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
         }
       };
       var country = {},
-          data = results.map(row => row['Country/Region']);
+          countryData = results.map(row => row['Country/Region']);
 
-      for (var i = 0; i < data.length; i += 1) {
-        country[data[i]] = results[i].Confirmed;
+      for (var i = 0; i < countryData.length; i += 1) {
+        country[countryData[i]] = results[i].Confirmed;
     }
-        
+
       d3.json(geoData, function(mapData) {
               L.geoJson(mapData, {
                 style: function(feature){
@@ -70,7 +70,7 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
               });
             },
           });
-          layer.bindPopup("<h4> Name: " + feature.properties.NAME + "</h4> <hr> <h4> COVID19 Cases: " + country[feature.properties.NAME] + "</h4>");
+          layer.bindPopup("<h4> Country: " + feature.properties.NAME + "</h4> <hr> <h4> COVID-19 Cases: " + country[feature.properties.NAME] + "</h4>");
           }
         }).addTo(myMap);
 
@@ -90,44 +90,83 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
       })
     })
 
-    
 
-    // d3.csv("cleaned_data/In_progress/countries_coordinates.csv", function(error1, data1) {
-      //   d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(error2, data2) {
-      //           console.log(data1);
-       
-      //       var countryLat = data1.map(data => data.latitude);
-      //       var countryLon = data1.map(data => data.longitude);
-      //       var confirmedCovid = data2.map(data => data.Confirmed);
+    function chooseRadius(d) {
+      switch (true) {
+      case (d < 10):
+        return "7";
+        break;
+      case (d < 50):
+        return "10";
+        break;
+      case (d < 100):
+        return "12";
+        break;
+      case (d < 500):
+        return "15";
+        break;
+      case (d < 1000):
+        return "20";
+        break;
+      case (d < 10000):
+        return "25";
+        break;
+      default:
+        return "30";
+      }
+    };
+
+    var mersMarkers = [];
+    var mersCoordinates =[]
+    
+    d3.csv("cleaned_data/In_progress/countries_coordinates.csv", function(error1, data1) {
+        d3.csv("cleaned_data/In_progress/mers_final.csv", function(error2, data2) {
+          
+          var mersCoordinates={},
+              countryID = data1.map(row => row.country),
+              latitude = data1.map(row => row.latitude),
+              longitude = data1.map(row => row.longitude);
+  
+          for (var i = 0; i < countryID.length; i += 1) {
+            mersCoordinates[countryID[i]] = L.latLng(latitude[i],longitude[i]);
+          }
+  
+            var country = {},
+            countryData = data2.map(row => row.Country);
+  
+            for (var i = 0; i < countryData.length; i += 1) {
+              country[countryData[i]] = data2[i].Cases;
+          }
+
+          var countryMers = [...new Set(data2.map(data => data.Country))];   
+            // function markerSize(population) {
+            //   return population / 40;
+            // }
+           
+            for (var i = 0; i < countryMers.length; i++) {             
+              mersMarkers.push(
+                L.circle(mersCoordinates[countryMers[i]], {
+                  stroke: false,
+                  fillOpacity: 0.75,
+                  color: "white",
+                  fillColor: "white",
+                  radius: chooseRadius(country[countryMers[i]])
+                })
+              );
+            }
+            console.log(mersMarkers)
+        });
+      });
+
+    var mersLayer = L.layerGroup(mersMarkers);
+    var baseMaps = {
+      "Worldmap": worldmap
+    };
+    var overlayMaps = {
+        "MERS": mersLayer,
+      };
       
-      //       // function markerSize(population) {
-      //       //   return population / 40;
-      //       // }
-      //       var covidMarkers = [];
-      
-      //       for (var i = 0; i < data1.length; i++) {
-      //         var coordinates = "["+countryLat[i]+","+countryLon[i]+"]";
-      
-      //         covidMarkers.push(
-      //           L.circle(data1[i].coordinates, {
-      //             stroke: false,
-      //             fillOpacity: 0.75,
-      //             color: "white",
-      //             fillColor: "white",
-      //             radius: confirmedCovid[i]
-      //           })
-      //         );
-      //       }
-      
-      //   });
-      // });
-      
-      // var covidCases = L.layerGroup(covidMarkers);
-      // var overlayMaps = {
-      //   "Covid Cases": covidCases,
-      // };
-      
-      // L.control.layers(overlayMaps, {
-      //   collapsed: false
-      // }).addTo(myMap);
+    L.control.layers(baseMaps,overlayMaps, {
+      collapsed: false
+    }).addTo(myMap);
 
