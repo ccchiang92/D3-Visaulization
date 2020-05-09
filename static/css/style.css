@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: black;
+  background-color: white;
   text-align: center;
   color: #ff5050;
   font-size: 20px;
@@ -28,14 +28,20 @@ html {
 
 /* CSS from the Leaflet-Choropleth documentation */
 .legend {
-  padding: 6px 8px;
-  font: 12px Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  line-height: 30px;
   color: #555;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.8);
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.legend i {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin-right: 10px;
+  opacity: 0.8;
+  font-size: 25px;
 }
 
 .legend ul {
