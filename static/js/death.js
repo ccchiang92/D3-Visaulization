@@ -76,7 +76,7 @@ d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
         },
     };
 
-    Plotly.newPlot("plt", data, layout);
+    Plotly.newPlot("deaths", data, layout);
 
   
 

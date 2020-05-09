@@ -165,8 +165,12 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
     var overlayMaps = {
         "MERS": mersLayer,
       };
-      
-    L.control.layers(baseMaps,overlayMaps, {
+    var test_date = "04-29-2020"
+    
+    var controlPanel = L.control.layers(baseMaps,overlayMaps, {
       collapsed: false
-    }).addTo(myMap);
+    });
+    controlPanel.addTo(myMap);
+    heatMap(myMap,controlPanel,test_date);
+    circleMap(myMap,controlPanel,test_date);
 
