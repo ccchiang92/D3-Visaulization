@@ -67,7 +67,7 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
         legend.onAdd = function(myMap) {
           var div = L.DomUtil.create("div", "info legend"),
               grades = [0,1000, 10000, 100000, 1000000];
-    
+              div.innerHTML = '<p> Covid-19 Cases</p>'
           for (var i = 0; i < grades.length; i++) {
             div.innerHTML +=
             '<i style="background:' + chooseColor(grades[i]) + '"></i> '  + "<" + 
