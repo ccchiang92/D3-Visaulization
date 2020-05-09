@@ -16,8 +16,8 @@ function makeResponsive(){
         initSvg.remove();
     }
     // Setting SVG parameters
-    var svgHeight = window.innerHeight*0.8;
-    var svgWidth = window.innerWidth*0.8;
+    var svgHeight = window.innerHeight*0.6;
+    var svgWidth = window.innerWidth*0.6;
 
     // margins
     var margin = {
@@ -29,7 +29,7 @@ function makeResponsive(){
     var chartH = svgHeight - margin.top - margin.bottom;
     var chartW = svgWidth - margin.right - margin.left;
 
-    var chartSvg = d3.select('#chart')
+    var chartSvg = d3.select('#stock')
         .append('svg')
         .attr('height', svgHeight)
         .attr('width', svgWidth);
@@ -349,13 +349,12 @@ function makeResponsive(){
         
     
         // X label
-            d3.selectAll('x_label').remove();
+            d3.selectAll('.x_label').remove();
             var x_label = lineChartG.append("text")
             .classed('x_label',true)
             .attr("transform", `translate(${chartW / 2-margin.left*0.7}, ${chartH + margin.top*0.7})`)
             .attr("font-size", "16px")
             .attr('fill','olive')
-            .classed("yLabel", true)
             .text('Date in '+year);
     
     }
@@ -374,7 +373,7 @@ function makeResponsive(){
                 year='2020';
                 break;
             case 'Ebola':
-                file_name = 'ebola_final';
+                file_name = 'updated_ebola  .csv';
                 country_col = 'Country';
                 case_col='No. of confirmed cases';
                 death_col='No. of confirmed deaths';

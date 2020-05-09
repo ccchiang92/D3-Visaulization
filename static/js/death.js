@@ -1,4 +1,4 @@
-d3.csv("deaths.csv").then(function(virus) {
+d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
 
     console.log(virus);
 

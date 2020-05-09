@@ -48,30 +48,30 @@ function circleMap(map,control,date){
 
 
 // Define variables for our base layers
-var streetmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
-  attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
-  maxZoom: 18,
-  id: "mapbox.streets",
-  accessToken: API_KEY
-});
+// var streetmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+//   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+//   maxZoom: 18,
+//   id: "mapbox.streets",
+//   accessToken: API_KEY
+// });
 
 // // Create two separate layer groups: one for cities and one for states
 // var states = L.layerGroup(stateMarkers);
 // var cities = L.layerGroup(cityMarkers);
 
 // Create a baseMaps object
-var baseMaps = {
-  "Street Map": streetmap,
-};
+// var baseMaps = {
+//   "Street Map": streetmap,
+// };
 
-// Create an overlay object
-var overlayMaps = {};
+// // Create an overlay object
+// var overlayMaps = {};
 
-// Define a map object
-var myMap = L.map("map", {
-  center: [37.09, -95.71],
-  zoom: 5,
-});
+// // Define a map object
+// var myMap = L.map("map", {
+//   center: [37.09, -95.71],
+//   zoom: 5,
+// });
 
 // Pass our map layers into our layer control
 // Add the layer control to the map
@@ -79,14 +79,14 @@ var myMap = L.map("map", {
 
 // circleMap(myMap,test_date).addTo(myMap);
 
-streetmap.addTo(myMap);
-test_date = "04-29-2020"
-var controlPanel = L.control.layers(baseMaps, overlayMaps, {
-  collapsed: false
-});
-controlPanel.addTo(myMap);
-heatMap(myMap,controlPanel,test_date);
-circleMap(myMap,controlPanel,test_date);
+// streetmap.addTo(myMap);
+// test_date = "04-29-2020"
+// var controlPanel = L.control.layers(baseMaps, overlayMaps, {
+//   collapsed: false
+// });
+// controlPanel.addTo(myMap);
+// heatMap(myMap,controlPanel,test_date);
+// circleMap(myMap,controlPanel,test_date);
 // a = d3.isoParse('202-01-03');
 // console.log(a);
 // console.log(type(a));
