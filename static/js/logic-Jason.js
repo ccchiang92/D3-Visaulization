@@ -20,21 +20,3 @@ function populate(arr) {
 }
 // Populate table
 populate(data);
-
-//sars_file_path='SARS_data.csv'
-// mers_file_path='mers_final.csv'
-// ebola_file_path='ebola_final.csv'
-// covid_file_path='covid_daily_world.csv'
-
-//Listener for button clicks.
-var button = d3.select(".dropdown-item");
-
-button.on('click', function() {
-    var inputElement = d3.select(".dropdown-item");
-    var inputValue = inputElement.property('value');
-    function filterData(input){
-        return input.virus == inputValue
-    };
-    var filteredData = data.filter(filterData);
-    populate(filteredData);
-});

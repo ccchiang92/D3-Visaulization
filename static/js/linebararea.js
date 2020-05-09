@@ -1,3 +1,7 @@
+sars_file_path='oil_sars_gp.csv'
+mers_file_path='oil_mers_gp.csv'
+ebola_file_path='oil_ebola_gp.csv'
+covid_file_path='oil_covid_gp.csv'
 
 // LineBarAreaComposedChart from recharts.org
 import React, { PureComponent } from 'react';
@@ -6,7 +10,8 @@ import {
   Legend, Scatter,
 } from 'recharts';
 
-
+// Create default chart
+d3.csv("cleaned_data/in_progress/summary_table.csv")
 var data = [
     {date: Date, cases: total_cases, deaths: total_deaths, price: current_price}
   // {
@@ -55,3 +60,16 @@ export default class Example extends PureComponent {
     );
   }
 }
+
+//Listener for button clicks.
+var button = d3.select(".dropdown-item");
+
+button.on('click', function() {
+    var inputElement = d3.select(".dropdown-item");
+    var inputValue = inputElement.property('value');
+    function filterData(input){
+        return input.virus == inputValue
+    };
+    var filteredData = data.filter(filterData);
+    populate(filteredData);
+});
