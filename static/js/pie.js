@@ -25,16 +25,20 @@ function init() {
 
 
     var layout = {
-      title: "Countries with Most Cases",
+      title: "Case Spread over Countries",
       hovermode: false,
       autosize: false,
-        width: 500,
-        height: 500,
+        width: 450,
+        height: 350,
         margin: {
         l: 80,
         r: 50,
         pad: 10
         },
+        legend: {
+          x: -1
+        }
+        
     };
 
 
@@ -88,19 +92,22 @@ function updatePlotly() {
 
     var data = [trace1];
 
-
     var layout = {
-      title: "Countries with Most Cases",
+      title: "Case Spread over Countries",
       hovermode: false,
       autosize: false,
-      width: 500,
-      height: 500,
+      width: 450,
+      height: 350,
       margin: {
       l: 80,
       r: 50,
       pad: 10
       },
-    };
+      legend: {
+        x: -1
+      }
+    }
+    
 
 
     Plotly.newPlot("pie", data, layout);

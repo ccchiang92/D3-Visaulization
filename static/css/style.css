@@ -16,9 +16,9 @@ body {
   padding:0; 
 }
 
-.selector {
-  position: relative;
-  right: 50px;
+#selDataset {
+  position: static;
+  margin-left: -10px;
 }
 /* body,
 html {
