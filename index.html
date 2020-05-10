@@ -44,34 +44,45 @@
       
      
         <div class="row">
-            <div class="col-md-3">
-              <div id="table"></div>
+          <div class="col-md-4">
+              <div class='container'>
+                <div class="row">
+                  <div class="col">
+                    <div id="table"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <select id="selDataset">
+                      <option value="dataset1">COVID</option>
+                      <option value="dataset2">SARS</option>
+                      <option value="dataset3">Ebola</option>
+                    </select>
+                    <div id="pie"></div>
+                    <p>Pie chart of the spread of countries affected by COVID, Ebola, and SARS. Use the dropdown selector 
+                      to switch between viruses to see affected countries.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7">
               <div id="map"></div>
+              <p>The colors on the choropleth map are based on the numbers of recent COVID-19 cases. 
+                Add other viruses (Ebola, SARS) to the map to see the comparison of different viruses spread over 
+                the world. Select "Light", "Streets" or "Satellite" to have different representation of the background map.
+                Slider on the bottom will adjust the Covid-19 heat map based on date. </p>
             </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 case">
-            <div id="cases"></div>
-          </div>
-          <div class="col-md-4 death">
-            <div id="deaths"></div>
-          </div>
-          <div class="col-md-4 pie">
-            <select id="selDataset">
-              <option value="dataset1">COVID</option>
-              <option value="dataset2">SARS</option>
-              <option value="dataset3">Ebola</option>
-            </select>
-            <div id="pie"></div>
-          </div>
         </div>
         <div class="row">
             <div class="col-md-8">
               <div id="stock"></div>
+              <p>Chart plotting correlation between different viruses 
+                and different stock market indexes.
+                Switch between different viruses on top, indexes on the left, 
+                and most affected countries on the right.</p>
             </div>
-            <!-- <div class="col-md-4">
+            <div class="col-md-4">
               <div class='container'>
                 <div class="row">
                   <div class="col">
@@ -84,7 +95,7 @@
                   </div>
                 </div>
               </div>
-            </div> -->
+            </div>
         </div>
 
         <!-- <div class="row">
