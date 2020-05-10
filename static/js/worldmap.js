@@ -24,12 +24,18 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
           return "rgb(169,169,169)";
         }
       };
-      var country = {},
+      var countryCases = {},
           countryData = results.map(row => row['Country/Region']);
 
       for (var i = 0; i < countryData.length; i += 1) {
-        country[countryData[i]] = results[i].Confirmed;
+        countryCases[countryData[i]] = results[i].Confirmed;
     }
+
+      var countryDeath = {};
+
+      for (var i = 0; i < countryData.length; i += 1) {
+        countryDeath[countryData[i]] = results[i].Deaths;
+      }
 
       d3.json(geoData, function(mapData) {
               L.geoJson(mapData, {
@@ -39,7 +45,7 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
                       opacity: 1,
                       color: 'white',
                       fillOpacity: 0.5,
-                      fillColor: chooseColor(parseFloat(country[feature.properties.NAME]))
+                      fillColor: chooseColor(parseFloat(countryCases[feature.properties.NAME]))
               }},
                     
         onEachFeature: function(feature, layer) {
@@ -59,7 +65,8 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
               });
             },
           });
-          layer.bindPopup("<h4> Country: " + feature.properties.NAME + "</h4> <hr> <h4> COVID-19 Cases: " + country[feature.properties.NAME] + "</h4>");
+          layer.bindPopup("<h4>" + feature.properties.NAME + "</h4> <hr> <h4> COVID-19 Cases: " + 
+          countryCases[feature.properties.NAME] + "</h4> <hr> <h4> COVID-19 Deaths: " + countryDeath[feature.properties.NAME] + "</h4>");
           }
         }).addTo(myMap);
 
