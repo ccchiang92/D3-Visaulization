@@ -20,10 +20,15 @@ body {
   position: static;
   margin-left: -10px;
 }
-/* body,
-html {
-  height: 100%;
-} */
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
 
 .leaflet-popup-content {
   text-align: center;
