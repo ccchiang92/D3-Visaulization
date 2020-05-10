@@ -1,7 +1,7 @@
 // Chropoleth Map: COVID19
 var geoData = "static/data/ne_110m_admin_0_countries.json";
 
-d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) { 
+d3.csv("static/data/covid_daily_world.csv", function(results) { 
 
       function chooseColor(d) {
         switch (true) {
@@ -115,9 +115,9 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
     };
 
   // Read csv *******************    
-    d3.csv("cleaned_data/In_progress/countries_coordinates.csv", function(error1, data1) {
-        d3.csv("cleaned_data/In_progress/ebola_final.csv", function(error2, data2) {
-          d3.csv("cleaned_data/In_progress/SARS_data.csv", function(error2, data3) {
+    d3.csv("static/data/countries_coordinates.csv", function(error1, data1) {
+        d3.csv("static/data/ebola_final.csv", function(error2, data2) {
+          d3.csv("static/data/SARS_data.csv", function(error2, data3) {
 
           var coordinates={},
               countryID = data1.map(row => row.country),
