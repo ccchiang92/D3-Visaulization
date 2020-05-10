@@ -1,4 +1,4 @@
-d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
+d3.csv("../../cleaned_data/In_progress/deaths.csv", function(virus) {
 
     console.log(virus);
 
@@ -29,7 +29,8 @@ d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
         x: days,
         y: covid,
         name: "COVID",
-        type: "line"
+        type: "line",
+        yaxis: 'y2'
     };
 
     var trace3 = {
@@ -42,6 +43,7 @@ d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
     var data = [trace1, trace2, trace3];
 
     var layout = {
+        paper_bgcolor:"light gray",
         title: {
             text:'Number of Deaths over Time',
             font: {
@@ -51,12 +53,24 @@ d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
 
         yaxis: {
             title: {
-                text: 'Number of Deaths',
+                text: 'Ebola & SARS Deaths',
                 font: {
                     size: 13
                 }
             },
-            range: [0, 100000]
+            range: [0, 4000]
+        },
+        yaxis2: {
+            title: {
+                text: 'COVID Deaths',
+                font: {
+                    size: 13
+                },
+                color: 'rgb(255,165,0)'
+            },
+            overlaying: 'y',
+            range: [0, 300000],
+            side: 'right',
         },
         xaxis: {
             title: {
@@ -69,17 +83,16 @@ d3.csv("../../cleaned_data/In_progress/deaths.csv").then(function(virus) {
         autosize: false,
         width: 400,
         height: 300,
-        margin: {
-        l: 80,
-        r: 50,
-        pad: 10
-        },
+        // margin: {
+        // l: 80,
+        // r: 50,
+        // pad: 10
+        // },
+        legend : {"x" : 1.5, "y" : 1}
     };
 
     Plotly.newPlot("deaths", data, layout);
 
   
 
-}).catch(function(error) {
-  console.log(error);
 });
