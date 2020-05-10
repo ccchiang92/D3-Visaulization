@@ -16,6 +16,10 @@ body {
   padding:0; 
 }
 
+.selector {
+  position: relative;
+  right: 50px;
+}
 /* body,
 html {
   height: 100%;
