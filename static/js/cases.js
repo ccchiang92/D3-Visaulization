@@ -1,4 +1,4 @@
-d3.csv("../../cleaned_data/In_progress/cases.csv",function(virus) {
+d3.csv("../../cleaned_data/In_progress/cases.csv", function(virus) {
 
     console.log(virus);
 
@@ -9,9 +9,9 @@ d3.csv("../../cleaned_data/In_progress/cases.csv",function(virus) {
 
     virus.forEach(function(data) {
         data.days = parseInt(data.days);
-        data.ebola = parseInt(data.ebola_confirmed);
-        data.covid = parseInt(data.covid_confirmed);
-        data.sars = parseInt(data.sars_confirmed);
+        data.ebola = parseInt(data.ebola_cases);
+        data.covid = parseInt(data.covid_cases);
+        data.sars = parseInt(data.sars_cases);
         days.push(data.days);
         sars.push(data.sars);
         ebola.push(data.ebola);
@@ -29,7 +29,8 @@ d3.csv("../../cleaned_data/In_progress/cases.csv",function(virus) {
         x: days,
         y: covid,
         name: "COVID",
-        type: "line"
+        type: "line",
+        yaxis: 'y2'
     };
 
     var trace3 = {
@@ -51,12 +52,24 @@ d3.csv("../../cleaned_data/In_progress/cases.csv",function(virus) {
 
         yaxis: {
             title: {
-                text: 'Number of Cases',
+                text: 'Ebola & SARS Cases',
                 font: {
                     size: 13
                 }
             },
-            range: [0, 100000]
+            range: [0, 15000]
+        },
+
+        yaxis2: {
+            title: {
+                text: 'COVID Cases',
+                font: {
+                    size: 13
+                }
+            },
+            overlaying: 'y',
+            range: [0, 4000000],
+            side: 'right'
         },
         xaxis: {
             title: {
@@ -69,11 +82,12 @@ d3.csv("../../cleaned_data/In_progress/cases.csv",function(virus) {
         autosize: false,
         width: 400,
         height: 300,
-        margin: {
-        l: 80,
-        r: 50,
-        pad: 10
-        },
+        // margin: {
+        // l: 80,
+        // r: 50,
+        // pad: 10
+        // },
+        legend : {"x" : 1.3, "y" : 1}
     };
 
     Plotly.newPlot("cases", data, layout);
