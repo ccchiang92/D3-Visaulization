@@ -1,6 +1,4 @@
-d3.csv("../data/cases.csv", function(virus) {
-
-    console.log(virus);
+d3.csv("./static/data/cases.csv", function(virus) {
 
     var days = [],
         sars = [],
