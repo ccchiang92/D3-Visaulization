@@ -28,7 +28,7 @@ function init() {
       title: "Case Spread over Countries",
       hovermode: false,
       autosize: false,
-        width: 450,
+        width: 350,
         height: 350,
         margin: {
         l: 80,
@@ -36,7 +36,7 @@ function init() {
         pad: 10
         },
         legend: {
-          x: -1
+          x: -1.5
         }
         
     };
@@ -96,7 +96,7 @@ function updatePlotly() {
       title: "Case Spread over Countries",
       hovermode: false,
       autosize: false,
-      width: 450,
+      width: 350,
       height: 350,
       margin: {
       l: 80,
@@ -104,7 +104,7 @@ function updatePlotly() {
       pad: 10
       },
       legend: {
-        x: -1
+        x: -1.5
       }
     }
     
