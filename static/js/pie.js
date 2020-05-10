@@ -1,7 +1,7 @@
 
 // immediate pie chart
 function init() {
-  d3.csv('../../cleaned_data/In_progress/covid_pie.csv', function(virus) {
+  d3.csv('../data/covid_pie.csv', function(virus) {
 
     console.log(virus);
 
@@ -59,15 +59,15 @@ function updatePlotly() {
   var dataset = dropdownMenu.property("value");
 
   if (dataset === 'dataset2') {
-    var file = "../../cleaned_data/In_progress/sars_pie.csv";
+    var file = "../data/sars_pie.csv";
   } 
 
   if (dataset === 'dataset1') {
-    var file = "../../cleaned_data/In_progress/covid_pie.csv";
+    var file = "../data/covid_pie.csv";
   }
 
   if (dataset === 'dataset3') {
-    var file = "../../cleaned_data/In_progress/ebola_pie.csv";
+    var file = "../data/ebola_pie.csv";
   }
 
   d3.csv(file, function(virus) {
