@@ -184,9 +184,14 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
                   collapsed: false
               });
               controlPanel.addTo(myMap);
-              var test_date = '04-29-2020';
-              heatMap(myMap,controlPanel,test_date);
+              var test_date = '03-04-2020';
+              heatMap(myMap,controlPanel,test_date,true,null);
               // circleMap(myMap,controlPanel,test_date);
+
+
+              
+
+            
         });
       });
     });

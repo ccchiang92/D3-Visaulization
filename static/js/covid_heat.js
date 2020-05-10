@@ -1,6 +1,6 @@
 // take in a map and date string
 // return heat map layer
-function heatMap(map,control,date){
+function heatMap(map,control,date,init,slider){
   // adjust radius, blur, divide_points for affects
   divide_points = 30
   heat_path = "cleaned_data/In_progress/covid_weekly/covid_weekly"
@@ -11,14 +11,51 @@ function heatMap(map,control,date){
       for (var i =0;i<Math.round(row.Confirmed/divide_points);i++){
         heatArray.push([row.Latitude, row.Longitude]);
       };
-      // console.log([row.Latitude, row.Longitude]);
     });
     heat = L.heatLayer(heatArray, {
       radius: 35,
       blur: 15,
       minOpacity: 0.15
     }).addTo(myMap);
-    control.addOverlay(heat,'heat')
+    control.addOverlay(heat,'Covid19 Heat')
+
+    // slider
+    var start_date = "03-04-2020"
+    var last_date = "04-29-2020"
+
+
+    var timeLabels =[];
+    var dateRange = [d3.isoParse(start_date)];
+    var curDate = d3.isoParse(start_date);
+    var loadStringFormatter =d3.timeFormat('%m-%d-%Y')
+    var formatterShort = d3.timeFormat('%m-%d')
+    for (var i=0;i<9;i++){
+      timeLabels.push(formatterShort(curDate));
+      var nextDate = d3.timeDay.offset(curDate, 7);
+      dateRange.push(nextDate);
+      curDate = nextDate;
+    }
+    function mapChange({label,value,map,lastHeat,cPanel,slide}){
+      lastHeat.forEach((hLayer=>{
+        map.removeLayer(hLayer);
+        cPanel.removeLayer(hLayer);
+      }))
+      setTimeout(
+      heatMap(map,cPanel,loadStringFormatter(dateRange[value-1]),false,slide),500);
+    };
+    if (init){
+    var timeSlide = L.control.timelineSlider({
+          timelineItems: timeLabels,
+          position: 'bottomleft',
+          initializeChange: false,
+          extraChangeMapParams: {lastHeat: [heat],cPanel:control,slide:null}, 
+          changeMap: mapChange });
+        timeSlide.addTo(myMap);
+        timeSlide.options.extraChangeMapParams.slide=timeSlide;
+      }else{
+        slider.options.extraChangeMapParams.lastHeat.push(heat);
+
+      }
   });
 
 };
@@ -45,6 +82,8 @@ function circleMap(map,control,date){
   control.addOverlay(circleLayer,'circle');
   });
 };
+
+// Testing Code
 
 
 // Define variables for our base layers
