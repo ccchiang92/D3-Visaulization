@@ -1,15 +1,4 @@
-var myMap = L.map("map", {
-  center: [0.00, 0.00],
-  zoom: 2
-});
-
-var worldmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
-  attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
-  maxZoom: 18,
-  id: "mapbox.light",
-  accessToken: API_KEY
-}).addTo(myMap);
-
+// Chropoleth Map: COVID19
 var geoData = "static/data/ne_110m_admin_0_countries.json";
 
 d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) { 
@@ -35,12 +24,18 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
           return "rgb(169,169,169)";
         }
       };
-      var country = {},
+      var countryCases = {},
           countryData = results.map(row => row['Country/Region']);
 
       for (var i = 0; i < countryData.length; i += 1) {
-        country[countryData[i]] = results[i].Confirmed;
+        countryCases[countryData[i]] = results[i].Confirmed;
     }
+
+      var countryDeath = {};
+
+      for (var i = 0; i < countryData.length; i += 1) {
+        countryDeath[countryData[i]] = results[i].Deaths;
+      }
 
       d3.json(geoData, function(mapData) {
               L.geoJson(mapData, {
@@ -50,7 +45,7 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
                       opacity: 1,
                       color: 'white',
                       fillOpacity: 0.5,
-                      fillColor: chooseColor(parseFloat(country[feature.properties.NAME]))
+                      fillColor: chooseColor(parseFloat(countryCases[feature.properties.NAME]))
               }},
                     
         onEachFeature: function(feature, layer) {
@@ -58,7 +53,7 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
               mouseover: function(event) {
                   layer = event.target;
                   layer.setStyle({
-                  fillOpacity: 0.2,
+                  fillOpacity: 0,
                   weight: 1
               });
             },
@@ -70,7 +65,8 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
               });
             },
           });
-          layer.bindPopup("<h4> Country: " + feature.properties.NAME + "</h4> <hr> <h4> COVID-19 Cases: " + country[feature.properties.NAME] + "</h4>");
+          layer.bindPopup("<h4>" + feature.properties.NAME + "</h4> <hr> <h4> COVID-19 Cases: " + 
+          countryCases[feature.properties.NAME] + "</h4> <hr> <h4> COVID-19 Deaths: " + countryDeath[feature.properties.NAME] + "</h4>");
           }
         }).addTo(myMap);
 
@@ -78,7 +74,7 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
         legend.onAdd = function(myMap) {
           var div = L.DomUtil.create("div", "info legend"),
               grades = [0,1000, 10000, 100000, 1000000];
-    
+              div.innerHTML = '<p> Covid-19 Cases</p>'
           for (var i = 0; i < grades.length; i++) {
             div.innerHTML +=
             '<i style="background:' + chooseColor(grades[i]) + '"></i> '  + "<" + 
@@ -90,87 +86,153 @@ d3.csv("cleaned_data/In_progress/covid_daily_world.csv", function(results) {
       })
     })
 
+//***************************
+
 
     function chooseRadius(d) {
       switch (true) {
       case (d < 10):
-        return "7";
+        return 70;
         break;
       case (d < 50):
-        return "10";
+        return 100;
         break;
       case (d < 100):
-        return "12";
+        return 120;
         break;
       case (d < 500):
-        return "15";
+        return 150;
         break;
       case (d < 1000):
-        return "20";
+        return 200;
         break;
       case (d < 10000):
-        return "25";
+        return 250;
         break;
       default:
-        return "30";
+        return 300;
       }
     };
 
-    var mersMarkers = [];
-    var mersCoordinates =[]
-    
+  // Read csv *******************    
     d3.csv("cleaned_data/In_progress/countries_coordinates.csv", function(error1, data1) {
-        d3.csv("cleaned_data/In_progress/mers_final.csv", function(error2, data2) {
-          
-          var mersCoordinates={},
+        d3.csv("cleaned_data/In_progress/ebola_final.csv", function(error2, data2) {
+          d3.csv("cleaned_data/In_progress/SARS_data.csv", function(error2, data3) {
+
+          var coordinates={},
               countryID = data1.map(row => row.country),
               latitude = data1.map(row => row.latitude),
               longitude = data1.map(row => row.longitude);
-  
+
           for (var i = 0; i < countryID.length; i += 1) {
-            mersCoordinates[countryID[i]] = L.latLng(latitude[i],longitude[i]);
-          }
-  
-            var country = {},
-            countryData = data2.map(row => row.Country);
-  
-            for (var i = 0; i < countryData.length; i += 1) {
-              country[countryData[i]] = data2[i].Cases;
+            coordinates[countryID[i]] = [latitude[i],longitude[i]];
           }
 
-          var countryMers = [...new Set(data2.map(data => data.Country))];   
-            // function markerSize(population) {
-            //   return population / 40;
-            // }
+  // Ebola Layer ****************
+            var ebolaMarkers = [],
+                countryEbola = {},
+                countryEbolaId = data2.map(row => row.code);
+  
+            for (var i = 0; i < countryEbolaId.length; i += 1) {
+              countryEbola[countryEbolaId[i]] = data2[i]["No. of confirmed cases"];
+          }
+
+          var countryEbolaCode = [...new Set(data2.map(data => data.code))];   
            
-            for (var i = 0; i < countryMers.length; i++) {             
-              mersMarkers.push(
-                L.circle(mersCoordinates[countryMers[i]], {
+            for (var i = 0; i < countryEbolaCode.length; i++) {             
+              ebolaMarkers.push(
+                L.circle(coordinates[countryEbolaCode[i]], {
                   stroke: false,
-                  fillOpacity: 0.75,
-                  color: "white",
-                  fillColor: "white",
-                  radius: chooseRadius(country[countryMers[i]])
-                })
+                  fillOpacity: 0.5,
+                  color: "black",
+                  fillColor: "blue",
+                  radius: chooseRadius(countryEbola[countryEbolaCode[i]])*2000
+                }).bindPopup("<h4>" + data2[i].Country + "</h4> <hr> <h4>Ebola Cases: " + data2[i]["No. of confirmed cases"] + "</h4>")
               );
             }
-            console.log(mersMarkers)
+            var ebolaLayer = L.layerGroup(ebolaMarkers);
+
+    // SARS Layer ****************
+            var sarsMarkers = [],
+                countryName = data1.map(row => row.name),
+                countrySars = {},
+                countrySarsId = data3.map(row => row.Country);
+
+            for (var i = 0; i < countryName.length; i += 1) {
+              coordinates[countryName[i]] = [latitude[i],longitude[i]];
+            }
+
+            for (var i = 0; i < countrySarsId.length; i += 1) {
+              countrySars[countrySarsId[i]] = data3[i].Cases;
+          }
+
+          var countrySarsCode = [...new Set(data3.map(data => data.Country))];   
+          
+            for (var i = 0; i < countrySarsCode.length; i++) {             
+              sarsMarkers.push(
+                L.circle(coordinates[countrySarsCode[i]], {
+                  stroke: false,
+                  fillOpacity: 0.5,
+                  color: "black",
+                  fillColor: "red",
+                  radius: chooseRadius(countrySars[countrySarsCode[i]])*2000
+                }).bindPopup("<h4>" + data3[i].Country + "</h4> <hr> <h4>SARS Cases: " + data3[i].Cases + "</h4>")
+              );
+            }
+            var sarsLayer = L.layerGroup(sarsMarkers);
+
+    // Maps and Combine Layers ******************
+            var overlayMaps = {
+                "Ebola": ebolaLayer,
+                "SARS": sarsLayer
+              };
+            
+              var controlPanel = L.control.layers(baseMaps, overlayMaps, {
+                  collapsed: false
+              });
+              controlPanel.addTo(myMap);
+              var test_date = '03-04-2020';
+              heatMap(myMap,controlPanel,test_date,true,null);
+              // circleMap(myMap,controlPanel,test_date);
+
+
+              
+
+            
         });
       });
-
-    var mersLayer = L.layerGroup(mersMarkers);
-    var baseMaps = {
-      "Worldmap": worldmap
-    };
-    var overlayMaps = {
-        "MERS": mersLayer,
-      };
-    var test_date = "04-29-2020"
-    
-    var controlPanel = L.control.layers(baseMaps,overlayMaps, {
-      collapsed: false
     });
-    controlPanel.addTo(myMap);
-    heatMap(myMap,controlPanel,test_date);
-    circleMap(myMap,controlPanel,test_date);
+  
+  // Leaflet******************************
+
+    var light = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+      attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+      maxZoom: 18,
+      id: "mapbox.light",
+      accessToken: API_KEY
+    })
+    var streets = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+      attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+      maxZoom: 18,
+      id: "mapbox.streets",
+      accessToken: API_KEY
+    })
+    var satellite = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+      attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
+      maxZoom: 18,
+      id: "mapbox.satellite",
+      accessToken: API_KEY
+    })
+    
+    var myMap = L.map("map", {
+      center: [0.00, 0.00],
+      zoom: 2,
+      layers: [light]
+    });
+
+    var baseMaps = {
+      "Light": light,
+      "Streets": streets,
+      "Satellite": satellite,
+    };
 

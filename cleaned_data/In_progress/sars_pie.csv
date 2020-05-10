@@ -1,11 +1,6 @@
-,Country,Confirmed,Deaths
-0,China,413597,24111
-1,Hong Kong,156783,20659
-2,Taiwan,38839,4560
-3,Singapore,19267,2452
-4,Canada,17279,2426
-5,United States of America,8294,0
-6,Viet Nam,6829,507
-7,Philippines,861,153
-8,Germany,860,0
-9,Others,6120,431
+,Country,cases
+0,China,343031
+1,Hong Kong,132776
+2,Taiwan,30373
+3,Singapore,16428
+4,Others,34047
