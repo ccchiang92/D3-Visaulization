@@ -19,7 +19,7 @@ function heatMap(map,control,date,init,slider){
     }).addTo(myMap);
     control.addOverlay(heat,'Covid19 Heat')
 
-    // slider
+    // slider set up and functions
     var start_date = "03-04-2020"
     var last_date = "04-29-2020"
 
@@ -71,15 +71,15 @@ function circleMap(map,control,date){
         L.circle([row.Latitude, row.Longitude], {
           stroke: false,
           fillOpacity: 0.50,
-          color: "maroon",
-          fillColor: "maroon",
+          color: "OldLace",
+          fillColor: "MediumSeaGreen",
           radius: row.Confirmed*3 
         })
       );
     })
   circleLayer = L.layerGroup(circleArray)
   circleLayer.addTo(map);
-  control.addOverlay(circleLayer,'circle');
+  control.addOverlay(circleLayer,'Covid Circle');
   });
 };
 
