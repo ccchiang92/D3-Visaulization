@@ -1,22 +1,19 @@
 // Call CSV data
-d3.csv("static/data/summary_table.csv")
-//.then(function (chartData) {
-    //D={
-        // StackOverflow used this to sum a selected column
-       // slice1:d3.sum(data, function(d){return parseFloat(d.cases);}),
-    //};
+d3.csv("static/data/summary_table.csv", function(chartData){
 
 // Create summary table
-function populate(arr) {
-    var table = d3.select("tbody");
-    table.attr("id", "table");
+    var table = d3.select("#table");
     table.html("");
-    arr.forEach(function (obj) {
+    head = table.append("tr");
+    head.append("th").text("Virus");
+    head.append("th").text("Cases");
+    head.append('th').text("Deaths");
+    head.append("th").text("Death Rate")
+    chartData.forEach(function (obj) {
         row = table.append("tr");
         row.append("td").text(obj.virus);
         row.append("td").text(obj.cases);
         row.append("td").text(obj.deaths);
-    })
-}
-// Populate table
-populate(data);
+        row.append("td").text((obj.deaths / obj.cases).toFixed(2));
+    });
+});
