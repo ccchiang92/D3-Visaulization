@@ -44,6 +44,11 @@ function xScale(oil_prices, ) {
 d3.csv("static/data/oil_prices.csv").then(function (oil_prices, err) {
     if (err) throw err;
 
+    // // group the data: I want to draw one line per group
+    // var sumstat = d3.nest() // nest function allows to group the calculation per level of a factor
+    //     .key(function (d) { return d.name; })
+    //     .entries(data);
+
     // parse data
     oil_prices.forEach(function (data) {
         data.Date = +data.Date;
@@ -89,8 +94,37 @@ d3.csv("static/data/oil_prices.csv").then(function (oil_prices, err) {
     //     populate(filteredData);
     // });
 
+    // Draw the line
+    //     svg.selectAll(".line")
+    //         .data(sumstat)
+    //         .enter()
+    //         .append("path")
+    //         .attr("fill", "none")
+    //         .attr("stroke", function (d) { return color(d.key) })
+    //         .attr("stroke-width", 1.5)
+    //         .attr("d", function (d) {
+    //             return d3.line()
+    //                 .x(function (d) { return x(d.year); })
+    //                 .y(function (d) { return y(+d.n); })
+    //                 (d.values)
+    //         })
+
+    // })
 
 
+    var data = [trace1, trace2];
+
+    var layout = {
+        title: 'Oil Prices During Viral Outbreaks',
+        yaxis: { title: 'Number of cases and deaths' },
+        yaxis2: {
+            title: 'Weekly oil price',
+            titlefont: { color: 'rgb(148, 103, 189)' },
+            tickfont: { color: 'rgb(148, 103, 189)' },
+            overlaying: 'y',
+            side: 'right'
+        }
+    };
 
 
     // function used for updating xAxis var upon click on axis label
