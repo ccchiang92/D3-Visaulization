@@ -30,14 +30,15 @@ function init() {
       autosize: false,
         width: 350,
         height: 350,
-        margin: {
-        l: 80,
-        r: 50,
-        pad: 10
-        },
+        // margin: {
+        // l: 80,
+        // r: 50,
+        // pad: 10
+        // },
         legend: {
-          x: -1.5
+          x: -2.5
         }
+      
         
     };
 
@@ -98,13 +99,13 @@ function updatePlotly() {
       autosize: false,
       width: 350,
       height: 350,
-      margin: {
-      l: 80,
-      r: 50,
-      pad: 10
-      },
+      // margin: {
+      // l: 80,
+      // r: 50,
+      // pad: 10
+      // },
       legend: {
-        x: -1.5
+        x: -2.5
       }
     }
     
