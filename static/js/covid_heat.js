@@ -3,7 +3,7 @@
 function heatMap(map,control,date,init,slider){
   // adjust radius, blur, divide_points for affects
   divide_points = 30
-  heat_path = "cleaned_data/In_progress/covid_weekly/covid_weekly"
+  heat_path = "static/data/covid_weekly/covid_weekly"
   var heat;
   var heatArray = [];
   d3.csv(heat_path+date+'.csv', function(data) {
@@ -64,7 +64,7 @@ function heatMap(map,control,date,init,slider){
 
 function circleMap(map,control,date){
   // adjust radius, blur, divide_points for affects
-  data_path = "cleaned_data/In_progress/covid_weekly/covid_weekly"
+  data_path = "static/data/covid_weekly/covid_weekly"
   var circleArray =[];
   d3.csv(data_path+date+'.csv', function(data) {
     data.forEach((row)=>{

@@ -58,7 +58,7 @@ function makeResponsive(){
         .attr("value", 'SARS')
         .classed("virusLabel inactive clickable", true)
         .text("SARS");
-    var data_loc = '../cleaned_data/In_progress/'
+    var data_loc = './static/data/'
     var curVirus ='Covid-19';
     var curCountry ='Total';
     var curIndex = 'DJI';

@@ -1,9 +1,0 @@
-SARS_data.csv
-Daily data from WHO
-date, country, cases, deaths
-each day includes a total row
-
-covid_daily_world.csv
-Daily data from Johns Hopkins
-date, country, cases, deaths
-each day includes a total row
