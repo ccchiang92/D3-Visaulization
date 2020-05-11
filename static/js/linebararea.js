@@ -116,67 +116,86 @@ d3.csv("static/data/oil_prices.csv").then(function (oil_prices, err) {
     // }
 
     // function used for updating circles group with new tooltip
-    // function updateToolTip(chosenXAxis, circlesGroup) {
+    function updateToolTip(chosenYAxis, linesGroup) {
 
-    //     var label;
+        var label;
 
-    //     if (chosenXAxis === "hair_length") {
-    //         label = "Hair Length:";
-    //     }
-    //     else {
-    //         label = "# of Albums:";
-    //     }
+        if (chosenYAxis === "COVID-19") {
+            label = "COVID-19";
+        }
+        else if (chosenYAxis === "SARS") {
+            label = "SARS";
+        }
+        else if (chosenYAxis === "MERS") {
+            label = "MERS";
+        }
+        else {
+            label = "Ebola";
+        }
 
-    //     var toolTip = d3.tip()
-    //         .attr("class", "tooltip")
-    //         .offset([80, -60])
-    //         .html(function (d) {
-    //             return (`${d.rockband}<br>${label} ${d[chosenXAxis]}`);
-    //         });
+        var toolTip = d3.tip()
+            .attr("class", "tooltip")
+            .offset([80, -60])
+            .html(function (d) {
+                return (`${d.Date}<br>${label} ${d[Brent_Spot_Price]}`);
+            });
 
-    //     circlesGroup.call(toolTip);
+        linesGroup.call(toolTip);
 
-    //     circlesGroup.on("mouseover", function (data) {
-    //         toolTip.show(data);
-    //     })
-    //         // onmouseout event
-    //         .on("mouseout", function (data, index) {
-    //             toolTip.hide(data);
-    //         });
+        linesGroup.on("mouseover", function (data) {
+            toolTip.show(data);
+        })
+            // onmouseout event
+            .on("mouseout", function (data, index) {
+                toolTip.hide(data);
+            });
 
-    //     return circlesGroup;
-    // }
+        return linesGroup;
+    }
 
 
 
     // append initial circles
-    var circlesGroup = chartGroup.selectAll("circle")
-        .data(hairData)
-        .enter()
-        .append("circle")
-        .attr("cx", d => xLinearScale(d[chosenXAxis]))
-        .attr("cy", d => yLinearScale(d.num_hits))
-        .attr("r", 20)
-        .attr("fill", "pink")
-        .attr("opacity", ".5");
+    // var circlesGroup = chartGroup.selectAll("circle")
+    //     .data(hairData)
+    //     .enter()
+    //     .append("circle")
+    //     .attr("cx", d => xLinearScale(d[chosenXAxis]))
+    //     .attr("cy", d => yLinearScale(d.num_hits))
+    //     .attr("r", 20)
+    //     .attr("fill", "pink")
+    //     .attr("opacity", ".5");
 
-    // Create group for two x-axis labels
+    // Create group for four x-axis labels
     var labelsGroup = chartGroup.append("g")
         .attr("transform", `translate(${width / 2}, ${height + 20})`);
 
-    var hairLengthLabel = labelsGroup.append("text")
+    var covidLabel = labelsGroup.append("text")
         .attr("x", 0)
         .attr("y", 20)
-        .attr("value", "hair_length") // value to grab for event listener
+        .attr("value", "COVID-19") // value to grab for event listener
         .classed("active", true)
-        .text("Hair Metal Band Hair Length (inches)");
+        .text("COVID-19");
 
-    var albumsLabel = labelsGroup.append("text")
+    var sarsLabel = labelsGroup.append("text")
         .attr("x", 0)
         .attr("y", 40)
-        .attr("value", "num_albums") // value to grab for event listener
+        .attr("value", "SARS") // value to grab for event listener
         .classed("inactive", true)
-        .text("# of Albums Released");
+        .text("SARS");
+
+    var mersLabel = labelsGroup.append("text")
+        .attr("x", 0)
+        .attr("y", 40)
+        .attr("value", "MERS") // value to grab for event listener
+        .classed("inactive", true)
+        .text("MERS");
+    var ebolaLabel = labelsGroup.append("text")
+        .attr("x", 0)
+        .attr("y", 40)
+        .attr("value", "Ebola") // value to grab for event listener
+        .classed("inactive", true)
+        .text("Ebola");
 
     // append y axis
     chartGroup.append("text")
@@ -209,11 +228,8 @@ d3.csv("static/data/oil_prices.csv").then(function (oil_prices, err) {
                 // updates x axis with transition
                 xyAxis = renderAxes(yLinearScale, yAxis);
 
-                // // updates circles with new x values
-                // circlesGroup = renderCircles(circlesGroup, xLinearScale, chosenXAxis);
-
-                // // updates tooltips with new info
-                // circlesGroup = updateToolTip(chosenXAxis, circlesGroup);
+                // // updates lines with new x values
+                // linesGroup = renderCircles(circlesGroup, xLinearScale, chosenXAxis);
 
                 // changes classes to change bold text
                 if (chosenYAxis === "COVID-19") {
