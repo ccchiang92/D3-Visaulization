@@ -25,17 +25,19 @@ function heatMap(map,control,date,init,slider){
 
 
     var timeLabels =[];
-    var dateRange = [d3.isoParse(start_date)];
+    var dateRange = [];
     var curDate = d3.isoParse(start_date);
     var loadStringFormatter =d3.timeFormat('%m-%d-%Y')
     var formatterShort = d3.timeFormat('%m-%d')
     for (var i=0;i<9;i++){
       timeLabels.push(formatterShort(curDate));
+      dateRange.push(curDate);
       var nextDate = d3.timeDay.offset(curDate, 7);
-      dateRange.push(nextDate);
+      // dateRange.push(nextDate);
       curDate = nextDate;
     }
     timeLabels=timeLabels.reverse();
+    dateRange=dateRange.reverse()
     function mapChange({label,value,map,lastHeat,cPanel,slide}){
       lastHeat.forEach((hLayer=>{
         map.removeLayer(hLayer);
