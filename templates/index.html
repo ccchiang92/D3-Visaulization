@@ -104,7 +104,15 @@
               </div>
             </div>
         </div>
-
+        <div class="row">
+          <div class="col-md-2">
+            <select onchange="oilChange(this.value)" id="oil-dropdown"></select>
+          </div>
+          <div class="col-md-10">
+            <div id="oil-chart"></div>
+            <p>Chart plotting the weekly oil price (Brent). Switch between viruses on the dropdown menu.</p>
+          </div>
+        </div>
         
       
       <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -125,6 +133,7 @@
       <script type="text/javascript" src="static/js/pie.js"></script>
 
       <script type="text/javascript" src="static/js/logic-Jason.js"></script>
+      <script type="text/javascript" src="static/js/oilChart.js"></script>
       <!-- Heat Map Script -->
       <!-- stock market graphs -->
       <script type="text/javascript" src="static/js/stock.js"></script>
