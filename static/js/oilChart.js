@@ -50,9 +50,9 @@ function oilChart(virus) {
 
     var layout = {
         title: 'Oil Prices During Viral Outbreaks',
-        yaxis: { title: 'Number of cases and deaths' },
+        yaxis: { title: 'Weekly Oil Price, US$ per barrel' },
         yaxis2: {
-            title: 'Weekly oil price, US$ per barrel',
+            title: 'Number of Cases',
             titlefont: { color: 'rgb(148, 103, 189)' },
             tickfont: { color: 'rgb(148, 103, 189)' },
             overlaying: 'y',
