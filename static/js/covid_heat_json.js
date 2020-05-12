@@ -88,7 +88,7 @@ function circleMap(map,control,date){
             color: "OldLace",
             fillColor: "MediumSeaGreen",
             radius: row.Confirmed*3 
-          })
+          }).bindPopup("<h4>" + row['Country/Region'] + "</h4> <hr> <h4>Covid Cases: " + row.Confirmed + "</h4>")
         );}
     })
   circleLayer = L.layerGroup(circleArray)
