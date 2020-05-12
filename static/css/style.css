@@ -3,14 +3,7 @@ body {
   margin: 0;
   color: #ff5050;
   font-size: 20px;
-  background-image: url('https://wallpapercave.com/wp/wp5979996.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100% 100%;
-  background-color: rgba(255,255,255,0.8);
-  background-blend-mode: lighten;
 }
-
 
 .tblbox #table {
   margin-left: 10px;
@@ -42,41 +35,47 @@ img {
 }
 
 .casedeath {
-  margin-top: 20px;
+  margin-top: -20px;
   margin-bottom: 60px;
   margin-left: -35px;
   margin-right: 20px;
   background-color: #EDEDED;
 }
 
-.casedeath #deaths {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
+.box #deaths {
+  margin: 10px 5px 10px 5px;
 }
 
-.casedeath #cases {
-  margin-bottom: 20px;
-  margin-left: 15px;
+.box #cases {
+  margin: 10px 5px 10px 5px;
 }
 
 .box {
-  margin-right: -62px;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 30px;
   margin-left: 10px;
-  padding: 10px 18px 15px;
+  min-width: 360px;
+  width: 360px;
+  max-width: 360px;
+  padding: 10px 0px 15px 0px;
   background-color: #EDEDED;
 }
 
-.box #pie {
-  margin-left: -15px;
-  margin-right: 15px;
-  border-radius: 10px;
+#pie {
+  position: relative;
+  margin: 10px 5px 10px 5px;
 }
 
 .box p {
   position: relative;
   margin-top: 10px;
   margin-bottom: 5px;
+  min-width: 350px;
+  width: 350px;
+  max-width: 350px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .box2 {
@@ -92,7 +91,7 @@ img {
 
 .box #selDataset {
   margin-bottom: 5px;
-  margin-left: -9px;
+  margin-left: 9px;
 }
 
 table, th, td {

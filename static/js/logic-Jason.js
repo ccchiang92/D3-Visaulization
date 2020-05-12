@@ -13,10 +13,17 @@ d3.csv("static/data/summary_table.csv", function(chartData){
     var i =0;
     chartData.forEach(function (obj) {
         row = table.append("tr");
+<<<<<<< HEAD
         row.append("td").style("color",colors[i]).text(obj.virus);
         row.append("td").style("color",colors[i]).text(obj.cases);
         row.append("td").style("color",colors[i]).text(obj.deaths);
         row.append("td").style("color",colors[i]).text((obj.deaths / obj.cases*100).toFixed(2)+'%');
         i++;
+=======
+        row.append("td").text(obj.virus);
+        row.append("td").text(obj.cases);
+        row.append("td").text(obj.deaths);
+        row.append("td").text(`${(obj.deaths / obj.cases).toFixed(2)}%`);
+>>>>>>> c38ba38e1b532fefb1389459e5bdc124a5a39ce5
     });
 });
