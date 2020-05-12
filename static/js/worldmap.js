@@ -183,7 +183,7 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
                   color: "black",
                   fillColor: "red",
                   radius: chooseRadius(countrySars[countrySarsCode[i]])*2000
-                }).bindPopup("<h4>" + data3[i].Country + "</h4> <hr> <h4>SARS Cases: " + data3[i].Cases + "</h4>")
+                }).bindPopup("<h4>" + countrySarsCode[i] + "</h4> <hr> <h4>SARS Cases: " + countrySars[countrySarsCode[i]] + "</h4>")
               );
             }
             var sarsLayer = L.layerGroup(sarsMarkers);

@@ -21,3 +21,6 @@ d3.csv("static/data/summary_table.csv", function(chartData){
 
     });
 });
+
+
+
