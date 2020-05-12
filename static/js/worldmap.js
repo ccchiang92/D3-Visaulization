@@ -153,22 +153,27 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
             var ebolaLayer = L.layerGroup(ebolaMarkers);
 
     // SARS Layer ****************
+            var no_total =[];
+            data3.forEach(function(row) {
+              if (row.Country!='Total'){
+                  no_total.push(row);
+              }
+            });
             var sarsMarkers = [],
                 countryName = data1.map(row => row.name),
                 countrySars = {},
-                countrySarsId = data3.map(row => row.Country);
+                countrySarsId = no_total.map(row => row.Country);
 
             for (var i = 0; i < countryName.length; i += 1) {
               coordinates[countryName[i]] = [latitude[i],longitude[i]];
             }
 
             for (var i = 0; i < countrySarsId.length; i += 1) {
-              if (countrySarsId[i]!='Total'){
-              countrySars[countrySarsId[i]] = data3[i].Cases;}
-          }
+              countrySars[countrySarsId[i]] = no_total[i].Cases;}
+        
           console.log(countrySars)
           
-          var countrySarsCode = [...new Set(data3.map(data => data.Country))];
+          var countrySarsCode = [...new Set(no_total.map(data => data.Country))];
           
             for (var i = 0; i < countrySarsCode.length; i++) {             
               sarsMarkers.push(
