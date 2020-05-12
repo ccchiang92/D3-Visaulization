@@ -34,7 +34,7 @@ function oilChart(virus) {
     var trace1 = {
         x: filteredData.map(row => row.Date),
         y: filteredData.map(row => row.Brent_Spot_Price),
-        name: 'weekly oil price',
+        name: 'weekly oil price, in dollars',
         type: 'scatter'
       };
       
@@ -52,7 +52,7 @@ function oilChart(virus) {
         title: 'Oil Prices During Viral Outbreaks',
         yaxis: { title: 'Number of cases and deaths' },
         yaxis2: {
-            title: 'Weekly oil price',
+            title: 'Weekly oil price, US$',
             titlefont: { color: 'rgb(148, 103, 189)' },
             tickfont: { color: 'rgb(148, 103, 189)' },
             overlaying: 'y',
