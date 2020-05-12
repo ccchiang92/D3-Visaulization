@@ -80,7 +80,7 @@ d3.csv("./static/data/deaths.csv", function(virus) {
             },
         },
         autosize: false,
-        width: 400,
+        width: 350,
         height: 300,
         // margin: {
         // l: 80,
