@@ -92,22 +92,22 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
     function chooseRadius(d) {
       switch (true) {
       case (d < 10):
-        return 70;
+        return 80;
         break;
       case (d < 50):
         return 100;
         break;
-      case (d < 100):
-        return 120;
+      case (d < 120):
+        return 100;
         break;
       case (d < 500):
-        return 150;
+        return 160;
         break;
       case (d < 1000):
         return 200;
         break;
       case (d < 10000):
-        return 250;
+        return 300;
         break;
       default:
         return 300;
@@ -128,8 +128,13 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
             coordinates[countryID[i]] = [latitude[i],longitude[i]];
           }
 
+
+  
   // Ebola Layer ****************
             var ebolaMarkers = [],
+                countryNames={},
+                countryName = data2.map(row => row.Country),
+                codeEbolaID = data2.map(row => row.code),
                 countryEbola = {},
                 countryEbolaId = data2.map(row => row.code);
   
@@ -137,8 +142,12 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
               countryEbola[countryEbolaId[i]] = data2[i]["No. of confirmed cases"];
           }
 
+            for (var i = 0; i < countryName.length; i += 1) {
+              countryNames[codeEbolaID[i]] = countryName[i];
+          }
+
           var countryEbolaCode = [...new Set(data2.map(data => data.code))];   
-           
+
             for (var i = 0; i < countryEbolaCode.length; i++) {             
               ebolaMarkers.push(
                 L.circle(coordinates[countryEbolaCode[i]], {
@@ -147,11 +156,12 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
                   color: "black",
                   fillColor: "blue",
                   radius: chooseRadius(countryEbola[countryEbolaCode[i]])*2000
-                }).bindPopup("<h4>" + data2[i].Country + "</h4> <hr> <h4>Ebola Cases: " + data2[i]["No. of confirmed cases"] + "</h4>")
+                }).bindPopup("<h4>" + countryNames[countryEbolaCode[i]] + "</h4> <hr> <h4>Ebola Cases: " + countryEbola[countryEbolaCode[i]] + "</h4>")
               );
             }
             var ebolaLayer = L.layerGroup(ebolaMarkers);
 
+            
     // SARS Layer ****************
             var no_total =[];
             data3.forEach(function(row) {
@@ -170,8 +180,6 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
 
             for (var i = 0; i < countrySarsId.length; i += 1) {
               countrySars[countrySarsId[i]] = no_total[i].Cases;}
-        
-          console.log(countrySars)
           
           var countrySarsCode = [...new Set(no_total.map(data => data.Country))];
           
