@@ -14,6 +14,6 @@ d3.csv("static/data/summary_table.csv", function(chartData){
         row.append("td").text(obj.virus);
         row.append("td").text(obj.cases);
         row.append("td").text(obj.deaths);
-        row.append("td").text((obj.deaths / obj.cases).toFixed(2));
+        row.append("td").text(`${(obj.deaths / obj.cases).toFixed(2)}%`);
     });
 });
