@@ -231,9 +231,9 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
     })
     
     var myMap = L.map("map", {
-      center: [0.00, 0.00],
+      center: [30.00, 0.00],
       zoom: 2,
-      layers: [light]
+      layers: [streets]
     });
 
     var baseMaps = {

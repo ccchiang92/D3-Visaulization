@@ -2,7 +2,7 @@ let csv_data;
 
 d3.csv('./static/data/oil_prices.csv', function (error, oilData) {
     csv_data = oilData;
-    console.log(csv_data)
+    // console.log(csv_data)
     init()
 });
 
@@ -30,7 +30,7 @@ function init() {
 function oilChart(virus) {
     // Code from https://plotly.com/javascript/multiple-axes/
     const filteredData = csv_data.filter(row => row.Virus === virus);
-    console.log(filteredData);
+    // console.log(filteredData);
     var trace1 = {
         x: filteredData.map(row => row.Date),
         y: filteredData.map(row => row.Brent_Spot_Price),
