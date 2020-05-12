@@ -1,5 +1,8 @@
-// Responsive interactive d3 scatter plot script
-// Uses code from class activities
+// Responsive interactive d3 line plot script
+// from plotting various virus against stock market indexes
+// By Chris Chiang
+
+// A color generator that switch between a few colors 
 var colorGen = 0;
 var colors= ['blue','red','green','orange','darkred','pink','grey','purple'];
 function newColor(){
@@ -10,6 +13,7 @@ function newColor(){
     }
     return colors[colorGen];
 }
+// redraw each time window size changes
 function makeResponsive(){
     var initSvg = d3.select('#stock').selectAll('svg');
     if (!initSvg.empty()) {
@@ -37,6 +41,7 @@ function makeResponsive(){
     var lineChartG = chartSvg.append('g')
         .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
+    //  create clickable virus labels
     lineChartG.append("text")
         .attr("x", (chartW / 4))             
         .attr("y", 0 - (margin.top / 2))
@@ -63,6 +68,7 @@ function makeResponsive(){
     var curCountry ='Total';
     var curIndex = 'DJI';
 
+    // function to return different d3 scale base on options
     function setScale(data, col_name,option) {
         if (option === 'x'){
             var scale = d3.scaleTime()
@@ -80,6 +86,7 @@ function makeResponsive(){
         }       
         return scale;
     }
+    // render new axis base on options
     function renderAxes(newScale, Axis, option) {
         if (option === 'x'){
             var bottomAxis = d3.axisBottom(newScale);
@@ -99,7 +106,7 @@ function makeResponsive(){
         }
         return Axis;
     }
-
+    // draw legend function
     function drawLegend(index){
         var i = 1;
         var legend = lineChartG.append('g')
@@ -153,7 +160,7 @@ function makeResponsive(){
         return [line,lineLab]
     }
 
-
+    // function to draw new stock index
     function draw_stock(path, index, year, legend,yAxis){
         d3.csv(path+'/stock/'+index+' '+year+'.csv', function(error, stockData) {
             if (error) throw error;
