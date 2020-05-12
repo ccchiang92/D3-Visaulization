@@ -9,11 +9,15 @@ d3.csv("static/data/summary_table.csv", function(chartData){
     head.append("th").text("Cases");
     head.append('th').text("Deaths");
     head.append("th").text("Death Rate")
+    var colors = ['maroon','blue','green','purple']
+    var i =0;
     chartData.forEach(function (obj) {
         row = table.append("tr");
-        row.append("td").text(obj.virus);
-        row.append("td").text(obj.cases);
-        row.append("td").text(obj.deaths);
-        row.append("td").text(`${(obj.deaths / obj.cases).toFixed(2)}%`);
+        row.append("td").style("color",colors[i]).text(obj.virus);
+        row.append("td").style("color",colors[i]).text(obj.cases);
+        row.append("td").style("color",colors[i]).text(obj.deaths);
+        row.append("td").style("color",colors[i]).text((obj.deaths / obj.cases*100).toFixed(2)+'%');
+        i++;
+
     });
 });
