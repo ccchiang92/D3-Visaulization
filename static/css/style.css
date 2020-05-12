@@ -3,6 +3,12 @@ body {
   margin: 0;
   color: #ff5050;
   font-size: 20px;
+  background-image: url('https://wallpapercave.com/wp/wp5979996.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  background-color: rgba(255,255,255,0.8);
+  background-blend-mode: lighten;
 }
 
 .tblbox #table {

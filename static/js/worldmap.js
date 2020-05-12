@@ -163,10 +163,12 @@ d3.csv("static/data/covid_daily_world.csv", function(results) {
             }
 
             for (var i = 0; i < countrySarsId.length; i += 1) {
-              countrySars[countrySarsId[i]] = data3[i].Cases;
+              if (countrySarsId[i]!='Total'){
+              countrySars[countrySarsId[i]] = data3[i].Cases;}
           }
-
-          var countrySarsCode = [...new Set(data3.map(data => data.Country))];   
+          console.log(countrySars)
+          
+          var countrySarsCode = [...new Set(data3.map(data => data.Country))];
           
             for (var i = 0; i < countrySarsCode.length; i++) {             
               sarsMarkers.push(
