@@ -3,7 +3,7 @@
 function init() {
   d3.csv('./static/data/covid_pie.csv', function(virus) {
 
-    console.log(virus);
+    //console.log(virus);
 
     var countries = [],
         cases = [];
