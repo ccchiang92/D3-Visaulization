@@ -2,7 +2,8 @@
 
 This is a data visualization project for UC Berkeley’s extension Data Analytics bootcamp. \
 In this webpage we have compiled data from various pandemics and created interactive visuals for the data. \
-The goal here was to measure, compare and understand the spread and impact of different pandemics through easy digestible visuals. 
+The goal here was to measure, compare and understand the spread and impact of different pandemics through easy digestible visuals. \
+Visit https://ccchiang92.github.io/D3-Visaulization to checkout the webpage
 
 ### This project involved bringing together many different elements:
 We utilized many of the tools and techniques we learned in class, to create a complete package. \
