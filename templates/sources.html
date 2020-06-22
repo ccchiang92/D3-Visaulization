@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+  <link rel="stylesheet" href="./static/css/d3Style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+  
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">COVID-19 Dashboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sources">About/Sources </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" target="_blank" href="https://github.com/ccchiang92/D3-Visaulization">Github Repo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Data Table
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/covid">COVID-19</a>
+            <a class="dropdown-item" href="/sars">SARS</a>
+            <a class="dropdown-item" href="/ebola">EBOLA</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+      <div class='container sources'>
+          <div class='row'>
+            <h3>About</h3>
+            <p>This is a data visualization project for UC Berkeley’s extension Data Analytics bootcamp.
+              In this webpage we have compiled data from various pandemics and created interactive visuals for the data.
+              The goal here was to measure, compare and understand the spread and impact of different pandemics through easy digestible visuals.
+              </p>
+          </div>
+          <div class='row'>
+              <div class='col-md-4'>
+                  <h3>Data Sources</h3>
+                  <ul>
+                      <li><a href="https://github.com/CSSEGISandData/COVID-19">COVID-19</a></li>
+                  </ul>
+                  <ul>
+                      <li><a href="https://www.who.int/csr/sars/country/en/">SARS</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="https://www.kaggle.com/imdevskp/ebola-outbreak-20142016-complete-dataset">Ebola</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="https://github.com/imdevskp/mers_dataset_collection_cleaning">MERS</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="https://www.eia.gov/dnav/pet/hist/RBRTEd.htm">Brent Oil Prices</a></li>
+                  </ul>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-4'>
+                <h3>Javascript Libraries/Extensions</h3>
+                <ul>
+                    <li>D3</li>
+                </ul>
+                <ul>
+                    <li>Bootstrap</li>
+                </ul>
+                <ul>
+                  <li>Leaflet</li>
+                </ul>
+                <ul>
+                  <li>Mapbox</li>
+                </ul>
+                <ul>
+                    <li>Plotly</li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/svitkin/leaflet-timeline-slider/">Leaflet timeline slider</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://github.com/Leaflet/Leaflet.heat">Leaflet heatmap</a></li>
+                </ul>
+                <ul>
+                    <li><a href="http://www.naturalearthdata.com/features/">Country borderss</a></li>
+                </ul>
+            </div>
+          </div>
+          <div class='row'></div>
+            <div class='col-md-4'>
+                <h3>Back-End</h3>
+                <ul>
+                    <li>Python</li>
+                </ul>
+                <ul>
+                    <li>Pandas</li>
+                </ul>
+                <ul>
+                  <li>SQLalchemy</li>
+                </ul>
+                <ul>
+                  <li>Flask</li>
+                </ul>
+                <ul>
+                    <li>Splinter</li>
+                </ul>
+                <ul>
+                    <li>BeautifulSoup</li>
+                </ul>
+                  
+            </div>
+          </div>
+      </div>
+
+      <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">UCB DA Bootcamp 2020. Project Team: Chris, Sowmya, Jason, Axel.</div>
+            
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+    integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+    crossorigin=""></script>
+
+    <script src="static/js/leaflet-timeline-slider.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</body>

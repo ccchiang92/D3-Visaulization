@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-     url:"data/ebola_final.csv",
+     url:"./static/data/ebola_final.csv",
      dataType:"text",
      success:function(data)
      {

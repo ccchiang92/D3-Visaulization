@@ -10,7 +10,7 @@ app = Flask(__name__)
 # render index.html
 @app.route("/")
 def base():
-    return render_template("index.html")
+    return render_template("index_flask.html")
 
 
 # # Weekly covid data routes
@@ -35,6 +35,19 @@ def sql_to_json(week):
         dict_list.append(temp_dict)
     return json.dumps(dict_list)
 
+# Load Sources/data_table pages 
+@app.route("/sources")
+def source():
+    return render_template("sources.html")
+@app.route("/covid")
+def cov19_data():
+    return render_template("covid.html")
+@app.route("/sars")
+def sars_data():
+    return render_template("sars.html")
+@app.route("/ebola")
+def ebola_data():
+    return render_template("ebola.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

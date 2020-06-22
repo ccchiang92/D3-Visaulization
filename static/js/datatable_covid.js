@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-     url:"data/covid_daily_world.csv",
+     url:"./static/data/covid_daily_world.csv",
      dataType:"text",
      success:function(data)
      {

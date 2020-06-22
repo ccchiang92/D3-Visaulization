@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-     url:"data/SARS_data.csv",
+     url:"./static/data/SARS_data.csv",
      dataType:"text",
      success:function(data)
      {
